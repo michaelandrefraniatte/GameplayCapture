@@ -1,0 +1,8 @@
+cd /
+cd users/mic/documents/video
+ffmpeg -i input.mp4 -vf scale=1912:1080:flags=neighbor -r 15 output.webm
+1080 / 768 * 1360 = 1912
+ffmpeg -i input.mp4 -vf scale=3824:2160:flags=neighbor -r 20 output.mp4
+2160 / 768 * 1360 = 3825
+ffmpeg -i input.mp4 -vcodec libx265 -fs 100M -crf 24 output.mp4
+ffmpeg -i input.mp4 -b:v 6M output.mp4
