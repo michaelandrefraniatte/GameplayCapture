@@ -769,3 +769,4 @@ C:\Users\micha\Documents\GitHub\GameplayCapture\Src\GameplayCapture\obj\Release\
 C:\Users\micha\Documents\GitHub\GameplayCapture\Src\GameplayCapture\obj\Release\GameplayCapture.pdb
 C:\Users\micha\Documents\GitHub\GameplayCapture\Src\GameplayCapture\bin\Release\AForge.Video.DirectShow.dll
 C:\Users\micha\Documents\GitHub\GameplayCapture\Src\GameplayCapture\bin\Release\AForge.Video.dll
+C:\Users\micha\Documents\GitHub\GameplayCapture\Src\GameplayCapture\obj\Release\GameplayCapture.exe.config
