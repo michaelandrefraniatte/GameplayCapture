@@ -126,14 +126,27 @@ namespace GameplayCapture
             {
                 var output = adapter.Outputs.FirstOrDefault(o => o.Description.DeviceName == Output);
                 if (output == null)
-                    return null;
+                    return null; // this can happen if the adapter is not connected to a display
 
                 return output.QueryInterface<Output1>();
             }
         }
 
+        public static string GetDefaultOutputDirectoryPath()
+        {
+            var dir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Duplicator");
+            if (!Directory.Exists(dir))
+            {
+                Directory.CreateDirectory(dir);
+            }
+            return dir;
+        }
+
         public static string GetDisplayDeviceName(string deviceName)
         {
+            if (deviceName == null)
+                throw new ArgumentNullException(nameof(deviceName));
+
             var dd = new DISPLAY_DEVICE();
             dd.cb = Marshal.SizeOf<DISPLAY_DEVICE>();
             if (!EnumDisplayDevices(deviceName, 0, ref dd, 0))

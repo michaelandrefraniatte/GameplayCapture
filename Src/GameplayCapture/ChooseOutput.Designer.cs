@@ -1,5 +1,4 @@
-﻿
-namespace GameplayCapture
+﻿namespace WinDuplicator
 {
     partial class ChooseOutput
     {
@@ -29,7 +28,6 @@ namespace GameplayCapture
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChooseOutput));
             this.tableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
             this.panelCommands = new System.Windows.Forms.Panel();
             this.buttonCancel = new System.Windows.Forms.Button();
@@ -57,7 +55,7 @@ namespace GameplayCapture
             this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanelMain.Size = new System.Drawing.Size(509, 255);
-            this.tableLayoutPanelMain.TabIndex = 1;
+            this.tableLayoutPanelMain.TabIndex = 0;
             // 
             // panelCommands
             // 
@@ -100,7 +98,6 @@ namespace GameplayCapture
             this.listViewMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewMain.FullRowSelect = true;
             this.listViewMain.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.listViewMain.HideSelection = false;
             this.listViewMain.Location = new System.Drawing.Point(3, 3);
             this.listViewMain.MultiSelect = false;
             this.listViewMain.Name = "listViewMain";
@@ -130,13 +127,17 @@ namespace GameplayCapture
             // 
             // ChooseOutput
             // 
+            this.AcceptButton = this.buttonOk;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(509, 255);
             this.Controls.Add(this.tableLayoutPanelMain);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ChooseOutput";
-            this.Text = "ChooseOutput";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Choose Output";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChooseOutput_FormClosing);
             this.tableLayoutPanelMain.ResumeLayout(false);
             this.panelCommands.ResumeLayout(false);

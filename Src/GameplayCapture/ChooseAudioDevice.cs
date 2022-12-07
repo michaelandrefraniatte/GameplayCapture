@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Windows.Forms;
-namespace GameplayCapture
+using GameplayCapture;
+namespace WinDuplicator
 {
     public partial class ChooseAudioDevice : Form
     {
@@ -21,17 +22,12 @@ namespace GameplayCapture
             }
 
             listViewMain.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-            //UpdateControls();
+            UpdateControls();
         }
 
         public AudioCapture.AudioDevice Device { get; private set; }
 
-        private void UpdateControls()
-        {
-            buttonOk.Enabled = listViewMain.SelectedItems.Count > 0;
-        }
-
-        private void ChooseAudioDevice_FormClosing(object sender, FormClosingEventArgs e)
+        private void ChooseAdapter_FormClosing(object sender, FormClosingEventArgs e)
         {
             if ((e.CloseReason == CloseReason.UserClosing || e.CloseReason == CloseReason.None) && DialogResult == DialogResult.OK)
             {
@@ -42,9 +38,9 @@ namespace GameplayCapture
             }
         }
 
-        private void listViewMain_SelectedIndexChanged(object sender, System.EventArgs e)
+        private void UpdateControls()
         {
-            //UpdateControls();
+            buttonOk.Enabled = listViewMain.SelectedItems.Count > 0;
         }
     }
 }

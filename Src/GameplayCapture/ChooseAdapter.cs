@@ -1,7 +1,8 @@
 ﻿using System.Windows.Forms;
 using SharpDX.DXGI;
+using GameplayCapture;
 
-namespace GameplayCapture
+namespace WinDuplicator
 {
     public partial class ChooseAdapter : Form
     {
@@ -50,7 +51,7 @@ namespace GameplayCapture
 
         private void listViewMain_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            //UpdateControls();
+            UpdateControls();
         }
     }
 }

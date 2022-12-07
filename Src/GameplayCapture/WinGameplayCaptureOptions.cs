@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Drawing.Design;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
+using WinDuplicator;
 namespace GameplayCapture
 {
     public class WinGameplayCaptureOptions : GameplayCaptureOptions
