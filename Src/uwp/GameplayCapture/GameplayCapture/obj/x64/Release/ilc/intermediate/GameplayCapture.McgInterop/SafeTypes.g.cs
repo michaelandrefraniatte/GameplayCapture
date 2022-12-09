@@ -97,6 +97,165 @@ namespace _
 	}
 }
 
+namespace __Interop
+{
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Size=32)]
+	public unsafe partial struct InlineArray_byte___32
+	{
+		public byte this[uint index]
+		{
+			get
+			{
+				if (index < 0 
+							|| index >= 32)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___32* pThis = &(this))
+					return ((byte*)pThis)[index];
+			}
+			set
+			{
+				if (index < 0 
+							|| index >= 32)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___32* pThis = &(this))
+					((byte*)pThis)[index] = value;
+			}
+		}
+		public const int Length = 32;
+		byte firstElement;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Size=16)]
+	public unsafe partial struct InlineArray_byte___16
+	{
+		public byte this[uint index]
+		{
+			get
+			{
+				if (index < 0 
+							|| index >= 16)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___16* pThis = &(this))
+					return ((byte*)pThis)[index];
+			}
+			set
+			{
+				if (index < 0 
+							|| index >= 16)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___16* pThis = &(this))
+					((byte*)pThis)[index] = value;
+			}
+		}
+		public const int Length = 16;
+		byte firstElement;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Size=64)]
+	public unsafe partial struct InlineArray_byte___64
+	{
+		public byte this[uint index]
+		{
+			get
+			{
+				if (index < 0 
+							|| index >= 64)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___64* pThis = &(this))
+					return ((byte*)pThis)[index];
+			}
+			set
+			{
+				if (index < 0 
+							|| index >= 64)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___64* pThis = &(this))
+					((byte*)pThis)[index] = value;
+			}
+		}
+		public const int Length = 64;
+		byte firstElement;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Size=64)]
+	public unsafe partial struct InlineArray_System_IntPtr___8
+	{
+		public global::System.IntPtr this[uint index]
+		{
+			get
+			{
+				if (index < 0 
+							|| index >= 8)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_System_IntPtr___8* pThis = &(this))
+					return ((global::System.IntPtr*)pThis)[index];
+			}
+			set
+			{
+				if (index < 0 
+							|| index >= 8)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_System_IntPtr___8* pThis = &(this))
+					((global::System.IntPtr*)pThis)[index] = value;
+			}
+		}
+		public const int Length = 8;
+		global::System.IntPtr firstElement;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Size=28)]
+	public unsafe partial struct InlineArray_short___14
+	{
+		public short this[uint index]
+		{
+			get
+			{
+				if (index < 0 
+							|| index >= 14)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_short___14* pThis = &(this))
+					return ((short*)pThis)[index];
+			}
+			set
+			{
+				if (index < 0 
+							|| index >= 14)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_short___14* pThis = &(this))
+					((short*)pThis)[index] = value;
+			}
+		}
+		public const int Length = 14;
+		short firstElement;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Size=100)]
+	public unsafe partial struct InlineArray_byte___100
+	{
+		public byte this[uint index]
+		{
+			get
+			{
+				if (index < 0 
+							|| index >= 100)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___100* pThis = &(this))
+					return ((byte*)pThis)[index];
+			}
+			set
+			{
+				if (index < 0 
+							|| index >= 100)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::__Interop.InlineArray_byte___100* pThis = &(this))
+					((byte*)pThis)[index] = value;
+			}
+		}
+		public const int Length = 100;
+		byte firstElement;
+	}
+}
+
 namespace CaptureEncoder
 {
 	[global::System.Runtime.InteropServices.McgRedirectedType("CaptureEncoder.IDirect3DDxgiInterfaceAccess,CaptureEncoder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nul" +
@@ -41917,6 +42076,2953 @@ namespace Microsoft.Graphics.Canvas.UI.Xaml
 	}
 }
 
+namespace NAudio
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MmResult,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MmResult__NAudio
+	{
+		NoError = 0,
+		UnspecifiedError = 1,
+		BadDeviceId = 2,
+		NotEnabled = 3,
+		AlreadyAllocated = 4,
+		InvalidHandle = 5,
+		NoDriver = 6,
+		MemoryAllocationError = 7,
+		NotSupported = 8,
+		BadErrorNumber = 9,
+		InvalidFlag = 10,
+		InvalidParameter = 11,
+		HandleBusy = 12,
+		InvalidAlias = 13,
+		BadRegistryDatabase = 14,
+		RegistryKeyNotFound = 15,
+		RegistryReadError = 16,
+		RegistryWriteError = 17,
+		RegistryDeleteError = 18,
+		RegistryValueNotFound = 19,
+		NoDriverCallback = 20,
+		MoreData = 21,
+		WaveBadFormat = 32,
+		WaveStillPlaying = 33,
+		WaveHeaderUnprepared = 34,
+		WaveSync = 35,
+		AcmNotPossible = 512,
+		AcmBusy = 513,
+		AcmHeaderUnprepared = 514,
+		AcmCancelled = 515,
+		MixerInvalidLine = 1024,
+		MixerInvalidControl = 1025,
+		MixerInvalidValue = 1026,
+	}
+}
+
+namespace NAudio.CoreAudioApi.Interfaces
+{
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyComObject)]
+	[global::System.Runtime.InteropServices.Guid("bcde0395-e52f-467c-8e3d-c4579291692e")]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	public unsafe class MMDeviceEnumeratorComObject : global::System.__ComObject
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public MMDeviceEnumeratorComObject()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.CoCreateInstanceEx(new global::System.Guid("bcde0395-e52f-467c-8e3d-c4579291692e"));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		public MMDeviceEnumeratorComObject(global::System.IntPtr dummy)
+		{
+		}
+	}
+}
+
+namespace NAudio.Dmo
+{
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyComObject)]
+	[global::System.Runtime.InteropServices.Guid("f447b69e-1884-4a7e-8055-346f74d6edb3")]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	public unsafe class ResamplerMediaComObject : global::System.__ComObject
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public ResamplerMediaComObject()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.CoCreateInstanceEx(new global::System.Guid("f447b69e-1884-4a7e-8055-346f74d6edb3"));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		public ResamplerMediaComObject(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyComObject)]
+	[global::System.Runtime.InteropServices.Guid("bbeea841-0a63-4f52-a7ab-a9b3a84ed38a")]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	public unsafe class WindowsMediaMp3DecoderComObject : global::System.__ComObject
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public WindowsMediaMp3DecoderComObject()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.CoCreateInstanceEx(new global::System.Guid("bbeea841-0a63-4f52-a7ab-a9b3a84ed38a"));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		public WindowsMediaMp3DecoderComObject(global::System.IntPtr dummy)
+		{
+		}
+	}
+}
+
+namespace NAudio.MediaFoundation
+{
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyComObject)]
+	[global::System.Runtime.InteropServices.Guid("48e2ed0f-98c2-4a37-bed5-166312ddd83f")]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	public unsafe class MFReadWriteClassFactory : global::System.__ComObject
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public MFReadWriteClassFactory()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.CoCreateInstanceEx(new global::System.Guid("48e2ed0f-98c2-4a37-bed5-166312ddd83f"));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		public MFReadWriteClassFactory(global::System.IntPtr dummy)
+		{
+		}
+	}
+}
+
+namespace NAudio.Midi
+{
+	// Unmanaged Function Pointer - Calling Convention StdCall
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Midi.MidiInterop+MidiInCallback,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe delegate void MidiInterop_MidiInCallback__NAudio(
+				global::System.IntPtr midiInHandle, 
+				global::NAudio_Midi.MidiInterop_MidiInMessage__NAudio message, 
+				global::System.IntPtr userData, 
+				global::System.IntPtr messageParameter1, 
+				global::System.IntPtr messageParameter2);
+
+	// Unmanaged Function Pointer - Calling Convention StdCall
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Midi.MidiInterop+MidiOutCallback,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe delegate void MidiInterop_MidiOutCallback__NAudio(
+				global::System.IntPtr midiInHandle, 
+				global::NAudio_Midi.MidiInterop_MidiOutMessage__NAudio message, 
+				global::System.IntPtr userData, 
+				global::System.IntPtr messageParameter1, 
+				global::System.IntPtr messageParameter2);
+}
+
+namespace NAudio.Wave
+{
+	// Unmanaged Function Pointer - Calling Convention StdCall
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveInterop+WaveCallback,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe delegate void WaveInterop_WaveCallback__NAudio(
+				global::System.IntPtr hWaveOut, 
+				global::NAudio_Wave.WaveInterop_WaveMessage__NAudio message, 
+				global::System.IntPtr dwInstance, 
+				global::NAudio_Wave.WaveHeader__NAudio wavhdr, 
+				global::System.IntPtr dwReserved);
+}
+
+namespace NAudio_CoreAudioApi
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.AudioClientShareMode,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum AudioClientShareMode__NAudio
+	{
+		Shared = 0,
+		Exclusive = 1,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.AudioClientStreamFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum AudioClientStreamFlags__NAudio
+	{
+		None = 0,
+		CrossProcess = 65536,
+		Loopback = 131072,
+		EventCallback = 262144,
+		NoPersist = 524288,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.AudioClientBufferFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum AudioClientBufferFlags__NAudio
+	{
+		None = 0,
+		DataDiscontinuity = 1,
+		Silent = 2,
+		TimestampError = 4,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.ConnectorType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum ConnectorType__NAudio
+	{
+		UnknownConnector = 0,
+		PhysicalInternal = 1,
+		PhysicalExternal = 2,
+		SoftwareIo = 3,
+		SoftwareFixed = 4,
+		Network = 5,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.DataFlow,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum DataFlow__NAudio
+	{
+		Render = 0,
+		Capture = 1,
+		All = 2,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.DeviceState,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum DeviceState__NAudio
+	{
+		Active = 1,
+		Disabled = 2,
+		NotPresent = 4,
+		Unplugged = 8,
+		All = 15,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Role,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum Role__NAudio
+	{
+		Console = 0,
+		Multimedia = 1,
+		Communications = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.PropertyKey,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct PropertyKey__NAudio
+	{
+		public global::System.Guid formatId;
+		public int propertyId;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.AudioClientProperties,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct AudioClientProperties__NAudio
+	{
+		public uint cbSize;
+		public int bIsOffload;
+		public global::NAudio_CoreAudioApi.AudioStreamCategory__NAudio eCategory;
+		public global::NAudio_CoreAudioApi.AudioClientStreamOptions__NAudio Options;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.AudioStreamCategory,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum AudioStreamCategory__NAudio
+	{
+		Other = 0,
+		ForegroundOnlyMedia = 1,
+		BackgroundCapableMedia = 2,
+		Communications = 3,
+		Alerts = 4,
+		SoundEffects = 5,
+		GameEffects = 6,
+		GameMedia = 7,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.AudioClientStreamOptions,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum AudioClientStreamOptions__NAudio
+	{
+		None = 0,
+		Raw = 1,
+	}
+}
+
+namespace NAudio_CoreAudioApi_Interfaces
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IAudioSessionEvents,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=nul" +
+		"l")]
+	public unsafe interface IAudioSessionEvents__NAudio
+	{
+		int OnDisplayNameChanged(
+					string displayName, 
+					ref global::System.Guid eventContext);
+
+		int OnIconPathChanged(
+					string iconPath, 
+					ref global::System.Guid eventContext);
+
+		int OnSimpleVolumeChanged(
+					float volume, 
+					bool isMuted, 
+					ref global::System.Guid eventContext);
+
+		int OnChannelVolumeChanged(
+					uint channelCount, 
+					global::System.IntPtr newVolumes, 
+					uint channelIndex, 
+					ref global::System.Guid eventContext);
+
+		int OnGroupingParamChanged(
+					ref global::System.Guid groupingId, 
+					ref global::System.Guid eventContext);
+
+		int OnStateChanged(global::NAudio_CoreAudioApi_Interfaces.AudioSessionState__NAudio state);
+
+		int OnSessionDisconnected(global::NAudio_CoreAudioApi_Interfaces.AudioSessionDisconnectReason__NAudio disconnectReason);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IAudioSessionNotification,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyTok" +
+		"en=null")]
+	public unsafe interface IAudioSessionNotification__NAudio
+	{
+		int OnSessionCreated(global::NAudio_CoreAudioApi_Interfaces.IAudioSessionControl__NAudio newSession);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IAudioSessionControl,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=nu" +
+		"ll")]
+	public unsafe interface IAudioSessionControl__NAudio
+	{
+		int GetState(out global::NAudio_CoreAudioApi_Interfaces.AudioSessionState__NAudio state);
+
+		int GetDisplayName(out string displayName);
+
+		int SetDisplayName(
+					string displayName, 
+					global::System.Guid eventContext);
+
+		int GetIconPath(out string iconPath);
+
+		int SetIconPath(
+					string iconPath, 
+					global::System.Guid eventContext);
+
+		int GetGroupingParam(out global::System.Guid groupingId);
+
+		int SetGroupingParam(
+					global::System.Guid groupingId, 
+					global::System.Guid eventContext);
+
+		int RegisterAudioSessionNotification(global::NAudio_CoreAudioApi_Interfaces.IAudioSessionEvents__NAudio client);
+
+		int UnregisterAudioSessionNotification(global::NAudio_CoreAudioApi_Interfaces.IAudioSessionEvents__NAudio client);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IAudioCaptureClient,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=nul" +
+		"l")]
+	public unsafe interface IAudioCaptureClient__NAudio
+	{
+		int GetBuffer(
+					out global::System.IntPtr dataBuffer, 
+					out int numFramesToRead, 
+					out global::NAudio_CoreAudioApi.AudioClientBufferFlags__NAudio bufferFlags, 
+					out long devicePosition, 
+					out long qpcPosition);
+
+		int ReleaseBuffer(int numFramesRead);
+
+		int GetNextPacketSize(out int numFramesInNextPacket);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IAudioClient,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IAudioClient__NAudio
+	{
+		int Initialize(
+					global::NAudio_CoreAudioApi.AudioClientShareMode__NAudio shareMode, 
+					global::NAudio_CoreAudioApi.AudioClientStreamFlags__NAudio streamFlags, 
+					long hnsBufferDuration, 
+					long hnsPeriodicity, 
+					global::NAudio_Wave.WaveFormat__NAudio pFormat, 
+					ref global::System.Guid audioSessionGuid);
+
+		int GetBufferSize(out uint bufferSize);
+
+		long GetStreamLatency();
+
+		int GetCurrentPadding(out int currentPadding);
+
+		int IsFormatSupported(
+					global::NAudio_CoreAudioApi.AudioClientShareMode__NAudio shareMode, 
+					global::NAudio_Wave.WaveFormat__NAudio pFormat, 
+					global::System.IntPtr closestMatchFormat);
+
+		int GetMixFormat(out global::System.IntPtr deviceFormatPointer);
+
+		int GetDevicePeriod(
+					out long defaultDevicePeriod, 
+					out long minimumDevicePeriod);
+
+		int Start();
+
+		int Stop();
+
+		int Reset();
+
+		int SetEventHandle(global::System.IntPtr eventHandle);
+
+		int GetService(
+					global::System.Guid interfaceId, 
+					out object interfacePointer);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IAudioRenderClient,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null" +
+		"")]
+	public unsafe interface IAudioRenderClient__NAudio
+	{
+		int GetBuffer(
+					int numFramesRequested, 
+					out global::System.IntPtr dataBufferPointer);
+
+		int ReleaseBuffer(
+					int numFramesWritten, 
+					global::NAudio_CoreAudioApi.AudioClientBufferFlags__NAudio bufferFlags);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IAudioSessionControl2,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=n" +
+		"ull")]
+	public unsafe interface IAudioSessionControl2__NAudio
+	{
+		int GetState(out global::NAudio_CoreAudioApi_Interfaces.AudioSessionState__NAudio state);
+
+		int GetDisplayName(out string displayName);
+
+		int SetDisplayName(
+					string displayName, 
+					global::System.Guid eventContext);
+
+		int GetIconPath(out string iconPath);
+
+		int SetIconPath(
+					string iconPath, 
+					global::System.Guid eventContext);
+
+		int GetGroupingParam(out global::System.Guid groupingId);
+
+		int SetGroupingParam(
+					global::System.Guid groupingId, 
+					global::System.Guid eventContext);
+
+		int RegisterAudioSessionNotification(global::NAudio_CoreAudioApi_Interfaces.IAudioSessionEvents__NAudio client);
+
+		int UnregisterAudioSessionNotification(global::NAudio_CoreAudioApi_Interfaces.IAudioSessionEvents__NAudio client);
+
+		int GetSessionIdentifier(out string retVal);
+
+		int GetSessionInstanceIdentifier(out string retVal);
+
+		int GetProcessId(out uint retVal);
+
+		int IsSystemSoundsSession();
+
+		int SetDuckingPreference(bool optOut);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IConnector,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IConnector__NAudio
+	{
+		int GetType(out global::NAudio_CoreAudioApi.ConnectorType__NAudio type);
+
+		int GetDataFlow(out global::NAudio_CoreAudioApi.DataFlow__NAudio flow);
+
+		int ConnectTo(global::NAudio_CoreAudioApi_Interfaces.IConnector__NAudio connectTo);
+
+		int Disconnect();
+
+		int IsConnected(out bool connected);
+
+		int GetConnectedTo(out global::NAudio_CoreAudioApi_Interfaces.IConnector__NAudio conTo);
+
+		int GetConnectorIdConnectedTo(out string id);
+
+		int GetDeviceIdConnectedTo(out string id);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IDeviceTopology,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IDeviceTopology__NAudio
+	{
+		int GetConnectorCount(out uint count);
+
+		int GetConnector(
+					uint index, 
+					out global::NAudio_CoreAudioApi_Interfaces.IConnector__NAudio connector);
+
+		int GetSubunitCount(out uint count);
+
+		int GetSubunit(
+					uint index, 
+					out global::NAudio_CoreAudioApi_Interfaces.ISubunit__NAudio subunit);
+
+		int GetPartById(
+					uint id, 
+					out global::NAudio_CoreAudioApi_Interfaces.IPart__NAudio part);
+
+		int GetDeviceId(out string id);
+
+		int GetSignalPath(
+					global::NAudio_CoreAudioApi_Interfaces.IPart__NAudio from, 
+					global::NAudio_CoreAudioApi_Interfaces.IPart__NAudio to, 
+					bool rejectMixedPaths, 
+					out global::NAudio_CoreAudioApi_Interfaces.IPartsList__NAudio parts);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.ISubunit,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface ISubunit__NAudio
+	{
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IPart,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IPart__NAudio
+	{
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IPartsList,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IPartsList__NAudio
+	{
+		int GetCount(out uint count);
+
+		int GetPart(
+					uint index, 
+					out global::NAudio_CoreAudioApi_Interfaces.IPart__NAudio part);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.IMMNotificationClient,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=n" +
+		"ull")]
+	public unsafe interface IMMNotificationClient__NAudio
+	{
+		void OnDeviceStateChanged(
+					string deviceId, 
+					global::NAudio_CoreAudioApi.DeviceState__NAudio newState);
+
+		void OnDeviceAdded(string pwstrDeviceId);
+
+		void OnDeviceRemoved(string deviceId);
+
+		void OnDefaultDeviceChanged(
+					global::NAudio_CoreAudioApi.DataFlow__NAudio flow, 
+					global::NAudio_CoreAudioApi.Role__NAudio role, 
+					string defaultDeviceId);
+
+		void OnPropertyValueChanged(
+					string pwstrDeviceId, 
+					global::NAudio_CoreAudioApi.PropertyKey__NAudio key);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.AudioSessionState,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum AudioSessionState__NAudio
+	{
+		AudioSessionStateInactive = 0,
+		AudioSessionStateActive = 1,
+		AudioSessionStateExpired = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.AudioSessionDisconnectReason,NAudio, Version=1.10.0.0, Culture=neutral, PublicKey" +
+		"Token=null")]
+	public enum AudioSessionDisconnectReason__NAudio
+	{
+		DisconnectReasonDeviceRemoval = 0,
+		DisconnectReasonServerShutdown = 1,
+		DisconnectReasonFormatChanged = 2,
+		DisconnectReasonSessionLogoff = 3,
+		DisconnectReasonSessionDisconnected = 4,
+		DisconnectReasonExclusiveModeOverride = 5,
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Explicit, Size=24)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.PropVariant,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct PropVariant__NAudio
+	{
+		[global::System.Runtime.InteropServices.FieldOffset(0)]
+		public short vt;
+		[global::System.Runtime.InteropServices.FieldOffset(2)]
+		public short wReserved1;
+		[global::System.Runtime.InteropServices.FieldOffset(4)]
+		public short wReserved2;
+		[global::System.Runtime.InteropServices.FieldOffset(6)]
+		public short wReserved3;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public sbyte cVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public byte bVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public short iVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public ushort uiVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public int lVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public uint ulVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public int intVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public uint uintVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public long hVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public long uhVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public float fltVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public double dblVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public short boolVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public int scode;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public global::System_Runtime_InteropServices_ComTypes.FILETIME__System_Private_Interop filetime;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public global::NAudio_CoreAudioApi_Interfaces.Blob__NAudio blobVal;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public global::System.IntPtr pointerValue;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.Blob,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct Blob__NAudio
+	{
+		public int Length;
+		public global::System.IntPtr Data;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.CoreAudioApi.Interfaces.AudioVolumeNotificationDataStruct,NAudio, Version=1.10.0.0, Culture=neutral, Publ" +
+		"icKeyToken=null")]
+	public unsafe partial struct AudioVolumeNotificationDataStruct__NAudio
+	{
+		public global::System.Guid guidEventContext;
+		public bool bMuted;
+		public float fMasterVolume;
+		public uint nChannels;
+		public float ChannelVolume;
+	}
+}
+
+namespace NAudio_Dmo
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.IMediaBuffer,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMediaBuffer__NAudio
+	{
+		int SetLength(int length);
+
+		int GetMaxLength(out int maxLength);
+
+		int GetBufferAndLength(
+					global::System.IntPtr bufferPointerPointer, 
+					global::System.IntPtr validDataLengthPointer);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.IMediaObject,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMediaObject__NAudio
+	{
+		int GetStreamCount(
+					out int inputStreams, 
+					out int outputStreams);
+
+		int GetInputStreamInfo(
+					int inputStreamIndex, 
+					out global::NAudio_Dmo.InputStreamInfoFlags__NAudio flags);
+
+		int GetOutputStreamInfo(
+					int outputStreamIndex, 
+					out global::NAudio_Dmo.OutputStreamInfoFlags__NAudio flags);
+
+		int GetInputType(
+					int inputStreamIndex, 
+					int typeIndex, 
+					out global::NAudio_Dmo.DmoMediaType__NAudio mediaType);
+
+		int GetOutputType(
+					int outputStreamIndex, 
+					int typeIndex, 
+					out global::NAudio_Dmo.DmoMediaType__NAudio mediaType);
+
+		int SetInputType(
+					int inputStreamIndex, 
+					ref global::NAudio_Dmo.DmoMediaType__NAudio mediaType, 
+					global::NAudio_Dmo.DmoSetTypeFlags__NAudio flags);
+
+		int SetOutputType(
+					int outputStreamIndex, 
+					ref global::NAudio_Dmo.DmoMediaType__NAudio mediaType, 
+					global::NAudio_Dmo.DmoSetTypeFlags__NAudio flags);
+
+		int GetInputCurrentType(
+					int inputStreamIndex, 
+					out global::NAudio_Dmo.DmoMediaType__NAudio mediaType);
+
+		int GetOutputCurrentType(
+					int outputStreamIndex, 
+					out global::NAudio_Dmo.DmoMediaType__NAudio mediaType);
+
+		int GetInputSizeInfo(
+					int inputStreamIndex, 
+					out int size, 
+					out int maxLookahead, 
+					out int alignment);
+
+		int GetOutputSizeInfo(
+					int outputStreamIndex, 
+					out int size, 
+					out int alignment);
+
+		int GetInputMaxLatency(
+					int inputStreamIndex, 
+					out long referenceTimeMaxLatency);
+
+		int SetInputMaxLatency(
+					int inputStreamIndex, 
+					long referenceTimeMaxLatency);
+
+		int Flush();
+
+		int Discontinuity(int inputStreamIndex);
+
+		int AllocateStreamingResources();
+
+		int FreeStreamingResources();
+
+		int GetInputStatus(
+					int inputStreamIndex, 
+					out global::NAudio_Dmo.DmoInputStatusFlags__NAudio flags);
+
+		int ProcessInput(
+					int inputStreamIndex, 
+					global::NAudio_Dmo.IMediaBuffer__NAudio mediaBuffer, 
+					global::NAudio_Dmo.DmoInputDataBufferFlags__NAudio flags, 
+					long referenceTimeTimestamp, 
+					long referenceTimeDuration);
+
+		int ProcessOutput(
+					global::NAudio_Dmo.DmoProcessOutputFlags__NAudio flags, 
+					int outputBufferCount, 
+					global::NAudio_Dmo.DmoOutputDataBuffer__NAudio[] outputBuffers, 
+					out int statusReserved);
+
+		int Lock(bool acquireLock);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.IMediaObjectInPlace,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMediaObjectInPlace__NAudio
+	{
+		int Process(
+					int size, 
+					global::System.IntPtr data, 
+					long refTimeStart, 
+					global::NAudio_Dmo.DmoInPlaceProcessFlags__NAudio dwFlags);
+
+		int Clone(out global::NAudio_Dmo.IMediaObjectInPlace__NAudio mediaObjectInPlace);
+
+		int GetLatency(out long latencyTime);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.IMediaParamInfo,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMediaParamInfo__NAudio
+	{
+		int GetParamCount(out int paramCount);
+
+		int GetParamInfo(
+					int paramIndex, 
+					ref global::NAudio_Dmo.MediaParamInfo__NAudio paramInfo);
+
+		int GetParamText(
+					int paramIndex, 
+					out global::System.IntPtr paramText);
+
+		int GetNumTimeFormats(out int numTimeFormats);
+
+		int GetSupportedTimeFormat(
+					int formatIndex, 
+					out global::System.Guid guidTimeFormat);
+
+		int GetCurrentTimeFormat(
+					out global::System.Guid guidTimeFormat, 
+					out int mediaTimeData);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.IEnumDmo,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IEnumDmo__NAudio
+	{
+		int Next(
+					int itemsToFetch, 
+					out global::System.Guid clsid, 
+					out global::System.IntPtr name, 
+					out int itemsFetched);
+
+		int Skip(int itemsToSkip);
+
+		int Reset();
+
+		int Clone(out global::NAudio_Dmo.IEnumDmo__NAudio enumPointer);
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.InputStreamInfoFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum InputStreamInfoFlags__NAudio
+	{
+		None = 0,
+		DMO_INPUT_STREAMF_WHOLE_SAMPLES = 1,
+		DMO_INPUT_STREAMF_SINGLE_SAMPLE_PER_BUFFER = 2,
+		DMO_INPUT_STREAMF_FIXED_SAMPLE_SIZE = 4,
+		DMO_INPUT_STREAMF_HOLDS_BUFFERS = 8,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.OutputStreamInfoFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum OutputStreamInfoFlags__NAudio
+	{
+		DMO_OUTPUT_STREAMF_WHOLE_SAMPLES = 1,
+		DMO_OUTPUT_STREAMF_SINGLE_SAMPLE_PER_BUFFER = 2,
+		DMO_OUTPUT_STREAMF_FIXED_SAMPLE_SIZE = 4,
+		DMO_OUTPUT_STREAMF_DISCARDABLE = 8,
+		DMO_OUTPUT_STREAMF_OPTIONAL = 16,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.DmoMediaType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct DmoMediaType__NAudio
+	{
+		public global::System.Guid majortype;
+		public global::System.Guid subtype;
+		public bool bFixedSizeSamples;
+		public bool bTemporalCompression;
+		public int lSampleSize;
+		public global::System.Guid formattype;
+		public global::System.IntPtr pUnk;
+		public int cbFormat;
+		public global::System.IntPtr pbFormat;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.DmoSetTypeFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum DmoSetTypeFlags__NAudio
+	{
+		None = 0,
+		DMO_SET_TYPEF_TEST_ONLY = 1,
+		DMO_SET_TYPEF_CLEAR = 2,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.DmoInputStatusFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum DmoInputStatusFlags__NAudio
+	{
+		None = 0,
+		DMO_INPUT_STATUSF_ACCEPT_DATA = 1,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.DmoInputDataBufferFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum DmoInputDataBufferFlags__NAudio
+	{
+		None = 0,
+		SyncPoint = 1,
+		Time = 2,
+		TimeLength = 4,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.DmoProcessOutputFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum DmoProcessOutputFlags__NAudio
+	{
+		None = 0,
+		DiscardWhenNoBuffer = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.DmoOutputDataBuffer,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct DmoOutputDataBuffer__NAudio
+	{
+		public global::NAudio_Dmo.IMediaBuffer__NAudio pBuffer;
+		public global::NAudio_Dmo.DmoOutputDataBufferFlags__NAudio dwStatus;
+		public long rtTimestamp;
+		public long referenceTimeDuration;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.DmoOutputDataBufferFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum DmoOutputDataBufferFlags__NAudio
+	{
+		None = 0,
+		SyncPoint = 1,
+		Time = 2,
+		TimeLength = 4,
+		Incomplete = 16777216,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.DmoInPlaceProcessFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum DmoInPlaceProcessFlags__NAudio
+	{
+		Normal = 0,
+		Zero = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.MediaParamInfo,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MediaParamInfo__NAudio
+	{
+		public global::NAudio_Dmo.MediaParamType__NAudio mpType;
+		public global::NAudio_Dmo.MediaParamCurveType__NAudio mopCaps;
+		public float mpdMinValue;
+		public float mpdMaxValue;
+		public float mpdNeutralValue;
+		public string szUnitText;
+		public string szLabel;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.MediaParamType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MediaParamType__NAudio
+	{
+		Int = 0,
+		Float = 1,
+		Bool = 2,
+		Enum = 3,
+		Max = 4,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.MediaParamCurveType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MediaParamCurveType__NAudio
+	{
+		MP_CURVE_JUMP = 1,
+		MP_CURVE_LINEAR = 2,
+		MP_CURVE_SQUARE = 4,
+		MP_CURVE_INVSQUARE = 8,
+		MP_CURVE_SINE = 16,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.DmoEnumFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum DmoEnumFlags__NAudio
+	{
+		None = 0,
+		DMO_ENUMF_INCLUDE_KEYED = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Dmo.DmoPartialMediaType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct DmoPartialMediaType__NAudio
+	{
+		public global::System.Guid type;
+		public global::System.Guid subtype;
+	}
+}
+
+namespace NAudio_MediaFoundation
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFAttributes,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFAttributes__NAudio
+	{
+		void GetItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr pValue);
+
+		void GetItemType(
+					global::System.Guid guidKey, 
+					out int pType);
+
+		void CompareItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr value, 
+					out bool pbResult);
+
+		void Compare(
+					global::NAudio_MediaFoundation.IMFAttributes__NAudio pTheirs, 
+					int matchType, 
+					out bool pbResult);
+
+		void GetUINT32(
+					global::System.Guid guidKey, 
+					out int punValue);
+
+		void GetUINT64(
+					global::System.Guid guidKey, 
+					out long punValue);
+
+		void GetDouble(
+					global::System.Guid guidKey, 
+					out double pfValue);
+
+		void GetGUID(
+					global::System.Guid guidKey, 
+					out global::System.Guid pguidValue);
+
+		void GetStringLength(
+					global::System.Guid guidKey, 
+					out int pcchLength);
+
+		void GetString(
+					global::System.Guid guidKey, 
+					global::System.Text.StringBuilder pwszValue, 
+					int cchBufSize, 
+					out int pcchLength);
+
+		void GetAllocatedString(
+					global::System.Guid guidKey, 
+					out string ppwszValue, 
+					out int pcchLength);
+
+		void GetBlobSize(
+					global::System.Guid guidKey, 
+					out int pcbBlobSize);
+
+		void GetBlob(
+					global::System.Guid guidKey, 
+					byte[] pBuf, 
+					int cbBufSize, 
+					out int pcbBlobSize);
+
+		void GetAllocatedBlob(
+					global::System.Guid guidKey, 
+					out global::System.IntPtr ip, 
+					out int pcbSize);
+
+		void GetUnknown(
+					global::System.Guid guidKey, 
+					global::System.Guid riid, 
+					out object ppv);
+
+		void SetItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr Value);
+
+		void DeleteItem(global::System.Guid guidKey);
+
+		void DeleteAllItems();
+
+		void SetUINT32(
+					global::System.Guid guidKey, 
+					int unValue);
+
+		void SetUINT64(
+					global::System.Guid guidKey, 
+					long unValue);
+
+		void SetDouble(
+					global::System.Guid guidKey, 
+					double fValue);
+
+		void SetGUID(
+					global::System.Guid guidKey, 
+					global::System.Guid guidValue);
+
+		void SetString(
+					global::System.Guid guidKey, 
+					string wszValue);
+
+		void SetBlob(
+					global::System.Guid guidKey, 
+					byte[] pBuf, 
+					int cbBufSize);
+
+		void SetUnknown(
+					global::System.Guid guidKey, 
+					object pUnknown);
+
+		void LockStore();
+
+		void UnlockStore();
+
+		void GetCount(out int pcItems);
+
+		void GetItemByIndex(
+					int unIndex, 
+					out global::System.Guid pGuidKey, 
+					global::System.IntPtr pValue);
+
+		void CopyAllItems(global::NAudio_MediaFoundation.IMFAttributes__NAudio pDest);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFActivate,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFActivate__NAudio
+	{
+		void GetItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr pValue);
+
+		void GetItemType(
+					global::System.Guid guidKey, 
+					out int pType);
+
+		void CompareItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr value, 
+					out bool pbResult);
+
+		void Compare(
+					global::NAudio_MediaFoundation.IMFAttributes__NAudio pTheirs, 
+					int matchType, 
+					out bool pbResult);
+
+		void GetUINT32(
+					global::System.Guid guidKey, 
+					out int punValue);
+
+		void GetUINT64(
+					global::System.Guid guidKey, 
+					out long punValue);
+
+		void GetDouble(
+					global::System.Guid guidKey, 
+					out double pfValue);
+
+		void GetGUID(
+					global::System.Guid guidKey, 
+					out global::System.Guid pguidValue);
+
+		void GetStringLength(
+					global::System.Guid guidKey, 
+					out int pcchLength);
+
+		void GetString(
+					global::System.Guid guidKey, 
+					global::System.Text.StringBuilder pwszValue, 
+					int cchBufSize, 
+					out int pcchLength);
+
+		void GetAllocatedString(
+					global::System.Guid guidKey, 
+					out string ppwszValue, 
+					out int pcchLength);
+
+		void GetBlobSize(
+					global::System.Guid guidKey, 
+					out int pcbBlobSize);
+
+		void GetBlob(
+					global::System.Guid guidKey, 
+					byte[] pBuf, 
+					int cbBufSize, 
+					out int pcbBlobSize);
+
+		void GetAllocatedBlob(
+					global::System.Guid guidKey, 
+					out global::System.IntPtr ip, 
+					out int pcbSize);
+
+		void GetUnknown(
+					global::System.Guid guidKey, 
+					global::System.Guid riid, 
+					out object ppv);
+
+		void SetItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr value);
+
+		void DeleteItem(global::System.Guid guidKey);
+
+		void DeleteAllItems();
+
+		void SetUINT32(
+					global::System.Guid guidKey, 
+					int unValue);
+
+		void SetUINT64(
+					global::System.Guid guidKey, 
+					long unValue);
+
+		void SetDouble(
+					global::System.Guid guidKey, 
+					double fValue);
+
+		void SetGUID(
+					global::System.Guid guidKey, 
+					global::System.Guid guidValue);
+
+		void SetString(
+					global::System.Guid guidKey, 
+					string wszValue);
+
+		void SetBlob(
+					global::System.Guid guidKey, 
+					byte[] pBuf, 
+					int cbBufSize);
+
+		void SetUnknown(
+					global::System.Guid guidKey, 
+					object pUnknown);
+
+		void LockStore();
+
+		void UnlockStore();
+
+		void GetCount(out int pcItems);
+
+		void GetItemByIndex(
+					int unIndex, 
+					out global::System.Guid pGuidKey, 
+					global::System.IntPtr pValue);
+
+		void CopyAllItems(global::NAudio_MediaFoundation.IMFAttributes__NAudio pDest);
+
+		void ActivateObject(
+					global::System.Guid riid, 
+					out object ppv);
+
+		void ShutdownObject();
+
+		void DetachObject();
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFByteStream,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFByteStream__NAudio
+	{
+		void GetCapabilities(ref int pdwCapabiities);
+
+		void GetLength(ref long pqwLength);
+
+		void SetLength(long qwLength);
+
+		void GetCurrentPosition(ref long pqwPosition);
+
+		void SetCurrentPosition(long qwPosition);
+
+		void IsEndOfStream(ref bool pfEndOfStream);
+
+		void Read(
+					global::System.IntPtr pb, 
+					int cb, 
+					ref int pcbRead);
+
+		void BeginRead(
+					global::System.IntPtr pb, 
+					int cb, 
+					global::System.IntPtr pCallback, 
+					global::System.IntPtr punkState);
+
+		void EndRead(
+					global::System.IntPtr pResult, 
+					ref int pcbRead);
+
+		void Write(
+					global::System.IntPtr pb, 
+					int cb, 
+					ref int pcbWritten);
+
+		void BeginWrite(
+					global::System.IntPtr pb, 
+					int cb, 
+					global::System.IntPtr pCallback, 
+					global::System.IntPtr punkState);
+
+		void EndWrite(
+					global::System.IntPtr pResult, 
+					ref int pcbWritten);
+
+		void Seek(
+					int SeekOrigin, 
+					long llSeekOffset, 
+					int dwSeekFlags, 
+					ref long pqwCurrentPosition);
+
+		void Flush();
+
+		void Close();
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFCollection,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFCollection__NAudio
+	{
+		void GetElementCount(out int pcElements);
+
+		void GetElement(
+					int dwElementIndex, 
+					out object ppUnkElement);
+
+		void AddElement(object pUnkElement);
+
+		void RemoveElement(
+					int dwElementIndex, 
+					out object ppUnkElement);
+
+		void InsertElementAt(
+					int dwIndex, 
+					object pUnknown);
+
+		void RemoveAllElements();
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFMediaBuffer,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFMediaBuffer__NAudio
+	{
+		void Lock(
+					out global::System.IntPtr ppbBuffer, 
+					out int pcbMaxLength, 
+					out int pcbCurrentLength);
+
+		void Unlock();
+
+		void GetCurrentLength(out int pcbCurrentLength);
+
+		void SetCurrentLength(int cbCurrentLength);
+
+		void GetMaxLength(out int pcbMaxLength);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFMediaEvent,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFMediaEvent__NAudio
+	{
+		void GetItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr pValue);
+
+		void GetItemType(
+					global::System.Guid guidKey, 
+					out int pType);
+
+		void CompareItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr value, 
+					out bool pbResult);
+
+		void Compare(
+					global::NAudio_MediaFoundation.IMFAttributes__NAudio pTheirs, 
+					int matchType, 
+					out bool pbResult);
+
+		void GetUINT32(
+					global::System.Guid guidKey, 
+					out int punValue);
+
+		void GetUINT64(
+					global::System.Guid guidKey, 
+					out long punValue);
+
+		void GetDouble(
+					global::System.Guid guidKey, 
+					out double pfValue);
+
+		void GetGUID(
+					global::System.Guid guidKey, 
+					out global::System.Guid pguidValue);
+
+		void GetStringLength(
+					global::System.Guid guidKey, 
+					out int pcchLength);
+
+		void GetString(
+					global::System.Guid guidKey, 
+					global::System.Text.StringBuilder pwszValue, 
+					int cchBufSize, 
+					out int pcchLength);
+
+		void GetAllocatedString(
+					global::System.Guid guidKey, 
+					out string ppwszValue, 
+					out int pcchLength);
+
+		void GetBlobSize(
+					global::System.Guid guidKey, 
+					out int pcbBlobSize);
+
+		void GetBlob(
+					global::System.Guid guidKey, 
+					byte[] pBuf, 
+					int cbBufSize, 
+					out int pcbBlobSize);
+
+		void GetAllocatedBlob(
+					global::System.Guid guidKey, 
+					out global::System.IntPtr ip, 
+					out int pcbSize);
+
+		void GetUnknown(
+					global::System.Guid guidKey, 
+					global::System.Guid riid, 
+					out object ppv);
+
+		void SetItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr value);
+
+		void DeleteItem(global::System.Guid guidKey);
+
+		void DeleteAllItems();
+
+		void SetUINT32(
+					global::System.Guid guidKey, 
+					int unValue);
+
+		void SetUINT64(
+					global::System.Guid guidKey, 
+					long unValue);
+
+		void SetDouble(
+					global::System.Guid guidKey, 
+					double fValue);
+
+		void SetGUID(
+					global::System.Guid guidKey, 
+					global::System.Guid guidValue);
+
+		void SetString(
+					global::System.Guid guidKey, 
+					string wszValue);
+
+		void SetBlob(
+					global::System.Guid guidKey, 
+					byte[] pBuf, 
+					int cbBufSize);
+
+		void SetUnknown(
+					global::System.Guid guidKey, 
+					object pUnknown);
+
+		void LockStore();
+
+		void UnlockStore();
+
+		void GetCount(out int pcItems);
+
+		void GetItemByIndex(
+					int unIndex, 
+					out global::System.Guid pGuidKey, 
+					global::System.IntPtr pValue);
+
+		void CopyAllItems(global::NAudio_MediaFoundation.IMFAttributes__NAudio pDest);
+
+		void GetType(out global::NAudio_MediaFoundation.MediaEventType__NAudio pmet);
+
+		void GetExtendedType(out global::System.Guid pguidExtendedType);
+
+		void GetStatus(out int phrStatus);
+
+		void GetValue(global::System.IntPtr pvValue);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFMediaType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFMediaType__NAudio
+	{
+		void GetItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr pValue);
+
+		void GetItemType(
+					global::System.Guid guidKey, 
+					out int pType);
+
+		void CompareItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr value, 
+					out bool pbResult);
+
+		void Compare(
+					global::NAudio_MediaFoundation.IMFAttributes__NAudio pTheirs, 
+					int matchType, 
+					out bool pbResult);
+
+		void GetUINT32(
+					global::System.Guid guidKey, 
+					out int punValue);
+
+		void GetUINT64(
+					global::System.Guid guidKey, 
+					out long punValue);
+
+		void GetDouble(
+					global::System.Guid guidKey, 
+					out double pfValue);
+
+		void GetGUID(
+					global::System.Guid guidKey, 
+					out global::System.Guid pguidValue);
+
+		void GetStringLength(
+					global::System.Guid guidKey, 
+					out int pcchLength);
+
+		void GetString(
+					global::System.Guid guidKey, 
+					global::System.Text.StringBuilder pwszValue, 
+					int cchBufSize, 
+					out int pcchLength);
+
+		void GetAllocatedString(
+					global::System.Guid guidKey, 
+					out string ppwszValue, 
+					out int pcchLength);
+
+		void GetBlobSize(
+					global::System.Guid guidKey, 
+					out int pcbBlobSize);
+
+		void GetBlob(
+					global::System.Guid guidKey, 
+					byte[] pBuf, 
+					int cbBufSize, 
+					out int pcbBlobSize);
+
+		void GetAllocatedBlob(
+					global::System.Guid guidKey, 
+					out global::System.IntPtr ip, 
+					out int pcbSize);
+
+		void GetUnknown(
+					global::System.Guid guidKey, 
+					global::System.Guid riid, 
+					out object ppv);
+
+		void SetItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr value);
+
+		void DeleteItem(global::System.Guid guidKey);
+
+		void DeleteAllItems();
+
+		void SetUINT32(
+					global::System.Guid guidKey, 
+					int unValue);
+
+		void SetUINT64(
+					global::System.Guid guidKey, 
+					long unValue);
+
+		void SetDouble(
+					global::System.Guid guidKey, 
+					double fValue);
+
+		void SetGUID(
+					global::System.Guid guidKey, 
+					global::System.Guid guidValue);
+
+		void SetString(
+					global::System.Guid guidKey, 
+					string wszValue);
+
+		void SetBlob(
+					global::System.Guid guidKey, 
+					byte[] pBuf, 
+					int cbBufSize);
+
+		void SetUnknown(
+					global::System.Guid guidKey, 
+					object pUnknown);
+
+		void LockStore();
+
+		void UnlockStore();
+
+		void GetCount(out int pcItems);
+
+		void GetItemByIndex(
+					int unIndex, 
+					out global::System.Guid pGuidKey, 
+					global::System.IntPtr pValue);
+
+		void CopyAllItems(global::NAudio_MediaFoundation.IMFAttributes__NAudio pDest);
+
+		void GetMajorType(out global::System.Guid pguidMajorType);
+
+		void IsCompressedFormat(out bool pfCompressed);
+
+		int IsEqual(
+					global::NAudio_MediaFoundation.IMFMediaType__NAudio pIMediaType, 
+					ref int pdwFlags);
+
+		void GetRepresentation(
+					global::System.Guid guidRepresentation, 
+					ref global::System.IntPtr ppvRepresentation);
+
+		void FreeRepresentation(
+					global::System.Guid guidRepresentation, 
+					global::System.IntPtr pvRepresentation);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFReadWriteClassFactory,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFReadWriteClassFactory__NAudio
+	{
+		void CreateInstanceFromURL(
+					global::System.Guid clsid, 
+					string pwszURL, 
+					global::NAudio_MediaFoundation.IMFAttributes__NAudio pAttributes, 
+					global::System.Guid riid, 
+					out object ppvObject);
+
+		void CreateInstanceFromObject(
+					global::System.Guid clsid, 
+					object punkObject, 
+					global::NAudio_MediaFoundation.IMFAttributes__NAudio pAttributes, 
+					global::System.Guid riid, 
+					out object ppvObject);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFSample,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFSample__NAudio
+	{
+		void GetItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr pValue);
+
+		void GetItemType(
+					global::System.Guid guidKey, 
+					out int pType);
+
+		void CompareItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr value, 
+					out bool pbResult);
+
+		void Compare(
+					global::NAudio_MediaFoundation.IMFAttributes__NAudio pTheirs, 
+					int matchType, 
+					out bool pbResult);
+
+		void GetUINT32(
+					global::System.Guid guidKey, 
+					out int punValue);
+
+		void GetUINT64(
+					global::System.Guid guidKey, 
+					out long punValue);
+
+		void GetDouble(
+					global::System.Guid guidKey, 
+					out double pfValue);
+
+		void GetGUID(
+					global::System.Guid guidKey, 
+					out global::System.Guid pguidValue);
+
+		void GetStringLength(
+					global::System.Guid guidKey, 
+					out int pcchLength);
+
+		void GetString(
+					global::System.Guid guidKey, 
+					global::System.Text.StringBuilder pwszValue, 
+					int cchBufSize, 
+					out int pcchLength);
+
+		void GetAllocatedString(
+					global::System.Guid guidKey, 
+					out string ppwszValue, 
+					out int pcchLength);
+
+		void GetBlobSize(
+					global::System.Guid guidKey, 
+					out int pcbBlobSize);
+
+		void GetBlob(
+					global::System.Guid guidKey, 
+					byte[] pBuf, 
+					int cbBufSize, 
+					out int pcbBlobSize);
+
+		void GetAllocatedBlob(
+					global::System.Guid guidKey, 
+					out global::System.IntPtr ip, 
+					out int pcbSize);
+
+		void GetUnknown(
+					global::System.Guid guidKey, 
+					global::System.Guid riid, 
+					out object ppv);
+
+		void SetItem(
+					global::System.Guid guidKey, 
+					global::System.IntPtr value);
+
+		void DeleteItem(global::System.Guid guidKey);
+
+		void DeleteAllItems();
+
+		void SetUINT32(
+					global::System.Guid guidKey, 
+					int unValue);
+
+		void SetUINT64(
+					global::System.Guid guidKey, 
+					long unValue);
+
+		void SetDouble(
+					global::System.Guid guidKey, 
+					double fValue);
+
+		void SetGUID(
+					global::System.Guid guidKey, 
+					global::System.Guid guidValue);
+
+		void SetString(
+					global::System.Guid guidKey, 
+					string wszValue);
+
+		void SetBlob(
+					global::System.Guid guidKey, 
+					byte[] pBuf, 
+					int cbBufSize);
+
+		void SetUnknown(
+					global::System.Guid guidKey, 
+					object pUnknown);
+
+		void LockStore();
+
+		void UnlockStore();
+
+		void GetCount(out int pcItems);
+
+		void GetItemByIndex(
+					int unIndex, 
+					out global::System.Guid pGuidKey, 
+					global::System.IntPtr pValue);
+
+		void CopyAllItems(global::NAudio_MediaFoundation.IMFAttributes__NAudio pDest);
+
+		void GetSampleFlags(out int pdwSampleFlags);
+
+		void SetSampleFlags(int dwSampleFlags);
+
+		void GetSampleTime(out long phnsSampletime);
+
+		void SetSampleTime(long hnsSampleTime);
+
+		void GetSampleDuration(out long phnsSampleDuration);
+
+		void SetSampleDuration(long hnsSampleDuration);
+
+		void GetBufferCount(out int pdwBufferCount);
+
+		void GetBufferByIndex(
+					int dwIndex, 
+					out global::NAudio_MediaFoundation.IMFMediaBuffer__NAudio ppBuffer);
+
+		void ConvertToContiguousBuffer(out global::NAudio_MediaFoundation.IMFMediaBuffer__NAudio ppBuffer);
+
+		void AddBuffer(global::NAudio_MediaFoundation.IMFMediaBuffer__NAudio pBuffer);
+
+		void RemoveBufferByIndex(int dwIndex);
+
+		void RemoveAllBuffers();
+
+		void GetTotalLength(out int pcbTotalLength);
+
+		void CopyToBuffer(global::NAudio_MediaFoundation.IMFMediaBuffer__NAudio pBuffer);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFSinkWriter,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFSinkWriter__NAudio
+	{
+		void AddStream(
+					global::NAudio_MediaFoundation.IMFMediaType__NAudio pTargetMediaType, 
+					out int pdwStreamIndex);
+
+		void SetInputMediaType(
+					int dwStreamIndex, 
+					global::NAudio_MediaFoundation.IMFMediaType__NAudio pInputMediaType, 
+					global::NAudio_MediaFoundation.IMFAttributes__NAudio pEncodingParameters);
+
+		void BeginWriting();
+
+		void WriteSample(
+					int dwStreamIndex, 
+					global::NAudio_MediaFoundation.IMFSample__NAudio pSample);
+
+		void SendStreamTick(
+					int dwStreamIndex, 
+					long llTimestamp);
+
+		void PlaceMarker(
+					int dwStreamIndex, 
+					global::System.IntPtr pvContext);
+
+		void NotifyEndOfSegment(int dwStreamIndex);
+
+		void Flush(int dwStreamIndex);
+
+		void DoFinalize();
+
+		void GetServiceForStream(
+					int dwStreamIndex, 
+					ref global::System.Guid guidService, 
+					ref global::System.Guid riid, 
+					out global::System.IntPtr ppvObject);
+
+		void GetStatistics(
+					int dwStreamIndex, 
+					global::NAudio_MediaFoundation.MF_SINK_WRITER_STATISTICS__NAudio pStats);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFSourceReader,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFSourceReader__NAudio
+	{
+		void GetStreamSelection(
+					int dwStreamIndex, 
+					out bool pSelected);
+
+		void SetStreamSelection(
+					int dwStreamIndex, 
+					bool pSelected);
+
+		void GetNativeMediaType(
+					int dwStreamIndex, 
+					int dwMediaTypeIndex, 
+					out global::NAudio_MediaFoundation.IMFMediaType__NAudio ppMediaType);
+
+		void GetCurrentMediaType(
+					int dwStreamIndex, 
+					out global::NAudio_MediaFoundation.IMFMediaType__NAudio ppMediaType);
+
+		void SetCurrentMediaType(
+					int dwStreamIndex, 
+					global::System.IntPtr pdwReserved, 
+					global::NAudio_MediaFoundation.IMFMediaType__NAudio pMediaType);
+
+		void SetCurrentPosition(
+					global::System.Guid guidTimeFormat, 
+					global::System.IntPtr varPosition);
+
+		void ReadSample(
+					int dwStreamIndex, 
+					int dwControlFlags, 
+					out int pdwActualStreamIndex, 
+					out global::NAudio_MediaFoundation.MF_SOURCE_READER_FLAG__NAudio pdwStreamFlags, 
+					out ulong pllTimestamp, 
+					out global::NAudio_MediaFoundation.IMFSample__NAudio ppSample);
+
+		void Flush(int dwStreamIndex);
+
+		void GetServiceForStream(
+					int dwStreamIndex, 
+					global::System.Guid guidService, 
+					global::System.Guid riid, 
+					out global::System.IntPtr ppvObject);
+
+		int GetPresentationAttribute(
+					int dwStreamIndex, 
+					global::System.Guid guidAttribute, 
+					global::System.IntPtr pvarAttribute);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.IMFTransform,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IMFTransform__NAudio
+	{
+		void GetStreamLimits(
+					out int pdwInputMinimum, 
+					out int pdwInputMaximum, 
+					out int pdwOutputMinimum, 
+					out int pdwOutputMaximum);
+
+		void GetStreamCount(
+					out int pcInputStreams, 
+					out int pcOutputStreams);
+
+		void GetStreamIds(
+					int dwInputIdArraySize, 
+					global::System.IntPtr pdwInputIDs, 
+					int dwOutputIdArraySize, 
+					global::System.IntPtr pdwOutputIDs);
+
+		void GetInputStreamInfo(
+					int dwInputStreamId, 
+					out global::NAudio_MediaFoundation.MFT_INPUT_STREAM_INFO__NAudio pStreamInfo);
+
+		void GetOutputStreamInfo(
+					int dwOutputStreamId, 
+					out global::NAudio_MediaFoundation.MFT_OUTPUT_STREAM_INFO__NAudio pStreamInfo);
+
+		void GetAttributes(out global::NAudio_MediaFoundation.IMFAttributes__NAudio pAttributes);
+
+		void GetInputStreamAttributes(
+					int dwInputStreamId, 
+					out global::NAudio_MediaFoundation.IMFAttributes__NAudio pAttributes);
+
+		void GetOutputStreamAttributes(
+					int dwOutputStreamId, 
+					out global::NAudio_MediaFoundation.IMFAttributes__NAudio pAttributes);
+
+		void DeleteInputStream(int dwOutputStreamId);
+
+		void AddInputStreams(
+					int cStreams, 
+					global::System.IntPtr adwStreamIDs);
+
+		void GetInputAvailableType(
+					int dwInputStreamId, 
+					int dwTypeIndex, 
+					out global::NAudio_MediaFoundation.IMFMediaType__NAudio ppType);
+
+		void GetOutputAvailableType(
+					int dwOutputStreamId, 
+					int dwTypeIndex, 
+					out global::NAudio_MediaFoundation.IMFMediaType__NAudio ppType);
+
+		void SetInputType(
+					int dwInputStreamId, 
+					global::NAudio_MediaFoundation.IMFMediaType__NAudio pType, 
+					global::NAudio_MediaFoundation._MFT_SET_TYPE_FLAGS__NAudio dwFlags);
+
+		void SetOutputType(
+					int dwOutputStreamId, 
+					global::NAudio_MediaFoundation.IMFMediaType__NAudio pType, 
+					global::NAudio_MediaFoundation._MFT_SET_TYPE_FLAGS__NAudio dwFlags);
+
+		void GetInputCurrentType(
+					int dwInputStreamId, 
+					out global::NAudio_MediaFoundation.IMFMediaType__NAudio ppType);
+
+		void GetOutputCurrentType(
+					int dwOutputStreamId, 
+					out global::NAudio_MediaFoundation.IMFMediaType__NAudio ppType);
+
+		void GetInputStatus(
+					int dwInputStreamId, 
+					out global::NAudio_MediaFoundation._MFT_INPUT_STATUS_FLAGS__NAudio pdwFlags);
+
+		void GetOutputStatus(
+					int dwInputStreamId, 
+					out global::NAudio_MediaFoundation._MFT_OUTPUT_STATUS_FLAGS__NAudio pdwFlags);
+
+		void SetOutputBounds(
+					long hnsLowerBound, 
+					long hnsUpperBound);
+
+		void ProcessEvent(
+					int dwInputStreamId, 
+					global::NAudio_MediaFoundation.IMFMediaEvent__NAudio pEvent);
+
+		void ProcessMessage(
+					global::NAudio_MediaFoundation.MFT_MESSAGE_TYPE__NAudio eMessage, 
+					global::System.IntPtr ulParam);
+
+		void ProcessInput(
+					int dwInputStreamId, 
+					global::NAudio_MediaFoundation.IMFSample__NAudio pSample, 
+					int dwFlags);
+
+		int ProcessOutput(
+					global::NAudio_MediaFoundation._MFT_PROCESS_OUTPUT_FLAGS__NAudio dwFlags, 
+					int cOutputBufferCount, 
+					global::NAudio_MediaFoundation.MFT_OUTPUT_DATA_BUFFER__NAudio[] pOutputSamples, 
+					out global::NAudio_MediaFoundation._MFT_PROCESS_OUTPUT_STATUS__NAudio pdwStatus);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.MediaEventType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MediaEventType__NAudio
+	{
+		MEUnknown = 0,
+		MEError = 1,
+		MEExtendedType = 2,
+		MENonFatalError = 3,
+		MESessionUnknown = 100,
+		MESessionTopologySet = 101,
+		MESessionTopologiesCleared = 102,
+		MESessionStarted = 103,
+		MESessionPaused = 104,
+		MESessionStopped = 105,
+		MESessionClosed = 106,
+		MESessionEnded = 107,
+		MESessionRateChanged = 108,
+		MESessionScrubSampleComplete = 109,
+		MESessionCapabilitiesChanged = 110,
+		MESessionTopologyStatus = 111,
+		MESessionNotifyPresentationTime = 112,
+		MENewPresentation = 113,
+		MELicenseAcquisitionStart = 114,
+		MELicenseAcquisitionCompleted = 115,
+		MEIndividualizationStart = 116,
+		MEIndividualizationCompleted = 117,
+		MEEnablerProgress = 118,
+		MEEnablerCompleted = 119,
+		MEPolicyError = 120,
+		MEPolicyReport = 121,
+		MEBufferingStarted = 122,
+		MEBufferingStopped = 123,
+		MEConnectStart = 124,
+		MEConnectEnd = 125,
+		MEReconnectStart = 126,
+		MEReconnectEnd = 127,
+		MERendererEvent = 128,
+		MESessionStreamSinkFormatChanged = 129,
+		MESourceUnknown = 200,
+		MESourceStarted = 201,
+		MEStreamStarted = 202,
+		MESourceSeeked = 203,
+		MEStreamSeeked = 204,
+		MENewStream = 205,
+		MEUpdatedStream = 206,
+		MESourceStopped = 207,
+		MEStreamStopped = 208,
+		MESourcePaused = 209,
+		MEStreamPaused = 210,
+		MEEndOfPresentation = 211,
+		MEEndOfStream = 212,
+		MEMediaSample = 213,
+		MEStreamTick = 214,
+		MEStreamThinMode = 215,
+		MEStreamFormatChanged = 216,
+		MESourceRateChanged = 217,
+		MEEndOfPresentationSegment = 218,
+		MESourceCharacteristicsChanged = 219,
+		MESourceRateChangeRequested = 220,
+		MESourceMetadataChanged = 221,
+		MESequencerSourceTopologyUpdated = 222,
+		MESinkUnknown = 300,
+		MEStreamSinkStarted = 301,
+		MEStreamSinkStopped = 302,
+		MEStreamSinkPaused = 303,
+		MEStreamSinkRateChanged = 304,
+		MEStreamSinkRequestSample = 305,
+		MEStreamSinkMarker = 306,
+		MEStreamSinkPrerolled = 307,
+		MEStreamSinkScrubSampleComplete = 308,
+		MEStreamSinkFormatChanged = 309,
+		MEStreamSinkDeviceChanged = 310,
+		MEQualityNotify = 311,
+		MESinkInvalidated = 312,
+		MEAudioSessionNameChanged = 313,
+		MEAudioSessionVolumeChanged = 314,
+		MEAudioSessionDeviceRemoved = 315,
+		MEAudioSessionServerShutdown = 316,
+		MEAudioSessionGroupingParamChanged = 317,
+		MEAudioSessionIconChanged = 318,
+		MEAudioSessionFormatChanged = 319,
+		MEAudioSessionDisconnected = 320,
+		MEAudioSessionExclusiveModeOverride = 321,
+		METrustUnknown = 400,
+		MEPolicyChanged = 401,
+		MEContentProtectionMessage = 402,
+		MEPolicySet = 403,
+		MEWMDRMLicenseBackupCompleted = 500,
+		MEWMDRMLicenseBackupProgress = 501,
+		MEWMDRMLicenseRestoreCompleted = 502,
+		MEWMDRMLicenseRestoreProgress = 503,
+		MEWMDRMLicenseAcquisitionCompleted = 506,
+		MEWMDRMIndividualizationCompleted = 508,
+		MEWMDRMIndividualizationProgress = 513,
+		MEWMDRMProximityCompleted = 514,
+		MEWMDRMLicenseStoreCleaned = 515,
+		MEWMDRMRevocationDownloadCompleted = 516,
+		METransformUnknown = 600,
+		METransformNeedInput = 601,
+		METransformHaveOutput = 602,
+		METransformDrainComplete = 603,
+		METransformMarker = 604,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.MF_SINK_WRITER_STATISTICS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial class MF_SINK_WRITER_STATISTICS__NAudio
+	{
+		public int cb;
+		public long llLastTimestampReceived;
+		public long llLastTimestampEncoded;
+		public long llLastTimestampProcessed;
+		public long llLastStreamTickReceived;
+		public long llLastSinkSampleRequest;
+		public long qwNumSamplesReceived;
+		public long qwNumSamplesEncoded;
+		public long qwNumSamplesProcessed;
+		public long qwNumStreamTicksReceived;
+		public int dwByteCountQueued;
+		public long qwByteCountProcessed;
+		public int dwNumOutstandingSinkSampleRequests;
+		public int dwAverageSampleRateReceived;
+		public int dwAverageSampleRateEncoded;
+		public int dwAverageSampleRateProcessed;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.MF_SOURCE_READER_FLAG,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MF_SOURCE_READER_FLAG__NAudio
+	{
+		None = 0,
+		MF_SOURCE_READERF_ERROR = 1,
+		MF_SOURCE_READERF_ENDOFSTREAM = 2,
+		MF_SOURCE_READERF_NEWSTREAM = 4,
+		MF_SOURCE_READERF_NATIVEMEDIATYPECHANGED = 16,
+		MF_SOURCE_READERF_CURRENTMEDIATYPECHANGED = 32,
+		MF_SOURCE_READERF_STREAMTICK = 256,
+		MF_SOURCE_READERF_ALLEFFECTSREMOVED = 512,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.MFT_INPUT_STREAM_INFO,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MFT_INPUT_STREAM_INFO__NAudio
+	{
+		public long hnsMaxLatency;
+		public global::NAudio_MediaFoundation._MFT_INPUT_STREAM_INFO_FLAGS__NAudio dwFlags;
+		public int cbSize;
+		public int cbMaxLookahead;
+		public int cbAlignment;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation._MFT_INPUT_STREAM_INFO_FLAGS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=nu" +
+		"ll")]
+	public enum _MFT_INPUT_STREAM_INFO_FLAGS__NAudio
+	{
+		None = 0,
+		MFT_INPUT_STREAM_WHOLE_SAMPLES = 1,
+		MFT_INPUT_STREAM_SINGLE_SAMPLE_PER_BUFFER = 2,
+		MFT_INPUT_STREAM_FIXED_SAMPLE_SIZE = 4,
+		MFT_INPUT_STREAM_HOLDS_BUFFERS = 8,
+		MFT_INPUT_STREAM_DOES_NOT_ADDREF = 256,
+		MFT_INPUT_STREAM_REMOVABLE = 512,
+		MFT_INPUT_STREAM_OPTIONAL = 1024,
+		MFT_INPUT_STREAM_PROCESSES_IN_PLACE = 2048,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.MFT_OUTPUT_STREAM_INFO,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MFT_OUTPUT_STREAM_INFO__NAudio
+	{
+		public global::NAudio_MediaFoundation._MFT_OUTPUT_STREAM_INFO_FLAGS__NAudio dwFlags;
+		public int cbSize;
+		public int cbAlignment;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation._MFT_OUTPUT_STREAM_INFO_FLAGS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=n" +
+		"ull")]
+	public enum _MFT_OUTPUT_STREAM_INFO_FLAGS__NAudio
+	{
+		None = 0,
+		MFT_OUTPUT_STREAM_WHOLE_SAMPLES = 1,
+		MFT_OUTPUT_STREAM_SINGLE_SAMPLE_PER_BUFFER = 2,
+		MFT_OUTPUT_STREAM_FIXED_SAMPLE_SIZE = 4,
+		MFT_OUTPUT_STREAM_DISCARDABLE = 8,
+		MFT_OUTPUT_STREAM_OPTIONAL = 16,
+		MFT_OUTPUT_STREAM_PROVIDES_SAMPLES = 256,
+		MFT_OUTPUT_STREAM_CAN_PROVIDE_SAMPLES = 512,
+		MFT_OUTPUT_STREAM_LAZY_READ = 1024,
+		MFT_OUTPUT_STREAM_REMOVABLE = 2048,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation._MFT_SET_TYPE_FLAGS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum _MFT_SET_TYPE_FLAGS__NAudio
+	{
+		None = 0,
+		MFT_SET_TYPE_TEST_ONLY = 1,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation._MFT_INPUT_STATUS_FLAGS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum _MFT_INPUT_STATUS_FLAGS__NAudio
+	{
+		None = 0,
+		MFT_INPUT_STATUS_ACCEPT_DATA = 1,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation._MFT_OUTPUT_STATUS_FLAGS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum _MFT_OUTPUT_STATUS_FLAGS__NAudio
+	{
+		None = 0,
+		MFT_OUTPUT_STATUS_SAMPLE_READY = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.MFT_MESSAGE_TYPE,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MFT_MESSAGE_TYPE__NAudio
+	{
+		MFT_MESSAGE_COMMAND_FLUSH = 0,
+		MFT_MESSAGE_COMMAND_DRAIN = 1,
+		MFT_MESSAGE_SET_D3D_MANAGER = 2,
+		MFT_MESSAGE_DROP_SAMPLES = 3,
+		MFT_MESSAGE_COMMAND_TICK = 4,
+		MFT_MESSAGE_NOTIFY_BEGIN_STREAMING = 268435456,
+		MFT_MESSAGE_NOTIFY_END_STREAMING = 268435457,
+		MFT_MESSAGE_NOTIFY_END_OF_STREAM = 268435458,
+		MFT_MESSAGE_NOTIFY_START_OF_STREAM = 268435459,
+		MFT_MESSAGE_COMMAND_MARKER = 536870912,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation._MFT_PROCESS_OUTPUT_FLAGS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum _MFT_PROCESS_OUTPUT_FLAGS__NAudio
+	{
+		None = 0,
+		MFT_PROCESS_OUTPUT_DISCARD_WHEN_NO_BUFFER = 1,
+		MFT_PROCESS_OUTPUT_REGENERATE_LAST_OUTPUT = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation.MFT_OUTPUT_DATA_BUFFER,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MFT_OUTPUT_DATA_BUFFER__NAudio
+	{
+		public int dwStreamID;
+		public global::NAudio_MediaFoundation.IMFSample__NAudio pSample;
+		public global::NAudio_MediaFoundation._MFT_OUTPUT_DATA_BUFFER_FLAGS__NAudio dwStatus;
+		public global::NAudio_MediaFoundation.IMFCollection__NAudio pEvents;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation._MFT_OUTPUT_DATA_BUFFER_FLAGS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=n" +
+		"ull")]
+	public enum _MFT_OUTPUT_DATA_BUFFER_FLAGS__NAudio
+	{
+		None = 0,
+		MFT_OUTPUT_DATA_BUFFER_FORMAT_CHANGE = 256,
+		MFT_OUTPUT_DATA_BUFFER_STREAM_END = 512,
+		MFT_OUTPUT_DATA_BUFFER_NO_SAMPLE = 768,
+		MFT_OUTPUT_DATA_BUFFER_INCOMPLETE = 16777216,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.MediaFoundation._MFT_PROCESS_OUTPUT_STATUS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null" +
+		"")]
+	public enum _MFT_PROCESS_OUTPUT_STATUS__NAudio
+	{
+		None = 0,
+		MFT_PROCESS_OUTPUT_STATUS_NEW_STREAMS = 256,
+	}
+}
+
+namespace NAudio_Midi
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Midi.MidiInterop+MIDIHDR,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MidiInterop_MIDIHDR__NAudio
+	{
+		public global::System.IntPtr lpData;
+		public int dwBufferLength;
+		public int dwBytesRecorded;
+		public global::System.IntPtr dwUser;
+		public int dwFlags;
+		public global::System.IntPtr lpNext;
+		public global::System.IntPtr reserved;
+		public int dwOffset;
+		public global::System.IntPtr[] dwReserved;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Midi.MidiInCapabilities,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MidiInCapabilities__NAudio
+	{
+		public ushort manufacturerId;
+		public ushort productId;
+		public uint driverVersion;
+		public string productName;
+		public int support;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Midi.MidiInterop+MidiInMessage,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MidiInterop_MidiInMessage__NAudio
+	{
+		Open = 961,
+		Close = 962,
+		Data = 963,
+		LongData = 964,
+		Error = 965,
+		LongError = 966,
+		MoreData = 972,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Midi.MidiOutCapabilities,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MidiOutCapabilities__NAudio
+	{
+		public short manufacturerId;
+		public short productId;
+		public int driverVersion;
+		public string productName;
+		public short wTechnology;
+		public short wVoices;
+		public short wNotes;
+		public ushort wChannelMask;
+		public global::NAudio_Midi.MidiOutCapabilities_MidiOutCapabilityFlags__NAudio dwSupport;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Midi.MidiOutCapabilities+MidiOutCapabilityFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken" +
+		"=null")]
+	public enum MidiOutCapabilities_MidiOutCapabilityFlags__NAudio
+	{
+		Volume = 1,
+		LeftRightVolume = 2,
+		PatchCaching = 4,
+		Stream = 8,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Midi.MidiInterop+MidiOutMessage,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MidiInterop_MidiOutMessage__NAudio
+	{
+		Open = 967,
+		Close = 968,
+		Done = 969,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Midi.MidiInterop+MMTIME,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MidiInterop_MMTIME__NAudio
+	{
+		public int wType;
+		public int u;
+	}
+}
+
+namespace NAudio_Mixer
+{
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MixerFlags__NAudio
+	{
+		Handle = -2147483648,
+		MixerHandle = -2147483648,
+		WaveOutHandle = -1879048192,
+		WaveInHandle = -1610612736,
+		MidiOutHandle = -1342177280,
+		MidiInHandle = -1073741824,
+		Mixer = 0,
+		Value = 0,
+		All = 0,
+		GetLineInfoOfDestination = 0,
+		ListText = 1,
+		OneById = 1,
+		GetLineInfoOfSource = 1,
+		OneByType = 2,
+		GetLineInfoOfLineId = 2,
+		GetLineInfoOfComponentType = 3,
+		GetLineInfoOfTargetType = 4,
+		QueryMask = 15,
+		GetLineInfoOfQueryMask = 15,
+		WaveOut = 268435456,
+		WaveIn = 536870912,
+		MidiOut = 805306368,
+		MidiIn = 1073741824,
+		Aux = 1342177280,
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=1)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+MIXERCONTROLDETAILS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MixerInterop_MIXERCONTROLDETAILS__NAudio
+	{
+		public int cbStruct;
+		public int dwControlID;
+		public int cChannels;
+		public global::System.IntPtr hwndOwner;
+		public int cbDetails;
+		public global::System.IntPtr paDetails;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=1)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+MIXERCAPS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MixerInterop_MIXERCAPS__NAudio
+	{
+		public ushort wMid;
+		public ushort wPid;
+		public uint vDriverVersion;
+		public string szPname;
+		public uint fdwSupport;
+		public uint cDestinations;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=1)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+MIXERLINECONTROLS,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MixerInterop_MIXERLINECONTROLS__NAudio
+	{
+		public int cbStruct;
+		public int dwLineID;
+		public int dwControlID;
+		public int cControls;
+		public int cbmxctrl;
+		public global::System.IntPtr pamxctrl;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=1)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+MIXERLINE,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MixerInterop_MIXERLINE__NAudio
+	{
+		public int cbStruct;
+		public int dwDestination;
+		public int dwSource;
+		public int dwLineID;
+		public global::NAudio_Mixer.MixerInterop_MIXERLINE_LINEF__NAudio fdwLine;
+		public global::System.IntPtr dwUser;
+		public global::NAudio_Mixer.MixerLineComponentType__NAudio dwComponentType;
+		public int cChannels;
+		public int cConnections;
+		public int cControls;
+		public string szShortName;
+		public string szName;
+		public uint dwType;
+		public uint dwDeviceID;
+		public ushort wMid;
+		public ushort wPid;
+		public uint vDriverVersion;
+		public string szPname;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+MIXERLINE_LINEF,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MixerInterop_MIXERLINE_LINEF__NAudio
+	{
+		MIXERLINE_LINEF_SOURCE = -2147483648,
+		MIXERLINE_LINEF_ACTIVE = 1,
+		MIXERLINE_LINEF_DISCONNECTED = 32768,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerLineComponentType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MixerLineComponentType__NAudio
+	{
+		DestinationUndefined = 0,
+		DestinationDigital = 1,
+		DestinationLine = 2,
+		DestinationMonitor = 3,
+		DestinationSpeakers = 4,
+		DestinationHeadphones = 5,
+		DestinationTelephone = 6,
+		DestinationWaveIn = 7,
+		DestinationVoiceIn = 8,
+		SourceUndefined = 4096,
+		SourceDigital = 4097,
+		SourceLine = 4098,
+		SourceMicrophone = 4099,
+		SourceSynthesizer = 4100,
+		SourceCompactDisc = 4101,
+		SourceTelephone = 4102,
+		SourcePcSpeaker = 4103,
+		SourceWaveOut = 4104,
+		SourceAuxiliary = 4105,
+		SourceAnalog = 4106,
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=1)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+Bounds,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MixerInterop_Bounds__NAudio
+	{
+		public int minimum;
+		public int maximum;
+		public int reserved2;
+		public int reserved3;
+		public int reserved4;
+		public int reserved5;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=1)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+Metrics,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MixerInterop_Metrics__NAudio
+	{
+		public int step;
+		public int customData;
+		public int reserved2;
+		public int reserved3;
+		public int reserved4;
+		public int reserved5;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=1)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+MIXERCONTROL,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MixerInterop_MIXERCONTROL__NAudio
+	{
+		public uint cbStruct;
+		public int dwControlID;
+		public global::NAudio_Mixer.MixerControlType__NAudio dwControlType;
+		public uint fdwControl;
+		public uint cMultipleItems;
+		public string szShortName;
+		public string szName;
+		public global::NAudio_Mixer.MixerInterop_Bounds__NAudio Bounds;
+		public global::NAudio_Mixer.MixerInterop_Metrics__NAudio Metrics;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerControlType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum MixerControlType__NAudio
+	{
+		Custom = 0,
+		BooleanMeter = 268500992,
+		SignedMeter = 268566528,
+		PeakMeter = 268566529,
+		UnsignedMeter = 268632064,
+		Boolean = 536936448,
+		OnOff = 536936449,
+		Mute = 536936450,
+		Mono = 536936451,
+		Loudness = 536936452,
+		StereoEnhance = 536936453,
+		Button = 553713664,
+		Signed = 805437440,
+		Unsigned = 805502976,
+		Decibels = 805568512,
+		Percent = 805634048,
+		Slider = 1073872896,
+		Pan = 1073872897,
+		QSoundPan = 1073872898,
+		Fader = 1342373888,
+		Volume = 1342373889,
+		Bass = 1342373890,
+		Treble = 1342373891,
+		Equalizer = 1342373892,
+		MicroTime = 1610809344,
+		MilliTime = 1627586560,
+		SingleSelect = 1879113728,
+		Mux = 1879113729,
+		MultipleSelect = 1895890944,
+		Mixer = 1895890945,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+MIXERCONTROLDETAILS_BOOLEAN,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=" +
+		"null")]
+	public unsafe partial struct MixerInterop_MIXERCONTROLDETAILS_BOOLEAN__NAudio
+	{
+		public int fValue;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+MIXERCONTROLDETAILS_SIGNED,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=n" +
+		"ull")]
+	public unsafe partial struct MixerInterop_MIXERCONTROLDETAILS_SIGNED__NAudio
+	{
+		public int lValue;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=1)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+MIXERCONTROLDETAILS_LISTTEXT,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken" +
+		"=null")]
+	public unsafe partial struct MixerInterop_MIXERCONTROLDETAILS_LISTTEXT__NAudio
+	{
+		public uint dwParam1;
+		public uint dwParam2;
+		public string szName;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Mixer.MixerInterop+MIXERCONTROLDETAILS_UNSIGNED,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken" +
+		"=null")]
+	public unsafe partial struct MixerInterop_MIXERCONTROLDETAILS_UNSIGNED__NAudio
+	{
+		public uint dwValue;
+	}
+}
+
+namespace NAudio_Wave
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.IActivateAudioInterfaceCompletionHandler,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=n" +
+		"ull")]
+	public unsafe interface IActivateAudioInterfaceCompletionHandler__NAudio
+	{
+		void ActivateCompleted(global::NAudio_Wave.IActivateAudioInterfaceAsyncOperation__NAudio activateOperation);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.IActivateAudioInterfaceAsyncOperation,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null" +
+		"")]
+	public unsafe interface IActivateAudioInterfaceAsyncOperation__NAudio
+	{
+		void GetActivateResult(
+					out int activateResult, 
+					out object activateInterface);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.IAgileObject,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IAgileObject__NAudio
+	{
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.IAudioClient2,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe interface IAudioClient2__NAudio
+	{
+		int Initialize(
+					global::NAudio_CoreAudioApi.AudioClientShareMode__NAudio shareMode, 
+					global::NAudio_CoreAudioApi.AudioClientStreamFlags__NAudio streamFlags, 
+					long hnsBufferDuration, 
+					long hnsPeriodicity, 
+					global::NAudio_Wave.WaveFormat__NAudio pFormat, 
+					global::System.IntPtr audioSessionGuid);
+
+		int GetBufferSize(out uint bufferSize);
+
+		long GetStreamLatency();
+
+		int GetCurrentPadding(out int currentPadding);
+
+		int IsFormatSupported(
+					global::NAudio_CoreAudioApi.AudioClientShareMode__NAudio shareMode, 
+					global::NAudio_Wave.WaveFormat__NAudio pFormat, 
+					out global::System.IntPtr closestMatchFormat);
+
+		int GetMixFormat(out global::System.IntPtr deviceFormatPointer);
+
+		int GetDevicePeriod(
+					out long defaultDevicePeriod, 
+					out long minimumDevicePeriod);
+
+		int Start();
+
+		int Stop();
+
+		int Reset();
+
+		int SetEventHandle(global::System.IntPtr eventHandle);
+
+		int GetService(
+					global::System.Guid interfaceId, 
+					out object interfacePointer);
+
+		void IsOffloadCapable(
+					int category, 
+					out bool pbOffloadCapable);
+
+		void SetClientProperties(global::System.IntPtr pProperties);
+
+		void GetBufferSizeLimits(
+					global::System.IntPtr pFormat, 
+					bool bEventDriven, 
+					out long phnsMinBufferDuration, 
+					out long phnsMaxBufferDuration);
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=2)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveFormat,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial class WaveFormat__NAudio
+	{
+		public global::NAudio_Wave.WaveFormatEncoding__NAudio waveFormatTag;
+		public short channels;
+		public int sampleRate;
+		public int averageBytesPerSecond;
+		public short blockAlign;
+		public short bitsPerSample;
+		public short extraSize;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveFormatEncoding,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum WaveFormatEncoding__NAudio : ushort
+	{
+		Unknown = 0x0,
+		Pcm = 0x1,
+		Adpcm = 0x2,
+		IeeeFloat = 0x3,
+		Vselp = 0x4,
+		IbmCvsd = 0x5,
+		ALaw = 0x6,
+		MuLaw = 0x7,
+		Dts = 0x8,
+		Drm = 0x9,
+		WmaVoice9 = 0xA,
+		OkiAdpcm = 0x10,
+		DviAdpcm = 0x11,
+		ImaAdpcm = 0x11,
+		MediaspaceAdpcm = 0x12,
+		SierraAdpcm = 0x13,
+		G723Adpcm = 0x14,
+		DigiStd = 0x15,
+		DigiFix = 0x16,
+		DialogicOkiAdpcm = 0x17,
+		MediaVisionAdpcm = 0x18,
+		CUCodec = 0x19,
+		YamahaAdpcm = 0x20,
+		SonarC = 0x21,
+		DspGroupTrueSpeech = 0x22,
+		EchoSpeechCorporation1 = 0x23,
+		AudioFileAf36 = 0x24,
+		Aptx = 0x25,
+		AudioFileAf10 = 0x26,
+		Prosody1612 = 0x27,
+		Lrc = 0x28,
+		DolbyAc2 = 0x30,
+		Gsm610 = 0x31,
+		MsnAudio = 0x32,
+		AntexAdpcme = 0x33,
+		ControlResVqlpc = 0x34,
+		DigiReal = 0x35,
+		DigiAdpcm = 0x36,
+		ControlResCr10 = 0x37,
+		WAVE_FORMAT_NMS_VBXADPCM = 0x38,
+		WAVE_FORMAT_CS_IMAADPCM = 0x39,
+		WAVE_FORMAT_ECHOSC3 = 0x3A,
+		WAVE_FORMAT_ROCKWELL_ADPCM = 0x3B,
+		WAVE_FORMAT_ROCKWELL_DIGITALK = 0x3C,
+		WAVE_FORMAT_XEBEC = 0x3D,
+		WAVE_FORMAT_G721_ADPCM = 0x40,
+		WAVE_FORMAT_G728_CELP = 0x41,
+		WAVE_FORMAT_MSG723 = 0x42,
+		Mpeg = 0x50,
+		WAVE_FORMAT_RT24 = 0x52,
+		WAVE_FORMAT_PAC = 0x53,
+		MpegLayer3 = 0x55,
+		WAVE_FORMAT_LUCENT_G723 = 0x59,
+		WAVE_FORMAT_CIRRUS = 0x60,
+		WAVE_FORMAT_ESPCM = 0x61,
+		WAVE_FORMAT_VOXWARE = 0x62,
+		WAVE_FORMAT_CANOPUS_ATRAC = 0x63,
+		WAVE_FORMAT_G726_ADPCM = 0x64,
+		WAVE_FORMAT_G722_ADPCM = 0x65,
+		WAVE_FORMAT_DSAT_DISPLAY = 0x67,
+		WAVE_FORMAT_VOXWARE_BYTE_ALIGNED = 0x69,
+		WAVE_FORMAT_VOXWARE_AC8 = 0x70,
+		WAVE_FORMAT_VOXWARE_AC10 = 0x71,
+		WAVE_FORMAT_VOXWARE_AC16 = 0x72,
+		WAVE_FORMAT_VOXWARE_AC20 = 0x73,
+		WAVE_FORMAT_VOXWARE_RT24 = 0x74,
+		WAVE_FORMAT_VOXWARE_RT29 = 0x75,
+		WAVE_FORMAT_VOXWARE_RT29HW = 0x76,
+		WAVE_FORMAT_VOXWARE_VR12 = 0x77,
+		WAVE_FORMAT_VOXWARE_VR18 = 0x78,
+		WAVE_FORMAT_VOXWARE_TQ40 = 0x79,
+		WAVE_FORMAT_SOFTSOUND = 0x80,
+		WAVE_FORMAT_VOXWARE_TQ60 = 0x81,
+		WAVE_FORMAT_MSRT24 = 0x82,
+		WAVE_FORMAT_G729A = 0x83,
+		WAVE_FORMAT_MVI_MVI2 = 0x84,
+		WAVE_FORMAT_DF_G726 = 0x85,
+		WAVE_FORMAT_DF_GSM610 = 0x86,
+		WAVE_FORMAT_ISIAUDIO = 0x88,
+		WAVE_FORMAT_ONLIVE = 0x89,
+		WAVE_FORMAT_SBC24 = 0x91,
+		WAVE_FORMAT_DOLBY_AC3_SPDIF = 0x92,
+		WAVE_FORMAT_MEDIASONIC_G723 = 0x93,
+		WAVE_FORMAT_PROSODY_8KBPS = 0x94,
+		WAVE_FORMAT_ZYXEL_ADPCM = 0x97,
+		WAVE_FORMAT_PHILIPS_LPCBB = 0x98,
+		WAVE_FORMAT_PACKED = 0x99,
+		WAVE_FORMAT_MALDEN_PHONYTALK = 0xA0,
+		Gsm = 0xA1,
+		G729 = 0xA2,
+		G723 = 0xA3,
+		Acelp = 0xA4,
+		RawAac = 0xFF,
+		WAVE_FORMAT_RHETOREX_ADPCM = 0x100,
+		WAVE_FORMAT_IRAT = 0x101,
+		WAVE_FORMAT_VIVO_G723 = 0x111,
+		WAVE_FORMAT_VIVO_SIREN = 0x112,
+		WAVE_FORMAT_DIGITAL_G723 = 0x123,
+		WAVE_FORMAT_SANYO_LD_ADPCM = 0x125,
+		WAVE_FORMAT_SIPROLAB_ACEPLNET = 0x130,
+		WAVE_FORMAT_SIPROLAB_ACELP4800 = 0x131,
+		WAVE_FORMAT_SIPROLAB_ACELP8V3 = 0x132,
+		WAVE_FORMAT_SIPROLAB_G729 = 0x133,
+		WAVE_FORMAT_SIPROLAB_G729A = 0x134,
+		WAVE_FORMAT_SIPROLAB_KELVIN = 0x135,
+		WAVE_FORMAT_G726ADPCM = 0x140,
+		WAVE_FORMAT_QUALCOMM_PUREVOICE = 0x150,
+		WAVE_FORMAT_QUALCOMM_HALFRATE = 0x151,
+		WAVE_FORMAT_TUBGSM = 0x155,
+		WAVE_FORMAT_MSAUDIO1 = 0x160,
+		WindowsMediaAudio = 0x161,
+		WindowsMediaAudioProfessional = 0x162,
+		WindowsMediaAudioLosseless = 0x163,
+		WindowsMediaAudioSpdif = 0x164,
+		WAVE_FORMAT_UNISYS_NAP_ADPCM = 0x170,
+		WAVE_FORMAT_UNISYS_NAP_ULAW = 0x171,
+		WAVE_FORMAT_UNISYS_NAP_ALAW = 0x172,
+		WAVE_FORMAT_UNISYS_NAP_16K = 0x173,
+		WAVE_FORMAT_CREATIVE_ADPCM = 0x200,
+		WAVE_FORMAT_CREATIVE_FASTSPEECH8 = 0x202,
+		WAVE_FORMAT_CREATIVE_FASTSPEECH10 = 0x203,
+		WAVE_FORMAT_UHER_ADPCM = 0x210,
+		WAVE_FORMAT_QUARTERDECK = 0x220,
+		WAVE_FORMAT_ILINK_VC = 0x230,
+		WAVE_FORMAT_RAW_SPORT = 0x240,
+		WAVE_FORMAT_ESST_AC3 = 0x241,
+		WAVE_FORMAT_IPI_HSX = 0x250,
+		WAVE_FORMAT_IPI_RPELP = 0x251,
+		WAVE_FORMAT_CS2 = 0x260,
+		WAVE_FORMAT_SONY_SCX = 0x270,
+		WAVE_FORMAT_FM_TOWNS_SND = 0x300,
+		WAVE_FORMAT_BTV_DIGITAL = 0x400,
+		WAVE_FORMAT_QDESIGN_MUSIC = 0x450,
+		WAVE_FORMAT_VME_VMPCM = 0x680,
+		WAVE_FORMAT_TPC = 0x681,
+		WAVE_FORMAT_OLIGSM = 0x1000,
+		WAVE_FORMAT_OLIADPCM = 0x1001,
+		WAVE_FORMAT_OLICELP = 0x1002,
+		WAVE_FORMAT_OLISBC = 0x1003,
+		WAVE_FORMAT_OLIOPR = 0x1004,
+		WAVE_FORMAT_LH_CODEC = 0x1100,
+		WAVE_FORMAT_NORRIS = 0x1400,
+		WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS = 0x1500,
+		MPEG_ADTS_AAC = 0x1600,
+		MPEG_RAW_AAC = 0x1601,
+		MPEG_LOAS = 0x1602,
+		NOKIA_MPEG_ADTS_AAC = 0x1608,
+		NOKIA_MPEG_RAW_AAC = 0x1609,
+		VODAFONE_MPEG_ADTS_AAC = 0x160A,
+		VODAFONE_MPEG_RAW_AAC = 0x160B,
+		MPEG_HEAAC = 0x1610,
+		WAVE_FORMAT_DVM = 0x2000,
+		Vorbis1 = 0x674F,
+		Vorbis2 = 0x6750,
+		Vorbis3 = 0x6751,
+		Vorbis1P = 0x676F,
+		Vorbis2P = 0x6770,
+		Vorbis3P = 0x6771,
+		Extensible = 0xFFFE,
+		WAVE_FORMAT_DEVELOPMENT = 0xFFFF,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveHeader,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial class WaveHeader__NAudio
+	{
+		public global::System.IntPtr dataBuffer;
+		public int bufferLength;
+		public int bytesRecorded;
+		public global::System.IntPtr userData;
+		public global::NAudio_Wave.WaveHeaderFlags__NAudio flags;
+		public int loops;
+		public global::System.IntPtr next;
+		public global::System.IntPtr reserved;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveHeaderFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum WaveHeaderFlags__NAudio
+	{
+		Done = 1,
+		Prepared = 2,
+		BeginLoop = 4,
+		EndLoop = 8,
+		InQueue = 16,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveInterop+WaveMessage,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum WaveInterop_WaveMessage__NAudio
+	{
+		WaveOutOpen = 955,
+		WaveOutClose = 956,
+		WaveOutDone = 957,
+		WaveInOpen = 958,
+		WaveInClose = 959,
+		WaveInData = 960,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveInterop+WaveInOutOpenFlags,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum WaveInterop_WaveInOutOpenFlags__NAudio
+	{
+		CallbackNull = 0,
+		CallbackWindow = 65536,
+		CallbackThread = 131072,
+		CallbackFunction = 196608,
+		CallbackEvent = 327680,
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Explicit, Size=12)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.MmTime,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct MmTime__NAudio
+	{
+		[global::System.Runtime.InteropServices.FieldOffset(0)]
+		public uint wType;
+		[global::System.Runtime.InteropServices.FieldOffset(4)]
+		public uint ms;
+		[global::System.Runtime.InteropServices.FieldOffset(4)]
+		public uint sample;
+		[global::System.Runtime.InteropServices.FieldOffset(4)]
+		public uint cb;
+		[global::System.Runtime.InteropServices.FieldOffset(4)]
+		public uint ticks;
+		[global::System.Runtime.InteropServices.FieldOffset(4)]
+		public byte smpteHour;
+		[global::System.Runtime.InteropServices.FieldOffset(5)]
+		public byte smpteMin;
+		[global::System.Runtime.InteropServices.FieldOffset(6)]
+		public byte smpteSec;
+		[global::System.Runtime.InteropServices.FieldOffset(7)]
+		public byte smpteFrame;
+		[global::System.Runtime.InteropServices.FieldOffset(8)]
+		public byte smpteFps;
+		[global::System.Runtime.InteropServices.FieldOffset(9)]
+		public byte smpteDummy;
+		[global::System.Runtime.InteropServices.FieldOffset(10)]
+		public byte smptePad0;
+		[global::System.Runtime.InteropServices.FieldOffset(11)]
+		public byte smptePad1;
+		[global::System.Runtime.InteropServices.FieldOffset(4)]
+		public uint midiSongPtrPos;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveOutCapabilities,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct WaveOutCapabilities__NAudio
+	{
+		public short manufacturerId;
+		public short productId;
+		public int driverVersion;
+		public string productName;
+		public global::NAudio_Wave.SupportedWaveFormat__NAudio supportedFormats;
+		public short channels;
+		public short reserved;
+		public global::NAudio_Wave.WaveOutSupport__NAudio support;
+		public global::System.Guid manufacturerGuid;
+		public global::System.Guid productGuid;
+		public global::System.Guid nameGuid;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.SupportedWaveFormat,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum SupportedWaveFormat__NAudio
+	{
+		WAVE_FORMAT_1M08 = 1,
+		WAVE_FORMAT_1S08 = 2,
+		WAVE_FORMAT_1M16 = 4,
+		WAVE_FORMAT_1S16 = 8,
+		WAVE_FORMAT_2M08 = 16,
+		WAVE_FORMAT_2S08 = 32,
+		WAVE_FORMAT_2M16 = 64,
+		WAVE_FORMAT_2S16 = 128,
+		WAVE_FORMAT_4M08 = 256,
+		WAVE_FORMAT_44M08 = 256,
+		WAVE_FORMAT_4S08 = 512,
+		WAVE_FORMAT_44S08 = 512,
+		WAVE_FORMAT_4M16 = 1024,
+		WAVE_FORMAT_44M16 = 1024,
+		WAVE_FORMAT_4S16 = 2048,
+		WAVE_FORMAT_44S16 = 2048,
+		WAVE_FORMAT_48M08 = 4096,
+		WAVE_FORMAT_48S08 = 8192,
+		WAVE_FORMAT_48M16 = 16384,
+		WAVE_FORMAT_48S16 = 32768,
+		WAVE_FORMAT_96M08 = 65536,
+		WAVE_FORMAT_96S08 = 131072,
+		WAVE_FORMAT_96M16 = 262144,
+		WAVE_FORMAT_96S16 = 524288,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveOutSupport,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum WaveOutSupport__NAudio
+	{
+		Pitch = 1,
+		PlaybackRate = 2,
+		Volume = 4,
+		LRVolume = 8,
+		Sync = 16,
+		SampleAccurate = 32,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveInCapabilities,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial struct WaveInCapabilities__NAudio
+	{
+		public short manufacturerId;
+		public short productId;
+		public int driverVersion;
+		public string productName;
+		public global::NAudio_Wave.SupportedWaveFormat__NAudio supportedFormats;
+		public short channels;
+		public short reserved;
+		public global::System.Guid manufacturerGuid;
+		public global::System.Guid productGuid;
+		public global::System.Guid nameGuid;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.EventAccess,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public enum EventAccess__NAudio
+	{
+		STANDARD_RIGHTS_REQUIRED = 983040,
+		SYNCHRONIZE = 1048576,
+		EVENT_ALL_ACCESS = 2031619,
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=2)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.AdpcmWaveFormat,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial class AdpcmWaveFormat__NAudio : global::NAudio_Wave.WaveFormat__NAudio
+	{
+		public short samplesPerBlock;
+		public short numCoeff;
+		public short[] coefficients;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=2)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.Gsm610WaveFormat,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial class Gsm610WaveFormat__NAudio : global::NAudio_Wave.WaveFormat__NAudio
+	{
+		public short samplesPerBlock;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=2)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveFormatExtensible,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial class WaveFormatExtensible__NAudio : global::NAudio_Wave.WaveFormat__NAudio
+	{
+		public short wValidBitsPerSample;
+		public int dwChannelMask;
+		public global::System.Guid subFormat;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, Pack=2)]
+	[global::System.Runtime.InteropServices.McgRedirectedType("NAudio.Wave.WaveFormatExtraData,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")]
+	public unsafe partial class WaveFormatExtraData__NAudio : global::NAudio_Wave.WaveFormat__NAudio
+	{
+		public byte[] extraData;
+	}
+}
+
 namespace ScreenSenderComponent
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::ScreenSenderComponent.__IAudioGraphHelperPublicNonVirtuals))]
@@ -43249,6 +46355,54 @@ namespace System_Runtime_InteropServices
 
 namespace System_Runtime_InteropServices_ComTypes
 {
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.ComTypes.IStream,System.Private.Interop, Version=999.999.999.999, Culture=neutral" +
+		", PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe interface IStream__System_Private_Interop
+	{
+		void Read(
+					byte[] pv, 
+					int cb, 
+					global::System.IntPtr pcbRead);
+
+		void Write(
+					byte[] pv, 
+					int cb, 
+					global::System.IntPtr pcbWritten);
+
+		void Seek(
+					long dlibMove, 
+					int dwOrigin, 
+					global::System.IntPtr plibNewPosition);
+
+		void SetSize(long libNewSize);
+
+		void CopyTo(
+					global::System_Runtime_InteropServices_ComTypes.IStream__System_Private_Interop pstm, 
+					long cb, 
+					global::System.IntPtr pcbRead, 
+					global::System.IntPtr pcbWritten);
+
+		void Commit(int grfCommitFlags);
+
+		void Revert();
+
+		void LockRegion(
+					long libOffset, 
+					long cb, 
+					int dwLockType);
+
+		void UnlockRegion(
+					long libOffset, 
+					long cb, 
+					int dwLockType);
+
+		void Stat(
+					out global::System_Runtime_InteropServices_ComTypes.STATSTG__System_Private_Interop pstatstg, 
+					int grfStatFlag);
+
+		void Clone(out global::System_Runtime_InteropServices_ComTypes.IStream__System_Private_Interop ppstm);
+	}
+
 	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.ComTypes.ITypeInfo,System.Private.Interop, Version=999.999.999.999, Culture=neutr" +
 		"al, PublicKeyToken=b03f5f7f11d50a3a")]
 	public unsafe interface ITypeInfo__System_Private_Interop
@@ -43412,6 +46566,31 @@ namespace System_Runtime_InteropServices_ComTypes
 		void Reset();
 
 		void Clone(out global::System_Runtime_InteropServices_ComTypes.IEnumString__System_Private_Interop ppenum);
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.ComTypes.STATSTG,System.Private.Interop, Version=999.999.999.999, Culture=neutral" +
+		", PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct STATSTG__System_Private_Interop
+	{
+		public string pwcsName;
+		public int type;
+		public long cbSize;
+		public global::System_Runtime_InteropServices_ComTypes.FILETIME__System_Private_Interop mtime;
+		public global::System_Runtime_InteropServices_ComTypes.FILETIME__System_Private_Interop ctime;
+		public global::System_Runtime_InteropServices_ComTypes.FILETIME__System_Private_Interop atime;
+		public int grfMode;
+		public int grfLocksSupported;
+		public global::System.Guid clsid;
+		public int grfStateBits;
+		public int reserved;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.ComTypes.FILETIME,System.Private.Interop, Version=999.999.999.999, Culture=neutra" +
+		"l, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial struct FILETIME__System_Private_Interop
+	{
+		public int dwLowDateTime;
+		public int dwHighDateTime;
 	}
 
 	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.ComTypes.DESCKIND,System.Private.Interop, Version=999.999.999.999, Culture=neutra" +
@@ -44290,6 +47469,125 @@ namespace Windows.ApplicationModel.Resources.Core
 	}
 }
 
+namespace Windows.Devices.Enumeration
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class DeviceInformationCollection : global::System.__ComObject, global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>, global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Devices.Enumeration.DeviceInformation>, global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>
+	{
+		global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.DeviceInformation> global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>.GetEnumerator()
+		{
+			global::System.RuntimeTypeHandle dummySharedDynamicAdapter = typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle;
+			return (global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.DeviceInformation>)global::__Interop.McgHelpers.GetGenericEnumerator(
+								this, 
+								typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
+							);
+		}
+
+		global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
+		{
+			return global::__Interop.McgHelpers.GetNonGenericEnumerator(
+								this, 
+								typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
+							);
+		}
+
+		int global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Devices.Enumeration.DeviceInformation>.Count
+		{
+			get
+			{
+				global::System.RuntimeTypeHandle dummySharedDynamicAdapter = typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle;
+				return global::__Interop.McgHelpers.GetReadOnlyCollectionCount(
+									this, 
+									typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
+								);
+			}
+		}
+
+		global::Windows.Devices.Enumeration.DeviceInformation global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>.this[int index]
+		{
+			get
+			{
+				return global::System.Runtime.InteropServices.McgMarshal.FastCast<global::System.Runtime.InteropServices.WindowsRuntime.IReadOnlyListAdapter<global::Windows.Devices.Enumeration.DeviceInformation>>(global::System.Runtime.InteropServices.McgMarshal.GetDynamicAdapter(
+										this, 
+										typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
+									))[index];
+			}
+		}
+
+		public DeviceInformationCollection(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Enumeration.IDeviceInformation))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class DeviceInformation : global::System.__ComObject, global::Windows.Devices.Enumeration.IDeviceInformation, global::Windows.Devices.Enumeration.IDeviceInformation2
+	{
+		public static global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> FindAllAsync(
+					string aqsFilter, 
+					global::System.Collections.Generic.IEnumerable<string> additionalProperties)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> retval;
+			retval = __Factory_Windows_Devices_Enumeration__IDeviceInformationStatics_FindAllAsync(
+								"Windows.Devices.Enumeration.DeviceInformation", 
+								aqsFilter, 
+								additionalProperties
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> __Factory_Windows_Devices_Enumeration__IDeviceInformationStatics_FindAllAsync(
+					string typeName, 
+					string aqsFilter, 
+					global::System.Collections.Generic.IEnumerable<string> additionalProperties)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> __pRetVal;
+			__pRetVal = global::Windows.Devices.Enumeration.IDeviceInformationStatics__Impl.Stubs.FindAllAsync(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Devices.Enumeration.IDeviceInformationStatics).TypeHandle
+												), 
+								aqsFilter, 
+								additionalProperties
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public DeviceInformation(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IDeviceInformationStatics
+	{
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> FindAllAsync(
+					string aqsFilter, 
+					global::System.Collections.Generic.IEnumerable<string> additionalProperties);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IDeviceInformation
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IDeviceInformation2
+	{
+	}
+}
+
 namespace Windows.Foundation
 {
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -44310,6 +47608,15 @@ namespace Windows.Foundation
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe struct FoundationContract
+	{
+	}
+}
+
+namespace Windows.Foundation.Collections
+{
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IPropertySet : global::Windows.Foundation.Collections.IObservableMap<string, object>, global::System.Collections.Generic.IDictionary<string, object>, global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, object>>
 	{
 	}
 }
@@ -45290,6 +48597,62 @@ namespace Windows.Foundation.Metadata
 		}
 	}
 
+	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
+				| global::System.AttributeTargets.Class 
+				| global::System.AttributeTargets.Struct 
+				| global::System.AttributeTargets.Enum 
+				| global::System.AttributeTargets.Constructor 
+				| global::System.AttributeTargets.Method 
+				| global::System.AttributeTargets.Property 
+				| global::System.AttributeTargets.Field 
+				| global::System.AttributeTargets.Event 
+				| global::System.AttributeTargets.Interface 
+				| global::System.AttributeTargets.Parameter 
+				| global::System.AttributeTargets.Delegate 
+				| global::System.AttributeTargets.ReturnValue 
+				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class HasVariantAttribute : global::System.Attribute
+	{
+		public HasVariantAttribute()
+		{
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.HasVariantAttribute\'.  Windows Runtime attribute types are no" +
+					"t constructable.");
+		}
+	}
+
+	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
+				| global::System.AttributeTargets.Class 
+				| global::System.AttributeTargets.Struct 
+				| global::System.AttributeTargets.Enum 
+				| global::System.AttributeTargets.Constructor 
+				| global::System.AttributeTargets.Method 
+				| global::System.AttributeTargets.Property 
+				| global::System.AttributeTargets.Field 
+				| global::System.AttributeTargets.Event 
+				| global::System.AttributeTargets.Interface 
+				| global::System.AttributeTargets.Parameter 
+				| global::System.AttributeTargets.Delegate 
+				| global::System.AttributeTargets.ReturnValue 
+				| global::System.AttributeTargets.GenericParameter), AllowMultiple=true)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class DeprecatedAttribute : global::System.Attribute
+	{
+		public DeprecatedAttribute(
+					string message, 
+					global::Windows.Foundation.Metadata.DeprecationType type, 
+					uint version, 
+					string contract)
+		{
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.DeprecatedAttribute\'.  Windows Runtime attribute types are no" +
+					"t constructable.");
+		}
+	}
+
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
@@ -45329,6 +48692,15 @@ namespace Windows.Foundation.Metadata
 		Low = 0,
 		Medium = 1,
 		High = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum DeprecationType
+	{
+		Deprecate = 0,
+		Remove = 1,
 	}
 }
 
@@ -45910,7 +49282,7 @@ namespace Windows.Graphics.Capture
 	}
 
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Graphics.Capture.IGraphicsCaptureSession))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(393216)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class GraphicsCaptureSession : global::System.__ComObject, global::Windows.Graphics.Capture.IGraphicsCaptureSession, global::System.IDisposable
@@ -45926,7 +49298,54 @@ namespace Windows.Graphics.Capture
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 		}
 
+		public static bool IsSupported()
+		{
+			bool retval;
+			retval = __Factory_Windows_Graphics_Capture__IGraphicsCaptureSessionStatics_IsSupported("Windows.Graphics.Capture.GraphicsCaptureSession");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static bool __Factory_Windows_Graphics_Capture__IGraphicsCaptureSessionStatics_IsSupported(string typeName)
+		{
+			bool __pRetVal;
+			__pRetVal = global::Windows.Graphics.Capture.IGraphicsCaptureSessionStatics__Impl.Stubs.IsSupported(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.Graphics.Capture.IGraphicsCaptureSessionStatics).TypeHandle
+								));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
 		public GraphicsCaptureSession(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Graphics.Capture.IGraphicsCapturePicker))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(393216)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class GraphicsCapturePicker : global::System.__ComObject, global::Windows.Graphics.Capture.IGraphicsCapturePicker
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public GraphicsCapturePicker()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.Graphics.Capture.GraphicsCapturePicker");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.Graphics.Capture.GraphicsCaptureItem> PickSingleItemAsync()
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Graphics.Capture.GraphicsCaptureItem> __retVal = global::Windows.Graphics.Capture.IGraphicsCapturePicker__Impl.Stubs.PickSingleItemAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public GraphicsCapturePicker(global::System.IntPtr dummy)
 		{
 		}
 	}
@@ -45987,9 +49406,23 @@ namespace Windows.Graphics.Capture
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IGraphicsCaptureSessionStatics
+	{
+		bool IsSupported();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IGraphicsCaptureSession
 	{
 		void StartCapture();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IGraphicsCapturePicker
+	{
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Graphics.Capture.GraphicsCaptureItem> PickSingleItemAsync();
 	}
 }
 
@@ -46721,6 +50154,112 @@ namespace Windows.Media.Core
 	}
 }
 
+namespace Windows.Media.Devices
+{
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class MediaDevice : global::System.__ComObject
+	{
+		public static string GetAudioCaptureSelector()
+		{
+			string retval;
+			retval = __Factory_Windows_Media_Devices__IMediaDeviceStatics_GetAudioCaptureSelector("Windows.Media.Devices.MediaDevice");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static string __Factory_Windows_Media_Devices__IMediaDeviceStatics_GetAudioCaptureSelector(string typeName)
+		{
+			string __pRetVal;
+			__pRetVal = global::Windows.Media.Devices.IMediaDeviceStatics__Impl.Stubs.GetAudioCaptureSelector(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.Media.Devices.IMediaDeviceStatics).TypeHandle
+								));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public static string GetDefaultAudioCaptureId(global::Windows.Media.Devices.AudioDeviceRole role)
+		{
+			string retval;
+			retval = __Factory_Windows_Media_Devices__IMediaDeviceStatics_GetDefaultAudioCaptureId(
+								"Windows.Media.Devices.MediaDevice", 
+								role
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static string __Factory_Windows_Media_Devices__IMediaDeviceStatics_GetDefaultAudioCaptureId(
+					string typeName, 
+					global::Windows.Media.Devices.AudioDeviceRole role)
+		{
+			string __pRetVal;
+			__pRetVal = global::Windows.Media.Devices.IMediaDeviceStatics__Impl.Stubs.GetDefaultAudioCaptureId(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Media.Devices.IMediaDeviceStatics).TypeHandle
+												), 
+								role
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public static string GetDefaultAudioRenderId(global::Windows.Media.Devices.AudioDeviceRole role)
+		{
+			string retval;
+			retval = __Factory_Windows_Media_Devices__IMediaDeviceStatics_GetDefaultAudioRenderId(
+								"Windows.Media.Devices.MediaDevice", 
+								role
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static string __Factory_Windows_Media_Devices__IMediaDeviceStatics_GetDefaultAudioRenderId(
+					string typeName, 
+					global::Windows.Media.Devices.AudioDeviceRole role)
+		{
+			string __pRetVal;
+			__pRetVal = global::Windows.Media.Devices.IMediaDeviceStatics__Impl.Stubs.GetDefaultAudioRenderId(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Media.Devices.IMediaDeviceStatics).TypeHandle
+												), 
+								role
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public MediaDevice(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IMediaDeviceStatics
+	{
+		string GetAudioCaptureSelector();
+
+		string GetDefaultAudioCaptureId(global::Windows.Media.Devices.AudioDeviceRole role);
+
+		string GetDefaultAudioRenderId(global::Windows.Media.Devices.AudioDeviceRole role);
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum AudioDeviceRole
+	{
+		Default = 0,
+		Communications = 1,
+	}
+}
+
 namespace Windows.Media.MediaProperties
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Media.MediaProperties.IAudioEncodingProperties))]
@@ -46760,6 +50299,14 @@ namespace Windows.Media.MediaProperties
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Bitrate")]
+		public uint get_Bitrate()
+		{
+			uint __retVal = global::Windows.Media.MediaProperties.IVideoEncodingProperties__Impl.Stubs.get_Bitrate(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Width")]
 		public void put_Width(uint value)
 		{
@@ -46770,6 +50317,14 @@ namespace Windows.Media.MediaProperties
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Width")]
+		public uint get_Width()
+		{
+			uint __retVal = global::Windows.Media.MediaProperties.IVideoEncodingProperties__Impl.Stubs.get_Width(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Height")]
 		public void put_Height(uint value)
 		{
@@ -46778,6 +50333,14 @@ namespace Windows.Media.MediaProperties
 								value
 							);
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Height")]
+		public uint get_Height()
+		{
+			uint __retVal = global::Windows.Media.MediaProperties.IVideoEncodingProperties__Impl.Stubs.get_Height(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
 		}
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "FrameRate")]
@@ -46910,6 +50473,33 @@ namespace Windows.Media.MediaProperties
 			return __retVal;
 		}
 
+		public static global::Windows.Media.MediaProperties.MediaEncodingProfile CreateMp4(global::Windows.Media.MediaProperties.VideoEncodingQuality quality)
+		{
+			global::Windows.Media.MediaProperties.MediaEncodingProfile retval;
+			retval = __Factory_Windows_Media_MediaProperties__IMediaEncodingProfileStatics_CreateMp4(
+								"Windows.Media.MediaProperties.MediaEncodingProfile", 
+								quality
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.Media.MediaProperties.MediaEncodingProfile __Factory_Windows_Media_MediaProperties__IMediaEncodingProfileStatics_CreateMp4(
+					string typeName, 
+					global::Windows.Media.MediaProperties.VideoEncodingQuality quality)
+		{
+			global::Windows.Media.MediaProperties.MediaEncodingProfile __pRetVal;
+			__pRetVal = global::Windows.Media.MediaProperties.IMediaEncodingProfileStatics__Impl.Stubs.CreateMp4(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Media.MediaProperties.IMediaEncodingProfileStatics).TypeHandle
+												), 
+								quality
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
 		public MediaEncodingProfile(global::System.IntPtr dummy)
 		{
 		}
@@ -46998,11 +50588,20 @@ namespace Windows.Media.MediaProperties
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Bitrate")]
 		void put_Bitrate(uint value);
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Bitrate")]
+		uint get_Bitrate();
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Width")]
 		void put_Width(uint value);
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Width")]
+		uint get_Width();
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Height")]
 		void put_Height(uint value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Height")]
+		uint get_Height();
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "FrameRate")]
 		global::Windows.Media.MediaProperties.MediaRatio get_FrameRate();
@@ -47020,6 +50619,13 @@ namespace Windows.Media.MediaProperties
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Denominator")]
 		void put_Denominator(uint value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IMediaEncodingProfileStatics
+	{
+		global::Windows.Media.MediaProperties.MediaEncodingProfile CreateMp4(global::Windows.Media.MediaProperties.VideoEncodingQuality quality);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -47045,6 +50651,23 @@ namespace Windows.Media.MediaProperties
 	{
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Bgra8")]
 		string get_Bgra8();
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum VideoEncodingQuality
+	{
+		Auto = 0,
+		HD1080p = 1,
+		HD720p = 2,
+		Wvga = 3,
+		Ntsc = 4,
+		Pal = 5,
+		Vga = 6,
+		Qvga = 7,
+		Uhd2160p = 8,
+		Uhd4320p = 9,
 	}
 }
 
@@ -47154,125 +50777,9 @@ namespace Windows.Media.Transcoding
 
 namespace Windows.Storage
 {
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFolder))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItem))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class StorageFolder : global::System.__ComObject, global::Windows.Storage.IStorageFolder, global::Windows.Storage.IStorageItem, global::Windows.Storage.Search.IStorageFolderQueryOperations, global::Windows.Storage.IStorageItemProperties, global::Windows.Storage.IStorageItemProperties2, global::Windows.Storage.IStorageItem2, global::Windows.Storage.IStorageFolder2, global::Windows.Storage.IStorageItemPropertiesWithProvider, global::Windows.Storage.IStorageFolder3
-	{
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(string desiredName)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.CreateFileAsync(
-								this, 
-								desiredName
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(
-					string desiredName, 
-					global::Windows.Storage.CreationCollisionOption options)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.CreateFileAsync(
-								this, 
-								desiredName, 
-								options
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> CreateFolderAsync(string desiredName)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.CreateFolderAsync(
-								this, 
-								desiredName
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> CreateFolderAsync(
-					string desiredName, 
-					global::Windows.Storage.CreationCollisionOption options)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.CreateFolderAsync(
-								this, 
-								desiredName, 
-								options
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileAsync(string name)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetFileAsync(
-								this, 
-								name
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> GetFolderAsync(string name)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetFolderAsync(
-								this, 
-								name
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> GetItemAsync(string name)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetItemAsync(
-								this, 
-								name
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> GetFilesAsync()
-		{
-			global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetFilesAsync(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFolder>> GetFoldersAsync()
-		{
-			global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFolder>> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetFoldersAsync(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.IStorageItem>> GetItemsAsync()
-		{
-			global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.IStorageItem>> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetItemsAsync(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
-		public string get_Path()
-		{
-			string __retVal = global::Windows.Storage.IStorageItem__Impl.Stubs.get_Path(this);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			return __retVal;
-		}
-
-		public StorageFolder(global::System.IntPtr dummy)
-		{
-		}
-	}
-
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFile))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItem))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class StorageFile : global::System.__ComObject, global::Windows.Storage.IStorageFile, global::Windows.Storage.Streams.IInputStreamReference, global::Windows.Storage.Streams.IRandomAccessStreamReference, global::Windows.Storage.IStorageItem, global::Windows.Storage.IStorageItemProperties, global::Windows.Storage.IStorageItemProperties2, global::Windows.Storage.IStorageItem2, global::Windows.Storage.IStorageItemPropertiesWithProvider, global::Windows.Storage.IStorageFilePropertiesWithAvailability, global::Windows.Storage.IStorageFile2
@@ -47406,6 +50913,13 @@ namespace Windows.Storage
 			return __retVal;
 		}
 
+		public global::Windows.Foundation.IAsyncAction DeleteAsync()
+		{
+			global::Windows.Foundation.IAsyncAction __retVal = global::Windows.Storage.IStorageItem__Impl.Stubs.DeleteAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
 		public string get_Path()
 		{
@@ -47414,13 +50928,39 @@ namespace Windows.Storage
 			return __retVal;
 		}
 
+		public static global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileFromPathAsync(string path)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> retval;
+			retval = __Factory_Windows_Storage__IStorageFileStatics_GetFileFromPathAsync(
+								"Windows.Storage.StorageFile", 
+								path
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __Factory_Windows_Storage__IStorageFileStatics_GetFileFromPathAsync(
+					string typeName, 
+					string path)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __pRetVal;
+			__pRetVal = global::Windows.Storage.IStorageFileStatics__Impl.Stubs.GetFileFromPathAsync(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Storage.IStorageFileStatics).TypeHandle
+												), 
+								path
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
 		public StorageFile(global::System.IntPtr dummy)
 		{
 		}
 	}
 
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageStreamTransaction))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.IDisposable))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
@@ -47436,41 +50976,221 @@ namespace Windows.Storage
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFolder))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class StorageFolder : global::System.__ComObject, global::Windows.Storage.IStorageFolder, global::Windows.Storage.IStorageItem, global::Windows.Storage.Search.IStorageFolderQueryOperations, global::Windows.Storage.IStorageItemProperties, global::Windows.Storage.IStorageItemProperties2, global::Windows.Storage.IStorageItem2, global::Windows.Storage.IStorageFolder2, global::Windows.Storage.IStorageItemPropertiesWithProvider, global::Windows.Storage.IStorageFolder3
+	{
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(string desiredName)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.CreateFileAsync(
+								this, 
+								desiredName
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(
+					string desiredName, 
+					global::Windows.Storage.CreationCollisionOption options)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.CreateFileAsync(
+								this, 
+								desiredName, 
+								options
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> CreateFolderAsync(string desiredName)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.CreateFolderAsync(
+								this, 
+								desiredName
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> CreateFolderAsync(
+					string desiredName, 
+					global::Windows.Storage.CreationCollisionOption options)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.CreateFolderAsync(
+								this, 
+								desiredName, 
+								options
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileAsync(string name)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetFileAsync(
+								this, 
+								name
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> GetFolderAsync(string name)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetFolderAsync(
+								this, 
+								name
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> GetItemAsync(string name)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetItemAsync(
+								this, 
+								name
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> GetFilesAsync()
+		{
+			global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetFilesAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFolder>> GetFoldersAsync()
+		{
+			global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFolder>> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetFoldersAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.IStorageItem>> GetItemsAsync()
+		{
+			global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.IStorageItem>> __retVal = global::Windows.Storage.IStorageFolder__Impl.Stubs.GetItemsAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public global::Windows.Foundation.IAsyncAction DeleteAsync()
+		{
+			global::Windows.Foundation.IAsyncAction __retVal = global::Windows.Storage.IStorageItem__Impl.Stubs.DeleteAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
+		public string get_Path()
+		{
+			string __retVal = global::Windows.Storage.IStorageItem__Impl.Stubs.get_Path(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public StorageFolder(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IApplicationData))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.IDisposable))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ApplicationData : global::System.__ComObject, global::Windows.Storage.IApplicationData, global::System.IDisposable
+	{
+		public void Dispose()
+		{
+			global::System.IDisposable__Impl.Stubs.Close(this);
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "LocalSettings")]
+		public global::Windows.Storage.ApplicationDataContainer get_LocalSettings()
+		{
+			global::Windows.Storage.ApplicationDataContainer __retVal = global::Windows.Storage.IApplicationData__Impl.Stubs.get_LocalSettings(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TemporaryFolder")]
+		public global::Windows.Storage.StorageFolder get_TemporaryFolder()
+		{
+			global::Windows.Storage.StorageFolder __retVal = global::Windows.Storage.IApplicationData__Impl.Stubs.get_TemporaryFolder(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Current")]
+		public static global::Windows.Storage.ApplicationData get_Current()
+		{
+			global::Windows.Storage.ApplicationData retval;
+			retval = __Factory_Windows_Storage__IApplicationDataStatics_get_Current("Windows.Storage.ApplicationData");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.Storage.ApplicationData __Factory_Windows_Storage__IApplicationDataStatics_get_Current(string typeName)
+		{
+			global::Windows.Storage.ApplicationData __pRetVal;
+			__pRetVal = global::Windows.Storage.IApplicationDataStatics__Impl.Stubs.get_Current(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.Storage.IApplicationDataStatics).TypeHandle
+								));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public ApplicationData(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IApplicationDataContainer))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ApplicationDataContainer : global::System.__ComObject, global::Windows.Storage.IApplicationDataContainer, global::System.IDisposable
+	{
+		public void Dispose()
+		{
+			global::System.IDisposable__Impl.Stubs.Close(this);
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Values")]
+		public global::Windows.Foundation.Collections.IPropertySet get_Values()
+		{
+			global::Windows.Foundation.Collections.IPropertySet __retVal = global::Windows.Storage.IApplicationDataContainer__Impl.Stubs.get_Values(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public ApplicationDataContainer(global::System.IntPtr dummy)
+		{
+		}
+	}
+
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IStorageItem
 	{
+		global::Windows.Foundation.IAsyncAction DeleteAsync();
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
 		string get_Path();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageFolder : global::Windows.Storage.IStorageItem
+	public unsafe interface IStorageFileStatics
 	{
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(string desiredName);
-
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(
-					string desiredName, 
-					global::Windows.Storage.CreationCollisionOption options);
-
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> CreateFolderAsync(string desiredName);
-
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> CreateFolderAsync(
-					string desiredName, 
-					global::Windows.Storage.CreationCollisionOption options);
-
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileAsync(string name);
-
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> GetFolderAsync(string name);
-
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> GetItemAsync(string name);
-
-		global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> GetFilesAsync();
-
-		global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFolder>> GetFoldersAsync();
-
-		global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.IStorageItem>> GetItemsAsync();
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileFromPathAsync(string path);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -47522,6 +51242,35 @@ namespace Windows.Storage
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStorageFolder : global::Windows.Storage.IStorageItem
+	{
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(string desiredName);
+
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(
+					string desiredName, 
+					global::Windows.Storage.CreationCollisionOption options);
+
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> CreateFolderAsync(string desiredName);
+
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> CreateFolderAsync(
+					string desiredName, 
+					global::Windows.Storage.CreationCollisionOption options);
+
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileAsync(string name);
+
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> GetFolderAsync(string name);
+
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> GetItemAsync(string name);
+
+		global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> GetFilesAsync();
+
+		global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFolder>> GetFoldersAsync();
+
+		global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.IStorageItem>> GetItemsAsync();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IStorageItemProperties
 	{
 	}
@@ -47540,7 +51289,19 @@ namespace Windows.Storage
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStorageFolder2
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IStorageItemPropertiesWithProvider : global::Windows.Storage.IStorageItemProperties
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStorageFolder3
 	{
 	}
 
@@ -47558,14 +51319,29 @@ namespace Windows.Storage
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageFolder2
+	public unsafe interface IApplicationDataStatics
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Current")]
+		global::Windows.Storage.ApplicationData get_Current();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageFolder3
+	public unsafe interface IApplicationData
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "LocalSettings")]
+		global::Windows.Storage.ApplicationDataContainer get_LocalSettings();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TemporaryFolder")]
+		global::Windows.Storage.StorageFolder get_TemporaryFolder();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IApplicationDataContainer
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Values")]
+		global::Windows.Foundation.Collections.IPropertySet get_Values();
 	}
 
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
@@ -47580,22 +51356,127 @@ namespace Windows.Storage
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum NameCollisionOption
-	{
-		GenerateUniqueName = 0,
-		ReplaceExisting = 1,
-		FailIfExists = 2,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public enum CreationCollisionOption
 	{
 		GenerateUniqueName = 0,
 		ReplaceExisting = 1,
 		FailIfExists = 2,
 		OpenIfExists = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum NameCollisionOption
+	{
+		GenerateUniqueName = 0,
+		ReplaceExisting = 1,
+		FailIfExists = 2,
+	}
+}
+
+namespace Windows.Storage.Pickers
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.Pickers.IFileSavePicker))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class FileSavePicker : global::System.__ComObject, global::Windows.Storage.Pickers.IFileSavePicker
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public FileSavePicker()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.Storage.Pickers.FileSavePicker");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "SuggestedStartLocation")]
+		public void put_SuggestedStartLocation(global::Windows.Storage.Pickers.PickerLocationId value)
+		{
+			global::Windows.Storage.Pickers.IFileSavePicker__Impl.Stubs.put_SuggestedStartLocation(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "FileTypeChoices")]
+		public global::System.Collections.Generic.IDictionary<string, global::System.Collections.Generic.IList<string>> get_FileTypeChoices()
+		{
+			global::System.Collections.Generic.IDictionary<string, global::System.Collections.Generic.IList<string>> __retVal = global::Windows.Storage.Pickers.IFileSavePicker__Impl.Stubs.get_FileTypeChoices(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "DefaultFileExtension")]
+		public void put_DefaultFileExtension(string value)
+		{
+			global::Windows.Storage.Pickers.IFileSavePicker__Impl.Stubs.put_DefaultFileExtension(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "SuggestedFileName")]
+		public void put_SuggestedFileName(string value)
+		{
+			global::Windows.Storage.Pickers.IFileSavePicker__Impl.Stubs.put_SuggestedFileName(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> PickSaveFileAsync()
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __retVal = global::Windows.Storage.Pickers.IFileSavePicker__Impl.Stubs.PickSaveFileAsync(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public FileSavePicker(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IFileSavePicker
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "SuggestedStartLocation")]
+		void put_SuggestedStartLocation(global::Windows.Storage.Pickers.PickerLocationId value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "FileTypeChoices")]
+		global::System.Collections.Generic.IDictionary<string, global::System.Collections.Generic.IList<string>> get_FileTypeChoices();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "DefaultFileExtension")]
+		void put_DefaultFileExtension(string value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "SuggestedFileName")]
+		void put_SuggestedFileName(string value);
+
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> PickSaveFileAsync();
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum PickerLocationId
+	{
+		DocumentsLibrary = 0,
+		ComputerFolder = 1,
+		Desktop = 2,
+		Downloads = 3,
+		HomeGroup = 4,
+		MusicLibrary = 5,
+		PicturesLibrary = 6,
+		VideosLibrary = 7,
+		Objects3D = 8,
+		Unspecified = 9,
 	}
 }
 
@@ -47692,6 +51573,101 @@ namespace Windows.Storage.Streams
 		None = 0x0u,
 		Partial = 0x1u,
 		ReadAhead = 0x2u,
+	}
+}
+
+namespace Windows.System
+{
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class Launcher : global::System.__ComObject
+	{
+		public static global::Windows.Foundation.IAsyncOperation<bool> LaunchFileAsync(global::Windows.Storage.IStorageFile file)
+		{
+			global::Windows.Foundation.IAsyncOperation<bool> retval;
+			retval = __Factory_Windows_System__ILauncherStatics_LaunchFileAsync(
+								"Windows.System.Launcher", 
+								file
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.Foundation.IAsyncOperation<bool> __Factory_Windows_System__ILauncherStatics_LaunchFileAsync(
+					string typeName, 
+					global::Windows.Storage.IStorageFile file)
+		{
+			global::Windows.Foundation.IAsyncOperation<bool> __pRetVal;
+			__pRetVal = global::Windows.System.ILauncherStatics__Impl.Stubs.LaunchFileAsync(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.System.ILauncherStatics).TypeHandle
+												), 
+								file
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public Launcher(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ILauncherStatics
+	{
+		global::Windows.Foundation.IAsyncOperation<bool> LaunchFileAsync(global::Windows.Storage.IStorageFile file);
+	}
+}
+
+namespace Windows.UI
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.IColors))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class Colors : global::System.__ComObject, global::Windows.UI.IColors
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Red")]
+		public static global::Windows.UI.Color get_Red()
+		{
+			global::Windows.UI.Color retval;
+			retval = __Factory_Windows_UI__IColorsStatics_get_Red("Windows.UI.Colors");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.UI.Color __Factory_Windows_UI__IColorsStatics_get_Red(string typeName)
+		{
+			global::Windows.UI.Color __pRetVal;
+			__pRetVal = global::Windows.UI.IColorsStatics__Impl.Stubs.get_Red(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.UI.IColorsStatics).TypeHandle
+								));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public Colors(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IColorsStatics
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Red")]
+		global::Windows.UI.Color get_Red();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IColors
+	{
 	}
 }
 
@@ -48206,10 +52182,6 @@ namespace Windows.UI.Popups
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe delegate void UICommandInvokedHandler(global::Windows.UI.Popups.IUICommand command);
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IMessageDialogFactory
 	{
 		global::System.IntPtr CreateWithTitle(
@@ -48232,6 +52204,10 @@ namespace Windows.UI.Popups
 
 		global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> ShowAsync();
 	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe delegate void UICommandInvokedHandler(global::Windows.UI.Popups.IUICommand command);
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
@@ -48281,6 +52257,69 @@ namespace Windows.UI.Text
 	}
 }
 
+namespace Windows.UI.ViewManagement
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.ViewManagement.IApplicationView))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.ViewManagement.IApplicationView3))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ApplicationView : global::System.__ComObject, global::Windows.UI.ViewManagement.IApplicationView, global::Windows.UI.ViewManagement.IApplicationView3
+	{
+		public void SetPreferredMinSize(global::Windows.Foundation.Size minSize)
+		{
+			global::Windows.UI.ViewManagement.IApplicationView3__Impl.Stubs.SetPreferredMinSize(
+								this, 
+								minSize
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public static global::Windows.UI.ViewManagement.ApplicationView GetForCurrentView()
+		{
+			global::Windows.UI.ViewManagement.ApplicationView retval;
+			retval = __Factory_Windows_UI_ViewManagement__IApplicationViewStatics2_GetForCurrentView("Windows.UI.ViewManagement.ApplicationView");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.UI.ViewManagement.ApplicationView __Factory_Windows_UI_ViewManagement__IApplicationViewStatics2_GetForCurrentView(string typeName)
+		{
+			global::Windows.UI.ViewManagement.ApplicationView __pRetVal;
+			__pRetVal = global::Windows.UI.ViewManagement.IApplicationViewStatics2__Impl.Stubs.GetForCurrentView(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.UI.ViewManagement.IApplicationViewStatics2).TypeHandle
+								));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public ApplicationView(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IApplicationViewStatics2
+	{
+		global::Windows.UI.ViewManagement.ApplicationView GetForCurrentView();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IApplicationView
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IApplicationView3
+	{
+		void SetPreferredMinSize(global::Windows.Foundation.Size minSize);
+	}
+}
+
 namespace Windows.UI.Xaml
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IDependencyObject))]
@@ -48309,6 +52348,24 @@ namespace Windows.UI.Xaml
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe class UIElement : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.IUIElement, global::Windows.UI.Xaml.IUIElement2, global::Windows.UI.Xaml.IUIElement3, global::Windows.UI.Xaml.IUIElement4, global::Windows.UI.Xaml.IUIElement5, global::Windows.UI.Xaml.IUIElement7, global::Windows.UI.Xaml.IUIElement8, global::Windows.UI.Xaml.IUIElement9, global::Windows.UI.Xaml.IUIElement10, global::Windows.UI.Xaml.IUIElementOverrides, global::Windows.UI.Xaml.IUIElementOverrides7, global::Windows.UI.Xaml.IUIElementOverrides8, global::Windows.UI.Xaml.IUIElementOverrides9, global::Windows.UI.Composition.IAnimationObject, global::Windows.UI.Composition.IVisualElement
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "RenderTransformOrigin")]
+		public virtual global::Windows.Foundation.Point get_RenderTransformOrigin()
+		{
+			global::Windows.Foundation.Point __retVal = global::Windows.UI.Xaml.IUIElement__Impl.Stubs.get_RenderTransformOrigin(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "RenderTransformOrigin")]
+		public virtual void put_RenderTransformOrigin(global::Windows.Foundation.Point value)
+		{
+			global::Windows.UI.Xaml.IUIElement__Impl.Stubs.put_RenderTransformOrigin(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "KeyUp")]
 		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_KeyUp(global::Windows.UI.Xaml.Input.KeyEventHandler handler)
 		{
@@ -49810,6 +53867,18 @@ namespace Windows.UI.Xaml
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IStyle))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class Style : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.IStyle
+	{
+		public Style(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IApplication))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IApplication2))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.IApplicationOverrides))]
@@ -50374,6 +54443,12 @@ namespace Windows.UI.Xaml
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IUIElement
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "RenderTransformOrigin")]
+		global::Windows.Foundation.Point get_RenderTransformOrigin();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "RenderTransformOrigin")]
+		void put_RenderTransformOrigin(global::Windows.Foundation.Point value);
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "KeyUp")]
 		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_KeyUp(global::Windows.UI.Xaml.Input.KeyEventHandler handler);
 
@@ -50923,6 +54998,12 @@ namespace Windows.UI.Xaml
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStyle
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IApplicationFactory
 	{
 		global::System.IntPtr CreateInstance(
@@ -51136,6 +55217,16 @@ namespace Windows.UI.Xaml
 		Center = 1,
 		Bottom = 2,
 		Stretch = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum TextWrapping
+	{
+		NoWrap = 1,
+		Wrap = 2,
+		WrapWholeWords = 3,
 	}
 }
 
@@ -52273,6 +56364,16 @@ namespace Windows.UI.Xaml.Controls
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe class Control : global::Windows.UI.Xaml.FrameworkElement, global::Windows.UI.Xaml.Controls.IControl, global::Windows.UI.Xaml.Controls.IControl4, global::Windows.UI.Xaml.Controls.IControlProtected, global::Windows.UI.Xaml.Controls.IControlOverrides, global::Windows.UI.Xaml.Controls.IControlOverrides6
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsEnabled")]
+		public virtual void put_IsEnabled(bool value)
+		{
+			global::Windows.UI.Xaml.Controls.IControl__Impl.Stubs.put_IsEnabled(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Background")]
 		public virtual global::Windows.UI.Xaml.Media.Brush get_Background()
 		{
@@ -53483,6 +57584,908 @@ namespace Windows.UI.Xaml.Controls
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IItemsControl))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IItemsControlOverrides))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe class ItemsControl : global::Windows.UI.Xaml.Controls.Control, global::Windows.UI.Xaml.Controls.IItemsControl, global::Windows.UI.Xaml.Controls.IItemsControlOverrides
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ItemsSource")]
+		public virtual void put_ItemsSource(object value)
+		{
+			global::Windows.UI.Xaml.Controls.IItemsControl__Impl.Stubs.put_ItemsSource(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		bool global::Windows.UI.Xaml.Controls.IItemsControlOverrides.IsItemItsOwnContainerOverride(object item)
+		{
+			bool __retVal_1 = this.IsItemItsOwnContainerOverride(item);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal_1;
+		}
+
+		protected virtual bool IsItemItsOwnContainerOverride(object item)
+		{
+			bool __retVal = global::Windows.UI.Xaml.Controls.IItemsControlOverrides__Impl.Stubs.IsItemItsOwnContainerOverride(
+								this, 
+								item
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		global::Windows.UI.Xaml.DependencyObject global::Windows.UI.Xaml.Controls.IItemsControlOverrides.GetContainerForItemOverride()
+		{
+			global::Windows.UI.Xaml.DependencyObject __retVal_1 = this.GetContainerForItemOverride();
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal_1;
+		}
+
+		protected virtual global::Windows.UI.Xaml.DependencyObject GetContainerForItemOverride()
+		{
+			global::Windows.UI.Xaml.DependencyObject __retVal = global::Windows.UI.Xaml.Controls.IItemsControlOverrides__Impl.Stubs.GetContainerForItemOverride(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		void global::Windows.UI.Xaml.Controls.IItemsControlOverrides.ClearContainerForItemOverride(
+					global::Windows.UI.Xaml.DependencyObject element, 
+					object item)
+		{
+			this.ClearContainerForItemOverride(
+								element, 
+								item
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		protected virtual void ClearContainerForItemOverride(
+					global::Windows.UI.Xaml.DependencyObject element, 
+					object item)
+		{
+			global::Windows.UI.Xaml.Controls.IItemsControlOverrides__Impl.Stubs.ClearContainerForItemOverride(
+								this, 
+								element, 
+								item
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		void global::Windows.UI.Xaml.Controls.IItemsControlOverrides.PrepareContainerForItemOverride(
+					global::Windows.UI.Xaml.DependencyObject element, 
+					object item)
+		{
+			this.PrepareContainerForItemOverride(
+								element, 
+								item
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		protected virtual void PrepareContainerForItemOverride(
+					global::Windows.UI.Xaml.DependencyObject element, 
+					object item)
+		{
+			global::Windows.UI.Xaml.Controls.IItemsControlOverrides__Impl.Stubs.PrepareContainerForItemOverride(
+								this, 
+								element, 
+								item
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		void global::Windows.UI.Xaml.Controls.IItemsControlOverrides.OnItemsChanged(object e)
+		{
+			this.OnItemsChanged(e);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		protected virtual void OnItemsChanged(object e)
+		{
+			global::Windows.UI.Xaml.Controls.IItemsControlOverrides__Impl.Stubs.OnItemsChanged(
+								this, 
+								e
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		void global::Windows.UI.Xaml.Controls.IItemsControlOverrides.OnItemContainerStyleChanged(
+					global::Windows.UI.Xaml.Style oldItemContainerStyle, 
+					global::Windows.UI.Xaml.Style newItemContainerStyle)
+		{
+			this.OnItemContainerStyleChanged(
+								oldItemContainerStyle, 
+								newItemContainerStyle
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		protected virtual void OnItemContainerStyleChanged(
+					global::Windows.UI.Xaml.Style oldItemContainerStyle, 
+					global::Windows.UI.Xaml.Style newItemContainerStyle)
+		{
+			global::Windows.UI.Xaml.Controls.IItemsControlOverrides__Impl.Stubs.OnItemContainerStyleChanged(
+								this, 
+								oldItemContainerStyle, 
+								newItemContainerStyle
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		void global::Windows.UI.Xaml.Controls.IItemsControlOverrides.OnItemContainerStyleSelectorChanged(
+					global::Windows.UI.Xaml.Controls.StyleSelector oldItemContainerStyleSelector, 
+					global::Windows.UI.Xaml.Controls.StyleSelector newItemContainerStyleSelector)
+		{
+			this.OnItemContainerStyleSelectorChanged(
+								oldItemContainerStyleSelector, 
+								newItemContainerStyleSelector
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		protected virtual void OnItemContainerStyleSelectorChanged(
+					global::Windows.UI.Xaml.Controls.StyleSelector oldItemContainerStyleSelector, 
+					global::Windows.UI.Xaml.Controls.StyleSelector newItemContainerStyleSelector)
+		{
+			global::Windows.UI.Xaml.Controls.IItemsControlOverrides__Impl.Stubs.OnItemContainerStyleSelectorChanged(
+								this, 
+								oldItemContainerStyleSelector, 
+								newItemContainerStyleSelector
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		void global::Windows.UI.Xaml.Controls.IItemsControlOverrides.OnItemTemplateChanged(
+					global::Windows.UI.Xaml.DataTemplate oldItemTemplate, 
+					global::Windows.UI.Xaml.DataTemplate newItemTemplate)
+		{
+			this.OnItemTemplateChanged(
+								oldItemTemplate, 
+								newItemTemplate
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		protected virtual void OnItemTemplateChanged(
+					global::Windows.UI.Xaml.DataTemplate oldItemTemplate, 
+					global::Windows.UI.Xaml.DataTemplate newItemTemplate)
+		{
+			global::Windows.UI.Xaml.Controls.IItemsControlOverrides__Impl.Stubs.OnItemTemplateChanged(
+								this, 
+								oldItemTemplate, 
+								newItemTemplate
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		void global::Windows.UI.Xaml.Controls.IItemsControlOverrides.OnItemTemplateSelectorChanged(
+					global::Windows.UI.Xaml.Controls.DataTemplateSelector oldItemTemplateSelector, 
+					global::Windows.UI.Xaml.Controls.DataTemplateSelector newItemTemplateSelector)
+		{
+			this.OnItemTemplateSelectorChanged(
+								oldItemTemplateSelector, 
+								newItemTemplateSelector
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		protected virtual void OnItemTemplateSelectorChanged(
+					global::Windows.UI.Xaml.Controls.DataTemplateSelector oldItemTemplateSelector, 
+					global::Windows.UI.Xaml.Controls.DataTemplateSelector newItemTemplateSelector)
+		{
+			global::Windows.UI.Xaml.Controls.IItemsControlOverrides__Impl.Stubs.OnItemTemplateSelectorChanged(
+								this, 
+								oldItemTemplateSelector, 
+								newItemTemplateSelector
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		void global::Windows.UI.Xaml.Controls.IItemsControlOverrides.OnGroupStyleSelectorChanged(
+					global::Windows.UI.Xaml.Controls.GroupStyleSelector oldGroupStyleSelector, 
+					global::Windows.UI.Xaml.Controls.GroupStyleSelector newGroupStyleSelector)
+		{
+			this.OnGroupStyleSelectorChanged(
+								oldGroupStyleSelector, 
+								newGroupStyleSelector
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		protected virtual void OnGroupStyleSelectorChanged(
+					global::Windows.UI.Xaml.Controls.GroupStyleSelector oldGroupStyleSelector, 
+					global::Windows.UI.Xaml.Controls.GroupStyleSelector newGroupStyleSelector)
+		{
+			global::Windows.UI.Xaml.Controls.IItemsControlOverrides__Impl.Stubs.OnGroupStyleSelectorChanged(
+								this, 
+								oldGroupStyleSelector, 
+								newGroupStyleSelector
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public ItemsControl(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IStyleSelector))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IStyleSelectorOverrides))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe class StyleSelector : global::System.__ComObject, global::Windows.UI.Xaml.Controls.IStyleSelector, global::Windows.UI.Xaml.Controls.IStyleSelectorOverrides
+	{
+		global::Windows.UI.Xaml.Style global::Windows.UI.Xaml.Controls.IStyleSelectorOverrides.SelectStyleCore(
+					object item, 
+					global::Windows.UI.Xaml.DependencyObject container)
+		{
+			global::Windows.UI.Xaml.Style __retVal_1 = this.SelectStyleCore(
+								item, 
+								container
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal_1;
+		}
+
+		protected virtual global::Windows.UI.Xaml.Style SelectStyleCore(
+					object item, 
+					global::Windows.UI.Xaml.DependencyObject container)
+		{
+			global::Windows.UI.Xaml.Style __retVal = global::Windows.UI.Xaml.Controls.IStyleSelectorOverrides__Impl.Stubs.SelectStyleCore(
+								this, 
+								item, 
+								container
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public StyleSelector(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IGroupStyleSelector))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IGroupStyleSelectorOverrides))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe class GroupStyleSelector : global::System.__ComObject, global::Windows.UI.Xaml.Controls.IGroupStyleSelector, global::Windows.UI.Xaml.Controls.IGroupStyleSelectorOverrides
+	{
+		global::Windows.UI.Xaml.Controls.GroupStyle global::Windows.UI.Xaml.Controls.IGroupStyleSelectorOverrides.SelectGroupStyleCore(
+					object group, 
+					uint level)
+		{
+			global::Windows.UI.Xaml.Controls.GroupStyle __retVal_1 = this.SelectGroupStyleCore(
+								group, 
+								level
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal_1;
+		}
+
+		protected virtual global::Windows.UI.Xaml.Controls.GroupStyle SelectGroupStyleCore(
+					object group, 
+					uint level)
+		{
+			global::Windows.UI.Xaml.Controls.GroupStyle __retVal = global::Windows.UI.Xaml.Controls.IGroupStyleSelectorOverrides__Impl.Stubs.SelectGroupStyleCore(
+								this, 
+								group, 
+								level
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public GroupStyleSelector(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IGroupStyle))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IGroupStyle2))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.ComponentModel.INotifyPropertyChanged))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe class GroupStyle : global::System.__ComObject, global::Windows.UI.Xaml.Controls.IGroupStyle, global::Windows.UI.Xaml.Controls.IGroupStyle2, global::System.ComponentModel.INotifyPropertyChanged
+	{
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __add_PropertyChanged(global::System.ComponentModel.PropertyChangedEventHandler eventHandler)
+		{
+			return global::System.ComponentModel.INotifyPropertyChanged__Impl.RCWAdapter.add_PropertyChanged(
+								this, 
+								eventHandler
+							);
+		}
+
+		void __remove_PropertyChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::System.ComponentModel.INotifyPropertyChanged__Impl.RCWAdapter.remove_PropertyChanged(
+								this, 
+								token
+							);
+		}
+
+		public virtual event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged
+		{
+			add
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.AddEventHandler<global::System.ComponentModel.PropertyChangedEventHandler>(
+									new global::System.Func<global::System.ComponentModel.PropertyChangedEventHandler, global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken>(this.__add_PropertyChanged), 
+									new global::System.Action<global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken>(this.__remove_PropertyChanged), 
+									value
+								);
+			}
+			remove
+			{
+				global::System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveEventHandler<global::System.ComponentModel.PropertyChangedEventHandler>(
+									new global::System.Action<global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken>(this.__remove_PropertyChanged), 
+									value
+								);
+			}
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Panel")]
+		public virtual global::Windows.UI.Xaml.Controls.ItemsPanelTemplate get_Panel()
+		{
+			global::Windows.UI.Xaml.Controls.ItemsPanelTemplate __retVal = global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.get_Panel(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Panel")]
+		public virtual void put_Panel(global::Windows.UI.Xaml.Controls.ItemsPanelTemplate value)
+		{
+			global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.put_Panel(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ContainerStyle")]
+		public virtual global::Windows.UI.Xaml.Style get_ContainerStyle()
+		{
+			global::Windows.UI.Xaml.Style __retVal = global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.get_ContainerStyle(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContainerStyle")]
+		public virtual void put_ContainerStyle(global::Windows.UI.Xaml.Style value)
+		{
+			global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.put_ContainerStyle(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ContainerStyleSelector")]
+		public virtual global::Windows.UI.Xaml.Controls.StyleSelector get_ContainerStyleSelector()
+		{
+			global::Windows.UI.Xaml.Controls.StyleSelector __retVal = global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.get_ContainerStyleSelector(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContainerStyleSelector")]
+		public virtual void put_ContainerStyleSelector(global::Windows.UI.Xaml.Controls.StyleSelector value)
+		{
+			global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.put_ContainerStyleSelector(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HeaderTemplate")]
+		public virtual global::Windows.UI.Xaml.DataTemplate get_HeaderTemplate()
+		{
+			global::Windows.UI.Xaml.DataTemplate __retVal = global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.get_HeaderTemplate(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "HeaderTemplate")]
+		public virtual void put_HeaderTemplate(global::Windows.UI.Xaml.DataTemplate value)
+		{
+			global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.put_HeaderTemplate(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HeaderTemplateSelector")]
+		public virtual global::Windows.UI.Xaml.Controls.DataTemplateSelector get_HeaderTemplateSelector()
+		{
+			global::Windows.UI.Xaml.Controls.DataTemplateSelector __retVal = global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.get_HeaderTemplateSelector(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "HeaderTemplateSelector")]
+		public virtual void put_HeaderTemplateSelector(global::Windows.UI.Xaml.Controls.DataTemplateSelector value)
+		{
+			global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.put_HeaderTemplateSelector(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HidesIfEmpty")]
+		public virtual bool get_HidesIfEmpty()
+		{
+			bool __retVal = global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.get_HidesIfEmpty(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "HidesIfEmpty")]
+		public virtual void put_HidesIfEmpty(bool value)
+		{
+			global::Windows.UI.Xaml.Controls.IGroupStyle__Impl.Stubs.put_HidesIfEmpty(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HeaderContainerStyle")]
+		public virtual global::Windows.UI.Xaml.Style get_HeaderContainerStyle()
+		{
+			global::Windows.UI.Xaml.Style __retVal = global::Windows.UI.Xaml.Controls.IGroupStyle2__Impl.Stubs.get_HeaderContainerStyle(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "HeaderContainerStyle")]
+		public virtual void put_HeaderContainerStyle(global::Windows.UI.Xaml.Style value)
+		{
+			global::Windows.UI.Xaml.Controls.IGroupStyle2__Impl.Stubs.put_HeaderContainerStyle(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public GroupStyle(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IItemsPanelTemplate))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ItemsPanelTemplate : global::Windows.UI.Xaml.FrameworkTemplate, global::Windows.UI.Xaml.Controls.IItemsPanelTemplate
+	{
+		public ItemsPanelTemplate(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.ISelectionChangedEventArgs))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe class SelectionChangedEventArgs : global::Windows.UI.Xaml.RoutedEventArgs, global::Windows.UI.Xaml.Controls.ISelectionChangedEventArgs
+	{
+		public SelectionChangedEventArgs(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IComboBox))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IComboBox6))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IComboBoxOverrides))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe class ComboBox : global::Windows.UI.Xaml.Controls.Primitives.Selector, global::Windows.UI.Xaml.Controls.IComboBox, global::Windows.UI.Xaml.Controls.IComboBox6, global::Windows.UI.Xaml.Controls.IComboBoxOverrides
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public ComboBox() : 
+				base(default(global::System.IntPtr))
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_UI_Xaml_Controls__IComboBoxFactory_CreateInstance("Windows.UI.Xaml.Controls.ComboBox");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_UI_Xaml_Controls__IComboBoxFactory_CreateInstance(string typeName)
+		{
+			global::System.IntPtr innerInspectable;
+			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
+			if (global::System.Runtime.InteropServices.McgMarshal.IsOfType(
+								this, 
+								typeof(global::Windows.UI.Xaml.Controls.ComboBox).TypeHandle
+							))
+			{
+				global::System.IntPtr __pRetVal_NoAggregation;
+				__pRetVal_NoAggregation = global::Windows.UI.Xaml.Controls.IComboBoxFactory__Impl.Stubs.CreateInstance(
+									global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+														typeName, 
+														typeof(global::Windows.UI.Xaml.Controls.IComboBoxFactory).TypeHandle
+													), 
+									outerInspectable, 
+									out innerInspectable
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(innerInspectable);
+				global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal_NoAggregation);
+				return __pRetVal_NoAggregation;
+			}
+			else
+			{
+				outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
+				global::System.IntPtr __pRetVal_WithAggregation;
+				__pRetVal_WithAggregation = global::Windows.UI.Xaml.Controls.IComboBoxFactory__Impl.Stubs.CreateInstance(
+									global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+														typeName, 
+														typeof(global::Windows.UI.Xaml.Controls.IComboBoxFactory).TypeHandle
+													), 
+									outerInspectable, 
+									out innerInspectable
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
+				return innerInspectable;
+			}
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "DropDownClosed")]
+		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DropDownClosed(global::System.EventHandler<object> handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.IComboBox__Impl.Stubs.add_DropDownClosed(
+								this, 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "DropDownClosed")]
+		public virtual void remove_DropDownClosed(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.IComboBox__Impl.Stubs.remove_DropDownClosed(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "DropDownOpened")]
+		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DropDownOpened(global::System.EventHandler<object> handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.IComboBox__Impl.Stubs.add_DropDownOpened(
+								this, 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "DropDownOpened")]
+		public virtual void remove_DropDownOpened(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.IComboBox__Impl.Stubs.remove_DropDownOpened(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "TextSubmitted")]
+		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_TextSubmitted(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ComboBox, global::Windows.UI.Xaml.Controls.ComboBoxTextSubmittedEventArgs> handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.IComboBox6__Impl.Stubs.add_TextSubmitted(
+								this, 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "TextSubmitted")]
+		public virtual void remove_TextSubmitted(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.IComboBox6__Impl.Stubs.remove_TextSubmitted(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		void global::Windows.UI.Xaml.Controls.IComboBoxOverrides.OnDropDownClosed(object e)
+		{
+			this.OnDropDownClosed(e);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		protected virtual void OnDropDownClosed(object e)
+		{
+			global::Windows.UI.Xaml.Controls.IComboBoxOverrides__Impl.Stubs.OnDropDownClosed(
+								this, 
+								e
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		void global::Windows.UI.Xaml.Controls.IComboBoxOverrides.OnDropDownOpened(object e)
+		{
+			this.OnDropDownOpened(e);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		protected virtual void OnDropDownOpened(object e)
+		{
+			global::Windows.UI.Xaml.Controls.IComboBoxOverrides__Impl.Stubs.OnDropDownOpened(
+								this, 
+								e
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public ComboBox(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IComboBoxTextSubmittedEventArgs))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ComboBoxTextSubmittedEventArgs : global::System.__ComObject, global::Windows.UI.Xaml.Controls.IComboBoxTextSubmittedEventArgs
+	{
+		public ComboBoxTextSubmittedEventArgs(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.ITextBlock))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.ITextBlock6))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class TextBlock : global::Windows.UI.Xaml.FrameworkElement, global::Windows.UI.Xaml.Controls.ITextBlock, global::Windows.UI.Xaml.Controls.ITextBlock6
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public TextBlock() : 
+				base(default(global::System.IntPtr))
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.UI.Xaml.Controls.TextBlock");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Foreground")]
+		public global::Windows.UI.Xaml.Media.Brush get_Foreground()
+		{
+			global::Windows.UI.Xaml.Media.Brush __retVal = global::Windows.UI.Xaml.Controls.ITextBlock__Impl.Stubs.get_Foreground(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Foreground")]
+		public void put_Foreground(global::Windows.UI.Xaml.Media.Brush value)
+		{
+			global::Windows.UI.Xaml.Controls.ITextBlock__Impl.Stubs.put_Foreground(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TextWrapping")]
+		public global::Windows.UI.Xaml.TextWrapping get_TextWrapping()
+		{
+			global::Windows.UI.Xaml.TextWrapping __retVal = global::Windows.UI.Xaml.Controls.ITextBlock__Impl.Stubs.get_TextWrapping(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TextWrapping")]
+		public void put_TextWrapping(global::Windows.UI.Xaml.TextWrapping value)
+		{
+			global::Windows.UI.Xaml.Controls.ITextBlock__Impl.Stubs.put_TextWrapping(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Text")]
+		public string get_Text()
+		{
+			string __retVal = global::Windows.UI.Xaml.Controls.ITextBlock__Impl.Stubs.get_Text(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Text")]
+		public void put_Text(string value)
+		{
+			global::Windows.UI.Xaml.Controls.ITextBlock__Impl.Stubs.put_Text(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "SelectionChanged")]
+		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_SelectionChanged(global::Windows.UI.Xaml.RoutedEventHandler handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.ITextBlock__Impl.Stubs.add_SelectionChanged(
+								this, 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "SelectionChanged")]
+		public void remove_SelectionChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.ITextBlock__Impl.Stubs.remove_SelectionChanged(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "ContextMenuOpening")]
+		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ContextMenuOpening(global::Windows.UI.Xaml.Controls.ContextMenuOpeningEventHandler handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.ITextBlock__Impl.Stubs.add_ContextMenuOpening(
+								this, 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "ContextMenuOpening")]
+		public void remove_ContextMenuOpening(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.ITextBlock__Impl.Stubs.remove_ContextMenuOpening(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "IsTextTrimmedChanged")]
+		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_IsTextTrimmedChanged(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.TextBlock, global::Windows.UI.Xaml.Controls.IsTextTrimmedChangedEventArgs> handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.ITextBlock6__Impl.Stubs.add_IsTextTrimmedChanged(
+								this, 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "IsTextTrimmedChanged")]
+		public void remove_IsTextTrimmedChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.ITextBlock6__Impl.Stubs.remove_IsTextTrimmedChanged(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public TextBlock(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IContextMenuEventArgs))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ContextMenuEventArgs : global::Windows.UI.Xaml.RoutedEventArgs, global::Windows.UI.Xaml.Controls.IContextMenuEventArgs
+	{
+		public ContextMenuEventArgs(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IIsTextTrimmedChangedEventArgs))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class IsTextTrimmedChangedEventArgs : global::System.__ComObject, global::Windows.UI.Xaml.Controls.IIsTextTrimmedChangedEventArgs
+	{
+		public IsTextTrimmedChangedEventArgs(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.ICheckBox))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe class CheckBox : global::Windows.UI.Xaml.Controls.Primitives.ToggleButton, global::Windows.UI.Xaml.Controls.ICheckBox
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public CheckBox() : 
+				base(default(global::System.IntPtr))
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_UI_Xaml_Controls__ICheckBoxFactory_CreateInstance("Windows.UI.Xaml.Controls.CheckBox");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_UI_Xaml_Controls__ICheckBoxFactory_CreateInstance(string typeName)
+		{
+			global::System.IntPtr innerInspectable;
+			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
+			if (global::System.Runtime.InteropServices.McgMarshal.IsOfType(
+								this, 
+								typeof(global::Windows.UI.Xaml.Controls.CheckBox).TypeHandle
+							))
+			{
+				global::System.IntPtr __pRetVal_NoAggregation;
+				__pRetVal_NoAggregation = global::Windows.UI.Xaml.Controls.ICheckBoxFactory__Impl.Stubs.CreateInstance(
+									global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+														typeName, 
+														typeof(global::Windows.UI.Xaml.Controls.ICheckBoxFactory).TypeHandle
+													), 
+									outerInspectable, 
+									out innerInspectable
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(innerInspectable);
+				global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal_NoAggregation);
+				return __pRetVal_NoAggregation;
+			}
+			else
+			{
+				outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
+				global::System.IntPtr __pRetVal_WithAggregation;
+				__pRetVal_WithAggregation = global::Windows.UI.Xaml.Controls.ICheckBoxFactory__Impl.Stubs.CreateInstance(
+									global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+														typeName, 
+														typeof(global::Windows.UI.Xaml.Controls.ICheckBoxFactory).TypeHandle
+													), 
+									outerInspectable, 
+									out innerInspectable
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
+				return innerInspectable;
+			}
+		}
+
+		public CheckBox(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.ISwapChainPanel))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -53735,6 +58738,9 @@ namespace Windows.UI.Xaml.Controls
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IControl
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsEnabled")]
+		void put_IsEnabled(bool value);
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Background")]
 		global::Windows.UI.Xaml.Media.Brush get_Background();
 
@@ -53992,6 +58998,284 @@ namespace Windows.UI.Xaml.Controls
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IItemsControl
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ItemsSource")]
+		void put_ItemsSource(object value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IItemsControlOverrides
+	{
+		bool IsItemItsOwnContainerOverride(object item);
+
+		global::Windows.UI.Xaml.DependencyObject GetContainerForItemOverride();
+
+		void ClearContainerForItemOverride(
+					global::Windows.UI.Xaml.DependencyObject element, 
+					object item);
+
+		void PrepareContainerForItemOverride(
+					global::Windows.UI.Xaml.DependencyObject element, 
+					object item);
+
+		void OnItemsChanged(object e);
+
+		void OnItemContainerStyleChanged(
+					global::Windows.UI.Xaml.Style oldItemContainerStyle, 
+					global::Windows.UI.Xaml.Style newItemContainerStyle);
+
+		void OnItemContainerStyleSelectorChanged(
+					global::Windows.UI.Xaml.Controls.StyleSelector oldItemContainerStyleSelector, 
+					global::Windows.UI.Xaml.Controls.StyleSelector newItemContainerStyleSelector);
+
+		void OnItemTemplateChanged(
+					global::Windows.UI.Xaml.DataTemplate oldItemTemplate, 
+					global::Windows.UI.Xaml.DataTemplate newItemTemplate);
+
+		void OnItemTemplateSelectorChanged(
+					global::Windows.UI.Xaml.Controls.DataTemplateSelector oldItemTemplateSelector, 
+					global::Windows.UI.Xaml.Controls.DataTemplateSelector newItemTemplateSelector);
+
+		void OnGroupStyleSelectorChanged(
+					global::Windows.UI.Xaml.Controls.GroupStyleSelector oldGroupStyleSelector, 
+					global::Windows.UI.Xaml.Controls.GroupStyleSelector newGroupStyleSelector);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStyleSelector
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStyleSelectorOverrides
+	{
+		global::Windows.UI.Xaml.Style SelectStyleCore(
+					object item, 
+					global::Windows.UI.Xaml.DependencyObject container);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IGroupStyleSelector
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IGroupStyleSelectorOverrides
+	{
+		global::Windows.UI.Xaml.Controls.GroupStyle SelectGroupStyleCore(
+					object group, 
+					uint level);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IGroupStyle
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Panel")]
+		global::Windows.UI.Xaml.Controls.ItemsPanelTemplate get_Panel();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Panel")]
+		void put_Panel(global::Windows.UI.Xaml.Controls.ItemsPanelTemplate value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ContainerStyle")]
+		global::Windows.UI.Xaml.Style get_ContainerStyle();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContainerStyle")]
+		void put_ContainerStyle(global::Windows.UI.Xaml.Style value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ContainerStyleSelector")]
+		global::Windows.UI.Xaml.Controls.StyleSelector get_ContainerStyleSelector();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ContainerStyleSelector")]
+		void put_ContainerStyleSelector(global::Windows.UI.Xaml.Controls.StyleSelector value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HeaderTemplate")]
+		global::Windows.UI.Xaml.DataTemplate get_HeaderTemplate();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "HeaderTemplate")]
+		void put_HeaderTemplate(global::Windows.UI.Xaml.DataTemplate value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HeaderTemplateSelector")]
+		global::Windows.UI.Xaml.Controls.DataTemplateSelector get_HeaderTemplateSelector();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "HeaderTemplateSelector")]
+		void put_HeaderTemplateSelector(global::Windows.UI.Xaml.Controls.DataTemplateSelector value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HidesIfEmpty")]
+		bool get_HidesIfEmpty();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "HidesIfEmpty")]
+		void put_HidesIfEmpty(bool value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IItemsPanelTemplate
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IGroupStyle2
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HeaderContainerStyle")]
+		global::Windows.UI.Xaml.Style get_HeaderContainerStyle();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "HeaderContainerStyle")]
+		void put_HeaderContainerStyle(global::Windows.UI.Xaml.Style value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe delegate void SelectionChangedEventHandler(
+				object sender, 
+				global::Windows.UI.Xaml.Controls.SelectionChangedEventArgs e);
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ISelectionChangedEventArgs
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IComboBoxFactory
+	{
+		global::System.IntPtr CreateInstance(
+					global::System.IntPtr baseInterface, 
+					out global::System.IntPtr innerInterface);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IComboBox
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "DropDownClosed")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DropDownClosed(global::System.EventHandler<object> handler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "DropDownClosed")]
+		void remove_DropDownClosed(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "DropDownOpened")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DropDownOpened(global::System.EventHandler<object> handler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "DropDownOpened")]
+		void remove_DropDownOpened(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IComboBox6
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "TextSubmitted")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_TextSubmitted(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.ComboBox, global::Windows.UI.Xaml.Controls.ComboBoxTextSubmittedEventArgs> handler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "TextSubmitted")]
+		void remove_TextSubmitted(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IComboBoxTextSubmittedEventArgs
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IComboBoxOverrides
+	{
+		void OnDropDownClosed(object e);
+
+		void OnDropDownOpened(object e);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ITextBlock
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Foreground")]
+		global::Windows.UI.Xaml.Media.Brush get_Foreground();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Foreground")]
+		void put_Foreground(global::Windows.UI.Xaml.Media.Brush value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "TextWrapping")]
+		global::Windows.UI.Xaml.TextWrapping get_TextWrapping();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "TextWrapping")]
+		void put_TextWrapping(global::Windows.UI.Xaml.TextWrapping value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Text")]
+		string get_Text();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Text")]
+		void put_Text(string value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "SelectionChanged")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_SelectionChanged(global::Windows.UI.Xaml.RoutedEventHandler handler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "SelectionChanged")]
+		void remove_SelectionChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "ContextMenuOpening")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ContextMenuOpening(global::Windows.UI.Xaml.Controls.ContextMenuOpeningEventHandler handler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "ContextMenuOpening")]
+		void remove_ContextMenuOpening(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe delegate void ContextMenuOpeningEventHandler(
+				object sender, 
+				global::Windows.UI.Xaml.Controls.ContextMenuEventArgs e);
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IContextMenuEventArgs
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ITextBlock6
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "IsTextTrimmedChanged")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_IsTextTrimmedChanged(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.TextBlock, global::Windows.UI.Xaml.Controls.IsTextTrimmedChangedEventArgs> handler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "IsTextTrimmedChanged")]
+		void remove_IsTextTrimmedChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IIsTextTrimmedChangedEventArgs
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ICheckBoxFactory
+	{
+		global::System.IntPtr CreateInstance(
+					global::System.IntPtr baseInterface, 
+					out global::System.IntPtr innerInterface);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ICheckBox
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface ISwapChainPanelFactory
 	{
 		global::System.IntPtr CreateInstance(
@@ -54088,6 +59372,163 @@ namespace Windows.UI.Xaml.Controls.Primitives
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.Primitives.ISelector))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe class Selector : global::Windows.UI.Xaml.Controls.ItemsControl, global::Windows.UI.Xaml.Controls.Primitives.ISelector
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "SelectedIndex")]
+		public virtual void put_SelectedIndex(int value)
+		{
+			global::Windows.UI.Xaml.Controls.Primitives.ISelector__Impl.Stubs.put_SelectedIndex(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "SelectedItem")]
+		public virtual object get_SelectedItem()
+		{
+			object __retVal = global::Windows.UI.Xaml.Controls.Primitives.ISelector__Impl.Stubs.get_SelectedItem(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "SelectionChanged")]
+		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_SelectionChanged(global::Windows.UI.Xaml.Controls.SelectionChangedEventHandler handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.Primitives.ISelector__Impl.Stubs.add_SelectionChanged(
+								this, 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "SelectionChanged")]
+		public virtual void remove_SelectionChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.Primitives.ISelector__Impl.Stubs.remove_SelectionChanged(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public Selector(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.Primitives.IToggleButton))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.Primitives.IToggleButtonOverrides))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe class ToggleButton : global::Windows.UI.Xaml.Controls.Primitives.ButtonBase, global::Windows.UI.Xaml.Controls.Primitives.IToggleButton, global::Windows.UI.Xaml.Controls.Primitives.IToggleButtonOverrides
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsChecked")]
+		public virtual global::System.Nullable<bool> get_IsChecked()
+		{
+			global::System.Nullable<bool> __retVal = global::Windows.UI.Xaml.Controls.Primitives.IToggleButton__Impl.Stubs.get_IsChecked(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsChecked")]
+		public virtual void put_IsChecked(global::System.Nullable<bool> value)
+		{
+			global::Windows.UI.Xaml.Controls.Primitives.IToggleButton__Impl.Stubs.put_IsChecked(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Checked")]
+		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Checked(global::Windows.UI.Xaml.RoutedEventHandler handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.Primitives.IToggleButton__Impl.Stubs.add_Checked(
+								this, 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Checked")]
+		public virtual void remove_Checked(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.Primitives.IToggleButton__Impl.Stubs.remove_Checked(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Unchecked")]
+		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Unchecked(global::Windows.UI.Xaml.RoutedEventHandler handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.Primitives.IToggleButton__Impl.Stubs.add_Unchecked(
+								this, 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Unchecked")]
+		public virtual void remove_Unchecked(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.Primitives.IToggleButton__Impl.Stubs.remove_Unchecked(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Indeterminate")]
+		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Indeterminate(global::Windows.UI.Xaml.RoutedEventHandler handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.Primitives.IToggleButton__Impl.Stubs.add_Indeterminate(
+								this, 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Indeterminate")]
+		public virtual void remove_Indeterminate(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.Primitives.IToggleButton__Impl.Stubs.remove_Indeterminate(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		void global::Windows.UI.Xaml.Controls.Primitives.IToggleButtonOverrides.OnToggle()
+		{
+			this.OnToggle();
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		protected virtual void OnToggle()
+		{
+			global::Windows.UI.Xaml.Controls.Primitives.IToggleButtonOverrides__Impl.Stubs.OnToggle(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public ToggleButton(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IButtonBase
@@ -54097,6 +59538,59 @@ namespace Windows.UI.Xaml.Controls.Primitives
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Click")]
 		void remove_Click(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ISelector
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "SelectedIndex")]
+		void put_SelectedIndex(int value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "SelectedItem")]
+		object get_SelectedItem();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "SelectionChanged")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_SelectionChanged(global::Windows.UI.Xaml.Controls.SelectionChangedEventHandler handler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "SelectionChanged")]
+		void remove_SelectionChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IToggleButton
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsChecked")]
+		global::System.Nullable<bool> get_IsChecked();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsChecked")]
+		void put_IsChecked(global::System.Nullable<bool> value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Checked")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Checked(global::Windows.UI.Xaml.RoutedEventHandler handler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Checked")]
+		void remove_Checked(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Unchecked")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Unchecked(global::Windows.UI.Xaml.RoutedEventHandler handler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Unchecked")]
+		void remove_Unchecked(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Indeterminate")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Indeterminate(global::Windows.UI.Xaml.RoutedEventHandler handler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Indeterminate")]
+		void remove_Indeterminate(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IToggleButtonOverrides
+	{
+		void OnToggle();
 	}
 
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
@@ -54880,6 +60374,49 @@ namespace Windows.UI.Xaml.Media
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.ISolidColorBrush))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class SolidColorBrush : global::Windows.UI.Xaml.Media.Brush, global::Windows.UI.Xaml.Media.ISolidColorBrush
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public SolidColorBrush(global::Windows.UI.Color color) : 
+				base(default(global::System.IntPtr))
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_UI_Xaml_Media__ISolidColorBrushFactory_CreateInstanceWithColor(
+								"Windows.UI.Xaml.Media.SolidColorBrush", 
+								color
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_UI_Xaml_Media__ISolidColorBrushFactory_CreateInstanceWithColor(
+					string typeName, 
+					global::Windows.UI.Color color)
+		{
+			global::System.IntPtr __pRetVal;
+			__pRetVal = global::Windows.UI.Xaml.Media.ISolidColorBrushFactory__Impl.Stubs.CreateInstanceWithColor(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.UI.Xaml.Media.ISolidColorBrushFactory).TypeHandle
+												), 
+								color
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
+			return __pRetVal;
+		}
+
+		public SolidColorBrush(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IBrush
@@ -54898,6 +60435,19 @@ namespace Windows.UI.Xaml.Media
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IImageSource
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ISolidColorBrushFactory
+	{
+		global::System.IntPtr CreateInstanceWithColor(global::Windows.UI.Color color);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ISolidColorBrush
 	{
 	}
 }

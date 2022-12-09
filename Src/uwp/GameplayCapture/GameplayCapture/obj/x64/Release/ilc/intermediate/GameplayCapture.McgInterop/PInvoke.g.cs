@@ -181,6 +181,2823 @@ namespace __Interop
 	}
 
 	/// <summary>
+	/// P/Invoke class for module 'kernel32.dll'
+	/// </summary>
+	public unsafe static partial class kernel32_dll
+	{
+		// Signature, GetProcAddress, [fwd] [return] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00041C30] string__unsigned char *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Utils.NativeMethods", "GetProcAddress")]
+		public static global::System.IntPtr GetProcAddress(
+					global::System.IntPtr hModule, 
+					string procedureName)
+		{
+			// Setup
+			byte* unsafe_procedureName = default(byte*);
+			global::System.IntPtr unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_procedureName = global::System.Runtime.InteropServices.McgMarshal.StringToAnsiString(procedureName, true, false);
+				// Call to native method
+				unsafe___value = global::__Interop.kernel32_dll_PInvokes.GetProcAddress(
+									hModule, 
+									unsafe_procedureName
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_procedureName);
+			}
+		}
+
+		// Signature, FreeLibrary, [fwd] [return] [EETypeRva:0x00040848] bool__System.Boolean, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Utils.NativeMethods", "FreeLibrary")]
+		public static bool FreeLibrary(global::System.IntPtr hModule)
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.kernel32_dll_PInvokes.FreeLibrary(hModule);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value != 0;
+		}
+
+		// Signature, LoadLibraryEx, [fwd] [return] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00041C30] string__unsigned char *, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00042D60] SharpDX_DXGI_Kernel32_LoadLibraryFlags__SharpDX_DXGI__Kernel32_LoadLibraryFlags__SharpDX_DXGI, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1", "SharpDX.DXGI.Kernel32", "LoadLibraryEx")]
+		public static global::System.IntPtr LoadLibraryEx(
+					string lpFileName, 
+					global::System.IntPtr hReservedNull, 
+					global::SharpDX_DXGI.Kernel32_LoadLibraryFlags__SharpDX_DXGI dwFlags)
+		{
+			// Setup
+			byte* unsafe_lpFileName = default(byte*);
+			global::System.IntPtr unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_lpFileName = global::System.Runtime.InteropServices.McgMarshal.StringToAnsiString(lpFileName, true, false);
+				global::System.Runtime.InteropServices.McgMarshal.ClearLastWin32Error();
+				// Call to native method
+				unsafe___value = global::__Interop.kernel32_dll_PInvokes.LoadLibraryEx(
+									unsafe_lpFileName, 
+									hReservedNull, 
+									dwFlags
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				global::System.Runtime.InteropServices.McgMarshal.SaveLastWin32Error();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpFileName);
+			}
+		}
+
+		// Signature, GetModuleHandle, [fwd] [return] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00041C30] string__unsigned char *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1", "SharpDX.DXGI.Kernel32", "GetModuleHandle")]
+		public static global::System.IntPtr GetModuleHandle(string lpModuleName)
+		{
+			// Setup
+			byte* unsafe_lpModuleName = default(byte*);
+			global::System.IntPtr unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_lpModuleName = global::System.Runtime.InteropServices.McgMarshal.StringToAnsiString(lpModuleName, true, false);
+				// Call to native method
+				unsafe___value = global::__Interop.kernel32_dll_PInvokes.GetModuleHandle(unsafe_lpModuleName);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpModuleName);
+			}
+		}
+
+		// Signature, GetProcAddress__0, [fwd] [return] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00041C30] string__unsigned char *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1", "SharpDX.DXGI.Kernel32", "GetProcAddress")]
+		public static global::System.IntPtr GetProcAddress__0(
+					global::System.IntPtr hModule, 
+					string procName)
+		{
+			// Setup
+			byte* unsafe_procName = default(byte*);
+			global::System.IntPtr unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_procName = global::System.Runtime.InteropServices.McgMarshal.StringToAnsiString(procName, true, false);
+				// Call to native method
+				unsafe___value = global::__Interop.kernel32_dll_PInvokes.GetProcAddress__0(
+									hModule, 
+									unsafe_procName
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_procName);
+			}
+		}
+
+		// Signature, GetCPInfoExW, [fwd] [return] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000419B0] uint__unsigned int, [fwd] [in] [EETypeRva:0x000419B0] uint__unsigned int, [fwd] [in] [EETypeRva:0x000419B0] __Interop_Kernel32_CPINFOEXW__System_Text_Encoding_CodePages___ptr__Interop_Kernel32_CPINFOEXW__System_Text_Encoding_CodePages *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("System.Text.Encoding.CodePages, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "Interop+Kernel32", "GetCPInfoExW")]
+		public static int GetCPInfoExW(
+					uint CodePage, 
+					uint dwFlags, 
+					global::_.Interop_Kernel32_CPINFOEXW__System_Text_Encoding_CodePages* lpCPInfoEx)
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.kernel32_dll_PInvokes.GetCPInfoExW(
+								CodePage, 
+								dwFlags, 
+								((global::_.Interop_Kernel32_CPINFOEXW__System_Text_Encoding_CodePages*)lpCPInfoEx)
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+	}
+
+	/// <summary>
+	/// P/Invoke class for module 'winmm.dll'
+	/// </summary>
+	public unsafe static partial class winmm_dll
+	{
+		// Signature, mixerGetNumDevs, [fwd] [return] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Mixer.MixerInterop", "mixerGetNumDevs")]
+		public static int mixerGetNumDevs()
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.mixerGetNumDevs();
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, mixerOpen, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Mixer_MixerFlags__NAudio__MixerFlags__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Mixer.MixerInterop", "mixerOpen")]
+		public static global::NAudio.MmResult__NAudio mixerOpen(
+					out global::System.IntPtr hMixer, 
+					int uMxId, 
+					global::System.IntPtr dwCallback, 
+					global::System.IntPtr dwInstance, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwOpenFlags)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (global::System.IntPtr* pinned_hMixer = &(hMixer))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.mixerOpen(
+									pinned_hMixer, 
+									uMxId, 
+									dwCallback, 
+									dwInstance, 
+									dwOpenFlags
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, mixerClose, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Mixer.MixerInterop", "mixerClose")]
+		public static global::NAudio.MmResult__NAudio mixerClose(global::System.IntPtr hMixer)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.mixerClose(hMixer);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, mixerGetControlDetails, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x0004314C] NAudio_Mixer_MixerInterop_MIXERCONTROLDETAILS__NAudio__NAudio_Mixer__MixerInterop_MIXERCONTROLDETAILS__NAudio, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Mixer_MixerFlags__NAudio__MixerFlags__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Mixer.MixerInterop", "mixerGetControlDetails")]
+		public static global::NAudio.MmResult__NAudio mixerGetControlDetails(
+					global::System.IntPtr hMixer, 
+					ref global::NAudio_Mixer.MixerInterop_MIXERCONTROLDETAILS__NAudio mixerControlDetails, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwDetailsFlags)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (global::NAudio_Mixer.MixerInterop_MIXERCONTROLDETAILS__NAudio* pinned_mixerControlDetails = &(mixerControlDetails))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.mixerGetControlDetails(
+									hMixer, 
+									pinned_mixerControlDetails, 
+									dwDetailsFlags
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, mixerGetDevCaps, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Mixer_MixerInterop_MIXERCAPS__NAudio__NAudio_Mixer__MixerInterop_MIXERCAPS__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Mixer.MixerInterop", "mixerGetDevCaps")]
+		public static global::NAudio.MmResult__NAudio mixerGetDevCaps(
+					global::System.IntPtr nMixerID, 
+					ref global::NAudio_Mixer.MixerInterop_MIXERCAPS__NAudio mixerCaps, 
+					int mixerCapsSize)
+		{
+			// Setup
+			global::NAudio_Mixer.MixerInterop_MIXERCAPS__NAudio__Impl.UnsafeType unsafe_mixerCaps = default(global::NAudio_Mixer.MixerInterop_MIXERCAPS__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			global::NAudio_Mixer.MixerInterop_MIXERCAPS__NAudio__Impl.Marshal__SafeToUnsafe(
+								ref mixerCaps, 
+								out unsafe_mixerCaps
+							);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.mixerGetDevCaps(
+								nMixerID, 
+								&(unsafe_mixerCaps), 
+								mixerCapsSize
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Mixer.MixerInterop_MIXERCAPS__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_mixerCaps, 
+								out mixerCaps
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, mixerGetID, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Mixer_MixerFlags__NAudio__MixerFlags__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Mixer.MixerInterop", "mixerGetID")]
+		public static global::NAudio.MmResult__NAudio mixerGetID(
+					global::System.IntPtr hMixer, 
+					out int mixerID, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwMixerIDFlags)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (int* pinned_mixerID = &(mixerID))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.mixerGetID(
+									hMixer, 
+									pinned_mixerID, 
+									dwMixerIDFlags
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, mixerGetLineControls, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x0004314C] NAudio_Mixer_MixerInterop_MIXERLINECONTROLS__NAudio__NAudio_Mixer__MixerInterop_MIXERLINECONTROLS__NAudio, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Mixer_MixerFlags__NAudio__MixerFlags__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Mixer.MixerInterop", "mixerGetLineControls")]
+		public static global::NAudio.MmResult__NAudio mixerGetLineControls(
+					global::System.IntPtr hMixer, 
+					ref global::NAudio_Mixer.MixerInterop_MIXERLINECONTROLS__NAudio mixerLineControls, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwControlFlags)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (global::NAudio_Mixer.MixerInterop_MIXERLINECONTROLS__NAudio* pinned_mixerLineControls = &(mixerLineControls))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.mixerGetLineControls(
+									hMixer, 
+									pinned_mixerLineControls, 
+									dwControlFlags
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, mixerGetLineInfo, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Mixer_MixerInterop_MIXERLINE__NAudio__NAudio_Mixer__MixerInterop_MIXERLINE__NAudio, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Mixer_MixerFlags__NAudio__MixerFlags__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Mixer.MixerInterop", "mixerGetLineInfo")]
+		public static global::NAudio.MmResult__NAudio mixerGetLineInfo(
+					global::System.IntPtr hMixer, 
+					ref global::NAudio_Mixer.MixerInterop_MIXERLINE__NAudio mixerLine, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwInfoFlags)
+		{
+			// Setup
+			global::NAudio_Mixer.MixerInterop_MIXERLINE__NAudio__Impl.UnsafeType unsafe_mixerLine = default(global::NAudio_Mixer.MixerInterop_MIXERLINE__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			global::NAudio_Mixer.MixerInterop_MIXERLINE__NAudio__Impl.Marshal__SafeToUnsafe(
+								ref mixerLine, 
+								out unsafe_mixerLine
+							);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.mixerGetLineInfo(
+								hMixer, 
+								&(unsafe_mixerLine), 
+								dwInfoFlags
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Mixer.MixerInterop_MIXERLINE__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_mixerLine, 
+								out mixerLine
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, mixerMessage, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] uint__unsigned int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Mixer.MixerInterop", "mixerMessage")]
+		public static global::NAudio.MmResult__NAudio mixerMessage(
+					global::System.IntPtr hMixer, 
+					uint nMessage, 
+					global::System.IntPtr dwParam1, 
+					global::System.IntPtr dwParam2)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.mixerMessage(
+								hMixer, 
+								nMessage, 
+								dwParam1, 
+								dwParam2
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, mixerSetControlDetails, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x0004314C] NAudio_Mixer_MixerInterop_MIXERCONTROLDETAILS__NAudio__NAudio_Mixer__MixerInterop_MIXERCONTROLDETAILS__NAudio, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Mixer_MixerFlags__NAudio__MixerFlags__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Mixer.MixerInterop", "mixerSetControlDetails")]
+		public static global::NAudio.MmResult__NAudio mixerSetControlDetails(
+					global::System.IntPtr hMixer, 
+					ref global::NAudio_Mixer.MixerInterop_MIXERCONTROLDETAILS__NAudio mixerControlDetails, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwDetailsFlags)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (global::NAudio_Mixer.MixerInterop_MIXERCONTROLDETAILS__NAudio* pinned_mixerControlDetails = &(mixerControlDetails))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.mixerSetControlDetails(
+									hMixer, 
+									pinned_mixerControlDetails, 
+									dwDetailsFlags
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiConnect, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiConnect")]
+		public static global::NAudio.MmResult__NAudio midiConnect(
+					global::System.IntPtr hMidiIn, 
+					global::System.IntPtr hMidiOut, 
+					global::System.IntPtr pReserved)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiConnect(
+								hMidiIn, 
+								hMidiOut, 
+								pReserved
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiDisconnect, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiDisconnect")]
+		public static global::NAudio.MmResult__NAudio midiDisconnect(
+					global::System.IntPtr hMidiIn, 
+					global::System.IntPtr hMidiOut, 
+					global::System.IntPtr pReserved)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiDisconnect(
+								hMidiIn, 
+								hMidiOut, 
+								pReserved
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInAddBuffer, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Midi_MidiInterop_MIDIHDR__NAudio__NAudio_Midi__MidiInterop_MIDIHDR__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInAddBuffer")]
+		public static global::NAudio.MmResult__NAudio midiInAddBuffer(
+					global::System.IntPtr hMidiIn, 
+					ref global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio lpMidiInHdr, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType unsafe_lpMidiInHdr = default(global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__SafeToUnsafe(
+								ref lpMidiInHdr, 
+								out unsafe_lpMidiInHdr
+							);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInAddBuffer(
+								hMidiIn, 
+								&(unsafe_lpMidiInHdr), 
+								uSize
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_lpMidiInHdr, 
+								out lpMidiInHdr
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInClose, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInClose")]
+		public static global::NAudio.MmResult__NAudio midiInClose(global::System.IntPtr hMidiIn)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInClose(hMidiIn);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInGetDevCaps, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Midi_MidiInCapabilities__NAudio__NAudio_Midi__MidiInCapabilities__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInGetDevCaps")]
+		public static global::NAudio.MmResult__NAudio midiInGetDevCaps(
+					global::System.IntPtr deviceId, 
+					out global::NAudio_Midi.MidiInCapabilities__NAudio capabilities, 
+					int size)
+		{
+			// Setup
+			global::NAudio_Midi.MidiInCapabilities__NAudio__Impl.UnsafeType unsafe_capabilities = default(global::NAudio_Midi.MidiInCapabilities__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			unsafe_capabilities = default(global::NAudio_Midi.MidiInCapabilities__NAudio__Impl.UnsafeType);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInGetDevCaps(
+								deviceId, 
+								&(unsafe_capabilities), 
+								size
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Midi.MidiInCapabilities__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_capabilities, 
+								out capabilities
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInGetErrorText, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x00041C30] string__unsigned char *, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInGetErrorText")]
+		public static global::NAudio.MmResult__NAudio midiInGetErrorText(
+					int err, 
+					string lpText, 
+					int uSize)
+		{
+			// Setup
+			byte* unsafe_lpText = default(byte*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_lpText = global::System.Runtime.InteropServices.McgMarshal.StringToAnsiString(lpText, true, false);
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInGetErrorText(
+									err, 
+									unsafe_lpText, 
+									uSize
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpText);
+			}
+		}
+
+		// Signature, midiInGetID, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInGetID")]
+		public static global::NAudio.MmResult__NAudio midiInGetID(
+					global::System.IntPtr hMidiIn, 
+					out int lpuDeviceId)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (int* pinned_lpuDeviceId = &(lpuDeviceId))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInGetID(
+									hMidiIn, 
+									pinned_lpuDeviceId
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInGetNumDevs, [fwd] [return] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInGetNumDevs")]
+		public static int midiInGetNumDevs()
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInGetNumDevs();
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInMessage, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInMessage")]
+		public static global::NAudio.MmResult__NAudio midiInMessage(
+					global::System.IntPtr hMidiIn, 
+					int msg, 
+					global::System.IntPtr dw1, 
+					global::System.IntPtr dw2)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInMessage(
+								hMidiIn, 
+								msg, 
+								dw1, 
+								dw2
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInOpen, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00041EA8] NAudio_Midi_MidiInterop_MidiInCallback__NAudio__NAudio_Midi__MidiInterop_MidiInCallback__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInOpen")]
+		public static global::NAudio.MmResult__NAudio midiInOpen(
+					out global::System.IntPtr hMidiIn, 
+					global::System.IntPtr uDeviceID, 
+					global::NAudio.Midi.MidiInterop_MidiInCallback__NAudio callback, 
+					global::System.IntPtr dwInstance, 
+					int dwFlags)
+		{
+			// Setup
+			void* unsafe_callback = default(void*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				fixed (global::System.IntPtr* pinned_hMidiIn = &(hMidiIn))
+				{
+					unsafe_callback = (void*)global::System.Runtime.InteropServices.McgMarshal.GetStubForPInvokeDelegate(
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.Midi.MidiInterop+MidiInCallback,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null"), 
+										callback
+									);
+					// Call to native method
+					unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInOpen(
+										pinned_hMidiIn, 
+										uDeviceID, 
+										unsafe_callback, 
+										dwInstance, 
+										dwFlags
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				}
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.GC.KeepAlive(callback);
+			}
+		}
+
+		// Signature, midiInOpenWindow, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInOpenWindow")]
+		public static global::NAudio.MmResult__NAudio midiInOpenWindow(
+					out global::System.IntPtr hMidiIn, 
+					global::System.IntPtr uDeviceID, 
+					global::System.IntPtr callbackWindowHandle, 
+					global::System.IntPtr dwInstance, 
+					int dwFlags)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (global::System.IntPtr* pinned_hMidiIn = &(hMidiIn))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInOpenWindow(
+									pinned_hMidiIn, 
+									uDeviceID, 
+									callbackWindowHandle, 
+									dwInstance, 
+									dwFlags
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInPrepareHeader, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Midi_MidiInterop_MIDIHDR__NAudio__NAudio_Midi__MidiInterop_MIDIHDR__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInPrepareHeader")]
+		public static global::NAudio.MmResult__NAudio midiInPrepareHeader(
+					global::System.IntPtr hMidiIn, 
+					ref global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio lpMidiInHdr, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType unsafe_lpMidiInHdr = default(global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__SafeToUnsafe(
+								ref lpMidiInHdr, 
+								out unsafe_lpMidiInHdr
+							);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInPrepareHeader(
+								hMidiIn, 
+								&(unsafe_lpMidiInHdr), 
+								uSize
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_lpMidiInHdr, 
+								out lpMidiInHdr
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInReset, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInReset")]
+		public static global::NAudio.MmResult__NAudio midiInReset(global::System.IntPtr hMidiIn)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInReset(hMidiIn);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInStart, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInStart")]
+		public static global::NAudio.MmResult__NAudio midiInStart(global::System.IntPtr hMidiIn)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInStart(hMidiIn);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInStop, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInStop")]
+		public static global::NAudio.MmResult__NAudio midiInStop(global::System.IntPtr hMidiIn)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInStop(hMidiIn);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiInUnprepareHeader, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Midi_MidiInterop_MIDIHDR__NAudio__NAudio_Midi__MidiInterop_MIDIHDR__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiInUnprepareHeader")]
+		public static global::NAudio.MmResult__NAudio midiInUnprepareHeader(
+					global::System.IntPtr hMidiIn, 
+					ref global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio lpMidiInHdr, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType unsafe_lpMidiInHdr = default(global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__SafeToUnsafe(
+								ref lpMidiInHdr, 
+								out unsafe_lpMidiInHdr
+							);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiInUnprepareHeader(
+								hMidiIn, 
+								&(unsafe_lpMidiInHdr), 
+								uSize
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_lpMidiInHdr, 
+								out lpMidiInHdr
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutCacheDrumPatches, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutCacheDrumPatches")]
+		public static global::NAudio.MmResult__NAudio midiOutCacheDrumPatches(
+					global::System.IntPtr hMidiOut, 
+					int uPatch, 
+					global::System.IntPtr lpKeyArray, 
+					int uFlags)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutCacheDrumPatches(
+								hMidiOut, 
+								uPatch, 
+								lpKeyArray, 
+								uFlags
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutCachePatches, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutCachePatches")]
+		public static global::NAudio.MmResult__NAudio midiOutCachePatches(
+					global::System.IntPtr hMidiOut, 
+					int uBank, 
+					global::System.IntPtr lpPatchArray, 
+					int uFlags)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutCachePatches(
+								hMidiOut, 
+								uBank, 
+								lpPatchArray, 
+								uFlags
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutClose, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutClose")]
+		public static global::NAudio.MmResult__NAudio midiOutClose(global::System.IntPtr hMidiOut)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutClose(hMidiOut);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutGetDevCaps, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Midi_MidiOutCapabilities__NAudio__NAudio_Midi__MidiOutCapabilities__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutGetDevCaps")]
+		public static global::NAudio.MmResult__NAudio midiOutGetDevCaps(
+					global::System.IntPtr deviceNumber, 
+					out global::NAudio_Midi.MidiOutCapabilities__NAudio caps, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Midi.MidiOutCapabilities__NAudio__Impl.UnsafeType unsafe_caps = default(global::NAudio_Midi.MidiOutCapabilities__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			unsafe_caps = default(global::NAudio_Midi.MidiOutCapabilities__NAudio__Impl.UnsafeType);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutGetDevCaps(
+								deviceNumber, 
+								&(unsafe_caps), 
+								uSize
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Midi.MidiOutCapabilities__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_caps, 
+								out caps
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutGetErrorText, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00041C30] string__unsigned char *, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutGetErrorText")]
+		public static global::NAudio.MmResult__NAudio midiOutGetErrorText(
+					global::System.IntPtr err, 
+					string lpText, 
+					int uSize)
+		{
+			// Setup
+			byte* unsafe_lpText = default(byte*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_lpText = global::System.Runtime.InteropServices.McgMarshal.StringToAnsiString(lpText, true, false);
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutGetErrorText(
+									err, 
+									unsafe_lpText, 
+									uSize
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpText);
+			}
+		}
+
+		// Signature, midiOutGetID, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutGetID")]
+		public static global::NAudio.MmResult__NAudio midiOutGetID(
+					global::System.IntPtr hMidiOut, 
+					out int lpuDeviceID)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (int* pinned_lpuDeviceID = &(lpuDeviceID))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutGetID(
+									hMidiOut, 
+									pinned_lpuDeviceID
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutGetNumDevs, [fwd] [return] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutGetNumDevs")]
+		public static int midiOutGetNumDevs()
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutGetNumDevs();
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutGetVolume, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutGetVolume")]
+		public static global::NAudio.MmResult__NAudio midiOutGetVolume(
+					global::System.IntPtr uDeviceID, 
+					ref int lpdwVolume)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (int* pinned_lpdwVolume = &(lpdwVolume))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutGetVolume(
+									uDeviceID, 
+									pinned_lpdwVolume
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutLongMsg, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Midi_MidiInterop_MIDIHDR__NAudio__NAudio_Midi__MidiInterop_MIDIHDR__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutLongMsg")]
+		public static global::NAudio.MmResult__NAudio midiOutLongMsg(
+					global::System.IntPtr hMidiOut, 
+					ref global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio lpMidiOutHdr, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType unsafe_lpMidiOutHdr = default(global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__SafeToUnsafe(
+								ref lpMidiOutHdr, 
+								out unsafe_lpMidiOutHdr
+							);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutLongMsg(
+								hMidiOut, 
+								&(unsafe_lpMidiOutHdr), 
+								uSize
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_lpMidiOutHdr, 
+								out lpMidiOutHdr
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutMessage, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutMessage")]
+		public static global::NAudio.MmResult__NAudio midiOutMessage(
+					global::System.IntPtr hMidiOut, 
+					int msg, 
+					global::System.IntPtr dw1, 
+					global::System.IntPtr dw2)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutMessage(
+								hMidiOut, 
+								msg, 
+								dw1, 
+								dw2
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutOpen, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00041EA8] NAudio_Midi_MidiInterop_MidiOutCallback__NAudio__NAudio_Midi__MidiInterop_MidiOutCallback__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutOpen")]
+		public static global::NAudio.MmResult__NAudio midiOutOpen(
+					out global::System.IntPtr lphMidiOut, 
+					global::System.IntPtr uDeviceID, 
+					global::NAudio.Midi.MidiInterop_MidiOutCallback__NAudio dwCallback, 
+					global::System.IntPtr dwInstance, 
+					int dwFlags)
+		{
+			// Setup
+			void* unsafe_dwCallback = default(void*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				fixed (global::System.IntPtr* pinned_lphMidiOut = &(lphMidiOut))
+				{
+					unsafe_dwCallback = (void*)global::System.Runtime.InteropServices.McgMarshal.GetStubForPInvokeDelegate(
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.Midi.MidiInterop+MidiOutCallback,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null"), 
+										dwCallback
+									);
+					// Call to native method
+					unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutOpen(
+										pinned_lphMidiOut, 
+										uDeviceID, 
+										unsafe_dwCallback, 
+										dwInstance, 
+										dwFlags
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				}
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.GC.KeepAlive(dwCallback);
+			}
+		}
+
+		// Signature, midiOutPrepareHeader, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Midi_MidiInterop_MIDIHDR__NAudio__NAudio_Midi__MidiInterop_MIDIHDR__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutPrepareHeader")]
+		public static global::NAudio.MmResult__NAudio midiOutPrepareHeader(
+					global::System.IntPtr hMidiOut, 
+					ref global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio lpMidiOutHdr, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType unsafe_lpMidiOutHdr = default(global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__SafeToUnsafe(
+								ref lpMidiOutHdr, 
+								out unsafe_lpMidiOutHdr
+							);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutPrepareHeader(
+								hMidiOut, 
+								&(unsafe_lpMidiOutHdr), 
+								uSize
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_lpMidiOutHdr, 
+								out lpMidiOutHdr
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutReset, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutReset")]
+		public static global::NAudio.MmResult__NAudio midiOutReset(global::System.IntPtr hMidiOut)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutReset(hMidiOut);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutSetVolume, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutSetVolume")]
+		public static global::NAudio.MmResult__NAudio midiOutSetVolume(
+					global::System.IntPtr hMidiOut, 
+					int dwVolume)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutSetVolume(
+								hMidiOut, 
+								dwVolume
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutShortMsg, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutShortMsg")]
+		public static global::NAudio.MmResult__NAudio midiOutShortMsg(
+					global::System.IntPtr hMidiOut, 
+					int dwMsg)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutShortMsg(
+								hMidiOut, 
+								dwMsg
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiOutUnprepareHeader, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Midi_MidiInterop_MIDIHDR__NAudio__NAudio_Midi__MidiInterop_MIDIHDR__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiOutUnprepareHeader")]
+		public static global::NAudio.MmResult__NAudio midiOutUnprepareHeader(
+					global::System.IntPtr hMidiOut, 
+					ref global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio lpMidiOutHdr, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType unsafe_lpMidiOutHdr = default(global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__SafeToUnsafe(
+								ref lpMidiOutHdr, 
+								out unsafe_lpMidiOutHdr
+							);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiOutUnprepareHeader(
+								hMidiOut, 
+								&(unsafe_lpMidiOutHdr), 
+								uSize
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_lpMidiOutHdr, 
+								out lpMidiOutHdr
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiStreamClose, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiStreamClose")]
+		public static global::NAudio.MmResult__NAudio midiStreamClose(global::System.IntPtr hMidiStream)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiStreamClose(hMidiStream);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiStreamOpen, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiStreamOpen")]
+		public static global::NAudio.MmResult__NAudio midiStreamOpen(
+					out global::System.IntPtr hMidiStream, 
+					global::System.IntPtr puDeviceID, 
+					int cMidi, 
+					global::System.IntPtr dwCallback, 
+					global::System.IntPtr dwInstance, 
+					int fdwOpen)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (global::System.IntPtr* pinned_hMidiStream = &(hMidiStream))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.midiStreamOpen(
+									pinned_hMidiStream, 
+									puDeviceID, 
+									cMidi, 
+									dwCallback, 
+									dwInstance, 
+									fdwOpen
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiStreamOut, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Midi_MidiInterop_MIDIHDR__NAudio__NAudio_Midi__MidiInterop_MIDIHDR__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiStreamOut")]
+		public static global::NAudio.MmResult__NAudio midiStreamOut(
+					global::System.IntPtr hMidiStream, 
+					ref global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio pmh, 
+					int cbmh)
+		{
+			// Setup
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType unsafe_pmh = default(global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__SafeToUnsafe(
+								ref pmh, 
+								out unsafe_pmh
+							);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiStreamOut(
+								hMidiStream, 
+								&(unsafe_pmh), 
+								cbmh
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_pmh, 
+								out pmh
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiStreamPause, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiStreamPause")]
+		public static global::NAudio.MmResult__NAudio midiStreamPause(global::System.IntPtr hMidiStream)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiStreamPause(hMidiStream);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiStreamPosition, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x0004314C] NAudio_Midi_MidiInterop_MMTIME__NAudio__NAudio_Midi__MidiInterop_MMTIME__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiStreamPosition")]
+		public static global::NAudio.MmResult__NAudio midiStreamPosition(
+					global::System.IntPtr hMidiStream, 
+					ref global::NAudio_Midi.MidiInterop_MMTIME__NAudio lpmmt, 
+					int cbmmt)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (global::NAudio_Midi.MidiInterop_MMTIME__NAudio* pinned_lpmmt = &(lpmmt))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.midiStreamPosition(
+									hMidiStream, 
+									pinned_lpmmt, 
+									cbmmt
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiStreamProperty, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiStreamProperty")]
+		public static global::NAudio.MmResult__NAudio midiStreamProperty(
+					global::System.IntPtr hMidiStream, 
+					global::System.IntPtr lppropdata, 
+					int dwProperty)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiStreamProperty(
+								hMidiStream, 
+								lppropdata, 
+								dwProperty
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiStreamRestart, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiStreamRestart")]
+		public static global::NAudio.MmResult__NAudio midiStreamRestart(global::System.IntPtr hMidiStream)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiStreamRestart(hMidiStream);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, midiStreamStop, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Midi.MidiInterop", "midiStreamStop")]
+		public static global::NAudio.MmResult__NAudio midiStreamStop(global::System.IntPtr hMidiStream)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.midiStreamStop(hMidiStream);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, mmioStringToFOURCC, [fwd] [return] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x00041C30] string__unsigned char *, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "mmioStringToFOURCC")]
+		public static int mmioStringToFOURCC(
+					string s, 
+					int flags)
+		{
+			// Setup
+			byte* unsafe_s = default(byte*);
+			int unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_s = global::System.Runtime.InteropServices.McgMarshal.StringToAnsiString(s, true, false);
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.mmioStringToFOURCC(
+									unsafe_s, 
+									flags
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_s);
+			}
+		}
+
+		// Signature, waveOutGetNumDevs, [fwd] [return] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutGetNumDevs")]
+		public static int waveOutGetNumDevs()
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutGetNumDevs();
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveOutPrepareHeader, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00043084] NAudio_Wave_WaveHeader__NAudio__NAudio_Wave__WaveHeader__NAudio *, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutPrepareHeader")]
+		public static global::NAudio.MmResult__NAudio waveOutPrepareHeader(
+					global::System.IntPtr hWaveOut, 
+					global::NAudio_Wave.WaveHeader__NAudio lpWaveOutHdr, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* unsafe_lpWaveOutHdr = default(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_lpWaveOutHdr = (global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(sizeof(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType)));
+				global::NAudio_Wave.WaveHeader__NAudio__Impl.Marshal__SafeToUnsafe(
+									lpWaveOutHdr, 
+									out (*(unsafe_lpWaveOutHdr))
+								);
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutPrepareHeader(
+									hWaveOut, 
+									unsafe_lpWaveOutHdr, 
+									uSize
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpWaveOutHdr);
+			}
+		}
+
+		// Signature, waveOutUnprepareHeader, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00043084] NAudio_Wave_WaveHeader__NAudio__NAudio_Wave__WaveHeader__NAudio *, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutUnprepareHeader")]
+		public static global::NAudio.MmResult__NAudio waveOutUnprepareHeader(
+					global::System.IntPtr hWaveOut, 
+					global::NAudio_Wave.WaveHeader__NAudio lpWaveOutHdr, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* unsafe_lpWaveOutHdr = default(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_lpWaveOutHdr = (global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(sizeof(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType)));
+				global::NAudio_Wave.WaveHeader__NAudio__Impl.Marshal__SafeToUnsafe(
+									lpWaveOutHdr, 
+									out (*(unsafe_lpWaveOutHdr))
+								);
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutUnprepareHeader(
+									hWaveOut, 
+									unsafe_lpWaveOutHdr, 
+									uSize
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpWaveOutHdr);
+			}
+		}
+
+		// Signature, waveOutWrite, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00043084] NAudio_Wave_WaveHeader__NAudio__NAudio_Wave__WaveHeader__NAudio *, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutWrite")]
+		public static global::NAudio.MmResult__NAudio waveOutWrite(
+					global::System.IntPtr hWaveOut, 
+					global::NAudio_Wave.WaveHeader__NAudio lpWaveOutHdr, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* unsafe_lpWaveOutHdr = default(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_lpWaveOutHdr = (global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(sizeof(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType)));
+				global::NAudio_Wave.WaveHeader__NAudio__Impl.Marshal__SafeToUnsafe(
+									lpWaveOutHdr, 
+									out (*(unsafe_lpWaveOutHdr))
+								);
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutWrite(
+									hWaveOut, 
+									unsafe_lpWaveOutHdr, 
+									uSize
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpWaveOutHdr);
+			}
+		}
+
+		// Signature, waveOutOpen, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00043084] NAudio_Wave_WaveFormat__NAudio__NAudio_Wave__WaveFormat__NAudio *, [fwd] [in] [EETypeRva:0x00041EA8] NAudio_Wave_WaveInterop_WaveCallback__NAudio__NAudio_Wave__WaveInterop_WaveCallback__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Wave_WaveInterop_WaveInOutOpenFlags__NAudio__WaveInterop_WaveInOutOpenFlags__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutOpen")]
+		public static global::NAudio.MmResult__NAudio waveOutOpen(
+					out global::System.IntPtr hWaveOut, 
+					global::System.IntPtr uDeviceID, 
+					global::NAudio_Wave.WaveFormat__NAudio lpFormat, 
+					global::NAudio.Wave.WaveInterop_WaveCallback__NAudio dwCallback, 
+					global::System.IntPtr dwInstance, 
+					global::NAudio_Wave.WaveInterop_WaveInOutOpenFlags__NAudio dwFlags)
+		{
+			// Setup
+			global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType* unsafe_lpFormat = default(global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType*);
+			void* unsafe_dwCallback = default(void*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				fixed (global::System.IntPtr* pinned_hWaveOut = &(hWaveOut))
+				{
+					unsafe_lpFormat = (global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(sizeof(global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType)));
+					global::NAudio_Wave.WaveFormat__NAudio__Impl.Marshal__SafeToUnsafe(
+										lpFormat, 
+										out (*(unsafe_lpFormat))
+									);
+					unsafe_dwCallback = (void*)global::System.Runtime.InteropServices.McgMarshal.GetStubForPInvokeDelegate(
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.Wave.WaveInterop+WaveCallback,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null"), 
+										dwCallback
+									);
+					// Call to native method
+					unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutOpen(
+										pinned_hWaveOut, 
+										uDeviceID, 
+										unsafe_lpFormat, 
+										unsafe_dwCallback, 
+										dwInstance, 
+										dwFlags
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				}
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpFormat);
+				global::System.GC.KeepAlive(dwCallback);
+			}
+		}
+
+		// Signature, waveOutOpenWindow, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00043084] NAudio_Wave_WaveFormat__NAudio__NAudio_Wave__WaveFormat__NAudio *, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Wave_WaveInterop_WaveInOutOpenFlags__NAudio__WaveInterop_WaveInOutOpenFlags__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutOpenWindow")]
+		public static global::NAudio.MmResult__NAudio waveOutOpenWindow(
+					out global::System.IntPtr hWaveOut, 
+					global::System.IntPtr uDeviceID, 
+					global::NAudio_Wave.WaveFormat__NAudio lpFormat, 
+					global::System.IntPtr callbackWindowHandle, 
+					global::System.IntPtr dwInstance, 
+					global::NAudio_Wave.WaveInterop_WaveInOutOpenFlags__NAudio dwFlags)
+		{
+			// Setup
+			global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType* unsafe_lpFormat = default(global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				fixed (global::System.IntPtr* pinned_hWaveOut = &(hWaveOut))
+				{
+					unsafe_lpFormat = (global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(sizeof(global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType)));
+					global::NAudio_Wave.WaveFormat__NAudio__Impl.Marshal__SafeToUnsafe(
+										lpFormat, 
+										out (*(unsafe_lpFormat))
+									);
+					// Call to native method
+					unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutOpenWindow(
+										pinned_hWaveOut, 
+										uDeviceID, 
+										unsafe_lpFormat, 
+										callbackWindowHandle, 
+										dwInstance, 
+										dwFlags
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				}
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpFormat);
+			}
+		}
+
+		// Signature, waveOutReset, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutReset")]
+		public static global::NAudio.MmResult__NAudio waveOutReset(global::System.IntPtr hWaveOut)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutReset(hWaveOut);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveOutClose, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutClose")]
+		public static global::NAudio.MmResult__NAudio waveOutClose(global::System.IntPtr hWaveOut)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutClose(hWaveOut);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveOutPause, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutPause")]
+		public static global::NAudio.MmResult__NAudio waveOutPause(global::System.IntPtr hWaveOut)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutPause(hWaveOut);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveOutRestart, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutRestart")]
+		public static global::NAudio.MmResult__NAudio waveOutRestart(global::System.IntPtr hWaveOut)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutRestart(hWaveOut);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveOutGetPosition, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x0004314C] NAudio_Wave_MmTime__NAudio__NAudio_Wave__MmTime__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutGetPosition")]
+		public static global::NAudio.MmResult__NAudio waveOutGetPosition(
+					global::System.IntPtr hWaveOut, 
+					ref global::NAudio_Wave.MmTime__NAudio mmTime, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (global::NAudio_Wave.MmTime__NAudio* pinned_mmTime = &(mmTime))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutGetPosition(
+									hWaveOut, 
+									pinned_mmTime, 
+									uSize
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveOutSetVolume, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutSetVolume")]
+		public static global::NAudio.MmResult__NAudio waveOutSetVolume(
+					global::System.IntPtr hWaveOut, 
+					int dwVolume)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutSetVolume(
+								hWaveOut, 
+								dwVolume
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveOutGetVolume, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutGetVolume")]
+		public static global::NAudio.MmResult__NAudio waveOutGetVolume(
+					global::System.IntPtr hWaveOut, 
+					out int dwVolume)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (int* pinned_dwVolume = &(dwVolume))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutGetVolume(
+									hWaveOut, 
+									pinned_dwVolume
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveOutGetDevCaps, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Wave_WaveOutCapabilities__NAudio__NAudio_Wave__WaveOutCapabilities__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveOutGetDevCaps")]
+		public static global::NAudio.MmResult__NAudio waveOutGetDevCaps(
+					global::System.IntPtr deviceID, 
+					out global::NAudio_Wave.WaveOutCapabilities__NAudio waveOutCaps, 
+					int waveOutCapsSize)
+		{
+			// Setup
+			global::NAudio_Wave.WaveOutCapabilities__NAudio__Impl.UnsafeType unsafe_waveOutCaps = default(global::NAudio_Wave.WaveOutCapabilities__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			unsafe_waveOutCaps = default(global::NAudio_Wave.WaveOutCapabilities__NAudio__Impl.UnsafeType);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveOutGetDevCaps(
+								deviceID, 
+								&(unsafe_waveOutCaps), 
+								waveOutCapsSize
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Wave.WaveOutCapabilities__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_waveOutCaps, 
+								out waveOutCaps
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveInGetNumDevs, [fwd] [return] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInGetNumDevs")]
+		public static int waveInGetNumDevs()
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInGetNumDevs();
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveInGetDevCaps, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Wave_WaveInCapabilities__NAudio__NAudio_Wave__WaveInCapabilities__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInGetDevCaps")]
+		public static global::NAudio.MmResult__NAudio waveInGetDevCaps(
+					global::System.IntPtr deviceID, 
+					out global::NAudio_Wave.WaveInCapabilities__NAudio waveInCaps, 
+					int waveInCapsSize)
+		{
+			// Setup
+			global::NAudio_Wave.WaveInCapabilities__NAudio__Impl.UnsafeType unsafe_waveInCaps = default(global::NAudio_Wave.WaveInCapabilities__NAudio__Impl.UnsafeType);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			unsafe_waveInCaps = default(global::NAudio_Wave.WaveInCapabilities__NAudio__Impl.UnsafeType);
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInGetDevCaps(
+								deviceID, 
+								&(unsafe_waveInCaps), 
+								waveInCapsSize
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Wave.WaveInCapabilities__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_waveInCaps, 
+								out waveInCaps
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveInAddBuffer, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00043084] NAudio_Wave_WaveHeader__NAudio__NAudio_Wave__WaveHeader__NAudio *, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInAddBuffer")]
+		public static global::NAudio.MmResult__NAudio waveInAddBuffer(
+					global::System.IntPtr hWaveIn, 
+					global::NAudio_Wave.WaveHeader__NAudio pwh, 
+					int cbwh)
+		{
+			// Setup
+			global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* unsafe_pwh = default(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_pwh = (global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(sizeof(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType)));
+				global::NAudio_Wave.WaveHeader__NAudio__Impl.Marshal__SafeToUnsafe(
+									pwh, 
+									out (*(unsafe_pwh))
+								);
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInAddBuffer(
+									hWaveIn, 
+									unsafe_pwh, 
+									cbwh
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_pwh);
+			}
+		}
+
+		// Signature, waveInClose, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInClose")]
+		public static global::NAudio.MmResult__NAudio waveInClose(global::System.IntPtr hWaveIn)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInClose(hWaveIn);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveInOpen, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00043084] NAudio_Wave_WaveFormat__NAudio__NAudio_Wave__WaveFormat__NAudio *, [fwd] [in] [EETypeRva:0x00041EA8] NAudio_Wave_WaveInterop_WaveCallback__NAudio__NAudio_Wave__WaveInterop_WaveCallback__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Wave_WaveInterop_WaveInOutOpenFlags__NAudio__WaveInterop_WaveInOutOpenFlags__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInOpen")]
+		public static global::NAudio.MmResult__NAudio waveInOpen(
+					out global::System.IntPtr hWaveIn, 
+					global::System.IntPtr uDeviceID, 
+					global::NAudio_Wave.WaveFormat__NAudio lpFormat, 
+					global::NAudio.Wave.WaveInterop_WaveCallback__NAudio dwCallback, 
+					global::System.IntPtr dwInstance, 
+					global::NAudio_Wave.WaveInterop_WaveInOutOpenFlags__NAudio dwFlags)
+		{
+			// Setup
+			global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType* unsafe_lpFormat = default(global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType*);
+			void* unsafe_dwCallback = default(void*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				fixed (global::System.IntPtr* pinned_hWaveIn = &(hWaveIn))
+				{
+					unsafe_lpFormat = (global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(sizeof(global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType)));
+					global::NAudio_Wave.WaveFormat__NAudio__Impl.Marshal__SafeToUnsafe(
+										lpFormat, 
+										out (*(unsafe_lpFormat))
+									);
+					unsafe_dwCallback = (void*)global::System.Runtime.InteropServices.McgMarshal.GetStubForPInvokeDelegate(
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.Wave.WaveInterop+WaveCallback,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null"), 
+										dwCallback
+									);
+					// Call to native method
+					unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInOpen(
+										pinned_hWaveIn, 
+										uDeviceID, 
+										unsafe_lpFormat, 
+										unsafe_dwCallback, 
+										dwInstance, 
+										dwFlags
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				}
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpFormat);
+				global::System.GC.KeepAlive(dwCallback);
+			}
+		}
+
+		// Signature, waveInOpenWindow, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00043084] NAudio_Wave_WaveFormat__NAudio__NAudio_Wave__WaveFormat__NAudio *, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Wave_WaveInterop_WaveInOutOpenFlags__NAudio__WaveInterop_WaveInOutOpenFlags__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInOpenWindow")]
+		public static global::NAudio.MmResult__NAudio waveInOpenWindow(
+					out global::System.IntPtr hWaveIn, 
+					global::System.IntPtr uDeviceID, 
+					global::NAudio_Wave.WaveFormat__NAudio lpFormat, 
+					global::System.IntPtr callbackWindowHandle, 
+					global::System.IntPtr dwInstance, 
+					global::NAudio_Wave.WaveInterop_WaveInOutOpenFlags__NAudio dwFlags)
+		{
+			// Setup
+			global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType* unsafe_lpFormat = default(global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				fixed (global::System.IntPtr* pinned_hWaveIn = &(hWaveIn))
+				{
+					unsafe_lpFormat = (global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(sizeof(global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType)));
+					global::NAudio_Wave.WaveFormat__NAudio__Impl.Marshal__SafeToUnsafe(
+										lpFormat, 
+										out (*(unsafe_lpFormat))
+									);
+					// Call to native method
+					unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInOpenWindow(
+										pinned_hWaveIn, 
+										uDeviceID, 
+										unsafe_lpFormat, 
+										callbackWindowHandle, 
+										dwInstance, 
+										dwFlags
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				}
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpFormat);
+			}
+		}
+
+		// Signature, waveInPrepareHeader, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00043084] NAudio_Wave_WaveHeader__NAudio__NAudio_Wave__WaveHeader__NAudio *, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInPrepareHeader")]
+		public static global::NAudio.MmResult__NAudio waveInPrepareHeader(
+					global::System.IntPtr hWaveIn, 
+					global::NAudio_Wave.WaveHeader__NAudio lpWaveInHdr, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* unsafe_lpWaveInHdr = default(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_lpWaveInHdr = (global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(sizeof(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType)));
+				global::NAudio_Wave.WaveHeader__NAudio__Impl.Marshal__SafeToUnsafe(
+									lpWaveInHdr, 
+									out (*(unsafe_lpWaveInHdr))
+								);
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInPrepareHeader(
+									hWaveIn, 
+									unsafe_lpWaveInHdr, 
+									uSize
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpWaveInHdr);
+			}
+		}
+
+		// Signature, waveInUnprepareHeader, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00043084] NAudio_Wave_WaveHeader__NAudio__NAudio_Wave__WaveHeader__NAudio *, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInUnprepareHeader")]
+		public static global::NAudio.MmResult__NAudio waveInUnprepareHeader(
+					global::System.IntPtr hWaveIn, 
+					global::NAudio_Wave.WaveHeader__NAudio lpWaveInHdr, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* unsafe_lpWaveInHdr = default(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*);
+			global::NAudio.MmResult__NAudio unsafe___value;
+			try
+			{
+				// Marshalling
+				unsafe_lpWaveInHdr = (global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(sizeof(global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType)));
+				global::NAudio_Wave.WaveHeader__NAudio__Impl.Marshal__SafeToUnsafe(
+									lpWaveInHdr, 
+									out (*(unsafe_lpWaveInHdr))
+								);
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInUnprepareHeader(
+									hWaveIn, 
+									unsafe_lpWaveInHdr, 
+									uSize
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpWaveInHdr);
+			}
+		}
+
+		// Signature, waveInReset, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInReset")]
+		public static global::NAudio.MmResult__NAudio waveInReset(global::System.IntPtr hWaveIn)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInReset(hWaveIn);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveInStart, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInStart")]
+		public static global::NAudio.MmResult__NAudio waveInStart(global::System.IntPtr hWaveIn)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInStart(hWaveIn);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveInStop, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInStop")]
+		public static global::NAudio.MmResult__NAudio waveInStop(global::System.IntPtr hWaveIn)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInStop(hWaveIn);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, waveInGetPosition, [fwd] [return] [EETypeRva:0x00042D60] NAudio_MmResult__NAudio__MmResult__NAudio, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x0004314C] NAudio_Wave_MmTime__NAudio__NAudio_Wave__MmTime__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.WaveInterop", "waveInGetPosition")]
+		public static global::NAudio.MmResult__NAudio waveInGetPosition(
+					global::System.IntPtr hWaveIn, 
+					out global::NAudio_Wave.MmTime__NAudio mmTime, 
+					int uSize)
+		{
+			// Setup
+			global::NAudio.MmResult__NAudio unsafe___value;
+			// Marshalling
+			fixed (global::NAudio_Wave.MmTime__NAudio* pinned_mmTime = &(mmTime))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.winmm_dll_PInvokes.waveInGetPosition(
+									hWaveIn, 
+									pinned_mmTime, 
+									uSize
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+	}
+
+	/// <summary>
+	/// P/Invoke class for module 'mfplat.dll'
+	/// </summary>
+	public unsafe static partial class mfplat_dll
+	{
+		// Signature, MFStartup, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [optional] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFStartup")]
+		public static void MFStartup(
+					int version, 
+					int dwFlags)
+		{
+			// Setup
+			int unsafe___hr;
+			// Marshalling
+			// Call to native method
+			unsafe___hr = global::__Interop.mfplat_dll_PInvokes.MFStartup(
+								version, 
+								dwFlags
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+		}
+
+		// Signature, MFShutdown, [fwd] [return] [EETypeRva:0x00042030] void__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFShutdown")]
+		public static void MFShutdown()
+		{
+			// Setup
+			int unsafe___hr;
+			// Marshalling
+			// Call to native method
+			unsafe___hr = global::__Interop.mfplat_dll_PInvokes.MFShutdown();
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+		}
+
+		// Signature, MFCreateMediaType, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFMediaType__NAudio__NAudio_MediaFoundation__IMFMediaType__NAudio *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFCreateMediaType")]
+		public static void MFCreateMediaType(out global::NAudio_MediaFoundation.IMFMediaType__NAudio ppMFType)
+		{
+			// Setup
+			void* unsafe_ppMFType = default(void*);
+			int unsafe___hr;
+			try
+			{
+				// Marshalling
+				unsafe_ppMFType = null;
+				// Call to native method
+				unsafe___hr = global::__Interop.mfplat_dll_PInvokes.MFCreateMediaType(&(unsafe_ppMFType));
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				ppMFType = (global::NAudio_MediaFoundation.IMFMediaType__NAudio)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+									((global::System.IntPtr)unsafe_ppMFType), 
+									global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFMediaType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+								);
+				// Return
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_ppMFType)));
+			}
+		}
+
+		// Signature, MFInitMediaTypeFromWaveFormatEx, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [in] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFMediaType__NAudio__NAudio_MediaFoundation__IMFMediaType__NAudio *, [fwd] [in] [EETypeRva:0x00043084] NAudio_Wave_WaveFormat__NAudio__NAudio_Wave__WaveFormat__NAudio *, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFInitMediaTypeFromWaveFormatEx")]
+		public static void MFInitMediaTypeFromWaveFormatEx(
+					global::NAudio_MediaFoundation.IMFMediaType__NAudio pMFType, 
+					global::NAudio_Wave.WaveFormat__NAudio pWaveFormat, 
+					int cbBufSize)
+		{
+			// Setup
+			void* unsafe_pMFType = default(void*);
+			global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType* unsafe_pWaveFormat = default(global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType*);
+			int unsafe___hr;
+			try
+			{
+				// Marshalling
+				unsafe_pMFType = (void*)global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(
+									pMFType, 
+									global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFMediaType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+								);
+				unsafe_pWaveFormat = (global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(sizeof(global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType)));
+				global::NAudio_Wave.WaveFormat__NAudio__Impl.Marshal__SafeToUnsafe(
+									pWaveFormat, 
+									out (*(unsafe_pWaveFormat))
+								);
+				// Call to native method
+				unsafe___hr = global::__Interop.mfplat_dll_PInvokes.MFInitMediaTypeFromWaveFormatEx(
+									unsafe_pMFType, 
+									unsafe_pWaveFormat, 
+									cbBufSize
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				// Return
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_pMFType)));
+				global::System.GC.KeepAlive(pMFType);
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_pWaveFormat);
+			}
+		}
+
+		// Signature, MFCreateWaveFormatExFromMFMediaType, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [in] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFMediaType__NAudio__NAudio_MediaFoundation__IMFMediaType__NAudio *, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] int__int, [fwd] [in] [optional] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFCreateWaveFormatExFromMFMediaType")]
+		public static void MFCreateWaveFormatExFromMFMediaType(
+					global::NAudio_MediaFoundation.IMFMediaType__NAudio pMFType, 
+					ref global::System.IntPtr ppWF, 
+					ref int pcbSize, 
+					int flags)
+		{
+			// Setup
+			void* unsafe_pMFType = default(void*);
+			int unsafe___hr;
+			try
+			{
+				// Marshalling
+				unsafe_pMFType = (void*)global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(
+									pMFType, 
+									global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFMediaType,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+								);
+				fixed (global::System.IntPtr* pinned_ppWF = &(ppWF))
+					fixed (int* pinned_pcbSize = &(pcbSize))
+					{
+						// Call to native method
+						unsafe___hr = global::__Interop.mfplat_dll_PInvokes.MFCreateWaveFormatExFromMFMediaType(
+											unsafe_pMFType, 
+											pinned_ppWF, 
+											pinned_pcbSize, 
+											flags
+										);
+						global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+					}
+				// Return
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_pMFType)));
+				global::System.GC.KeepAlive(pMFType);
+			}
+		}
+
+		// Signature, MFCreateMFByteStreamOnStreamEx, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [in] [EETypeRva:0x00040FFC] object____mcg_IUnknown *, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFByteStream__NAudio__NAudio_MediaFoundation__IMFByteStream__NAudio *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFCreateMFByteStreamOnStreamEx")]
+		public static void MFCreateMFByteStreamOnStreamEx(
+					object punkStream, 
+					out global::NAudio_MediaFoundation.IMFByteStream__NAudio ppByteStream)
+		{
+			// Setup
+			void** unsafe_punkStream = default(void**);
+			void* unsafe_ppByteStream = default(void*);
+			int unsafe___hr;
+			try
+			{
+				// Marshalling
+				unsafe_punkStream = (void**)global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(
+									punkStream, 
+									typeof(global::System.Runtime.InteropServices.__com_IUnknown).TypeHandle
+								);
+				unsafe_ppByteStream = null;
+				// Call to native method
+				unsafe___hr = global::__Interop.mfplat_dll_PInvokes.MFCreateMFByteStreamOnStreamEx(
+									unsafe_punkStream, 
+									&(unsafe_ppByteStream)
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				ppByteStream = (global::NAudio_MediaFoundation.IMFByteStream__NAudio)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+									((global::System.IntPtr)unsafe_ppByteStream), 
+									global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFByteStream,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+								);
+				// Return
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_punkStream)));
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_ppByteStream)));
+			}
+		}
+
+		// Signature, MFCreateSample, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFSample__NAudio__NAudio_MediaFoundation__IMFSample__NAudio *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFCreateSample")]
+		public static void MFCreateSample(out global::NAudio_MediaFoundation.IMFSample__NAudio ppIMFSample)
+		{
+			// Setup
+			void* unsafe_ppIMFSample = default(void*);
+			int unsafe___hr;
+			try
+			{
+				// Marshalling
+				unsafe_ppIMFSample = null;
+				// Call to native method
+				unsafe___hr = global::__Interop.mfplat_dll_PInvokes.MFCreateSample(&(unsafe_ppIMFSample));
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				ppIMFSample = (global::NAudio_MediaFoundation.IMFSample__NAudio)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+									((global::System.IntPtr)unsafe_ppIMFSample), 
+									global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFSample,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+								);
+				// Return
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_ppIMFSample)));
+			}
+		}
+
+		// Signature, MFCreateMemoryBuffer, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFMediaBuffer__NAudio__NAudio_MediaFoundation__IMFMediaBuffer__NAudio *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFCreateMemoryBuffer")]
+		public static void MFCreateMemoryBuffer(
+					int cbMaxLength, 
+					out global::NAudio_MediaFoundation.IMFMediaBuffer__NAudio ppBuffer)
+		{
+			// Setup
+			void* unsafe_ppBuffer = default(void*);
+			int unsafe___hr;
+			try
+			{
+				// Marshalling
+				unsafe_ppBuffer = null;
+				// Call to native method
+				unsafe___hr = global::__Interop.mfplat_dll_PInvokes.MFCreateMemoryBuffer(
+									cbMaxLength, 
+									&(unsafe_ppBuffer)
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				ppBuffer = (global::NAudio_MediaFoundation.IMFMediaBuffer__NAudio)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+									((global::System.IntPtr)unsafe_ppBuffer), 
+									global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFMediaBuffer,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+								);
+				// Return
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_ppBuffer)));
+			}
+		}
+
+		// Signature, MFCreateAttributes, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFAttributes__NAudio__NAudio_MediaFoundation__IMFAttributes__NAudio *, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFCreateAttributes")]
+		public static void MFCreateAttributes(
+					out global::NAudio_MediaFoundation.IMFAttributes__NAudio ppMFAttributes, 
+					int cInitialSize)
+		{
+			// Setup
+			void* unsafe_ppMFAttributes = default(void*);
+			int unsafe___hr;
+			try
+			{
+				// Marshalling
+				unsafe_ppMFAttributes = null;
+				// Call to native method
+				unsafe___hr = global::__Interop.mfplat_dll_PInvokes.MFCreateAttributes(
+									&(unsafe_ppMFAttributes), 
+									cInitialSize
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				ppMFAttributes = (global::NAudio_MediaFoundation.IMFAttributes__NAudio)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+									((global::System.IntPtr)unsafe_ppMFAttributes), 
+									global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFAttributes,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+								);
+				// Return
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_ppMFAttributes)));
+			}
+		}
+	}
+
+	/// <summary>
+	/// P/Invoke class for module 'mfreadwrite.dll'
+	/// </summary>
+	public unsafe static partial class mfreadwrite_dll
+	{
+		// Signature, MFCreateSourceReaderFromURL, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [in] [EETypeRva:0x00041B44] string__wchar_t *, [fwd] [in] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFAttributes__NAudio__NAudio_MediaFoundation__IMFAttributes__NAudio *, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFSourceReader__NAudio__NAudio_MediaFoundation__IMFSourceReader__NAudio *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFCreateSourceReaderFromURL")]
+		public static void MFCreateSourceReaderFromURL(
+					string pwszURL, 
+					global::NAudio_MediaFoundation.IMFAttributes__NAudio pAttributes, 
+					out global::NAudio_MediaFoundation.IMFSourceReader__NAudio ppSourceReader)
+		{
+			// Setup
+			ushort* unsafe_pwszURL = default(ushort*);
+			void* unsafe_pAttributes = default(void*);
+			void* unsafe_ppSourceReader = default(void*);
+			int unsafe___hr;
+			try
+			{
+				// Marshalling
+				fixed (char* pinned_pwszURL = pwszURL)
+				{
+					unsafe_pwszURL = (ushort*)pinned_pwszURL;
+					unsafe_pAttributes = (void*)global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(
+										pAttributes, 
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFAttributes,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+									);
+					unsafe_ppSourceReader = null;
+					// Call to native method
+					unsafe___hr = global::__Interop.mfreadwrite_dll_PInvokes.MFCreateSourceReaderFromURL(
+										unsafe_pwszURL, 
+										unsafe_pAttributes, 
+										&(unsafe_ppSourceReader)
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+					ppSourceReader = (global::NAudio_MediaFoundation.IMFSourceReader__NAudio)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+										((global::System.IntPtr)unsafe_ppSourceReader), 
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFSourceReader,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+									);
+				}
+				// Return
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_pAttributes)));
+				global::System.GC.KeepAlive(pAttributes);
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_ppSourceReader)));
+			}
+		}
+
+		// Signature, MFCreateSourceReaderFromByteStream, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [in] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFByteStream__NAudio__NAudio_MediaFoundation__IMFByteStream__NAudio *, [fwd] [in] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFAttributes__NAudio__NAudio_MediaFoundation__IMFAttributes__NAudio *, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFSourceReader__NAudio__NAudio_MediaFoundation__IMFSourceReader__NAudio *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFCreateSourceReaderFromByteStream")]
+		public static void MFCreateSourceReaderFromByteStream(
+					global::NAudio_MediaFoundation.IMFByteStream__NAudio pByteStream, 
+					global::NAudio_MediaFoundation.IMFAttributes__NAudio pAttributes, 
+					out global::NAudio_MediaFoundation.IMFSourceReader__NAudio ppSourceReader)
+		{
+			// Setup
+			void* unsafe_pByteStream = default(void*);
+			void* unsafe_pAttributes = default(void*);
+			void* unsafe_ppSourceReader = default(void*);
+			int unsafe___hr;
+			try
+			{
+				// Marshalling
+				unsafe_pByteStream = (void*)global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(
+									pByteStream, 
+									global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFByteStream,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+								);
+				unsafe_pAttributes = (void*)global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(
+									pAttributes, 
+									global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFAttributes,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+								);
+				unsafe_ppSourceReader = null;
+				// Call to native method
+				unsafe___hr = global::__Interop.mfreadwrite_dll_PInvokes.MFCreateSourceReaderFromByteStream(
+									unsafe_pByteStream, 
+									unsafe_pAttributes, 
+									&(unsafe_ppSourceReader)
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				ppSourceReader = (global::NAudio_MediaFoundation.IMFSourceReader__NAudio)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+									((global::System.IntPtr)unsafe_ppSourceReader), 
+									global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFSourceReader,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+								);
+				// Return
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_pByteStream)));
+				global::System.GC.KeepAlive(pByteStream);
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_pAttributes)));
+				global::System.GC.KeepAlive(pAttributes);
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_ppSourceReader)));
+			}
+		}
+
+		// Signature, MFCreateSinkWriterFromURL, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [in] [EETypeRva:0x00041B44] string__wchar_t *, [fwd] [in] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFByteStream__NAudio__NAudio_MediaFoundation__IMFByteStream__NAudio *, [fwd] [in] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFAttributes__NAudio__NAudio_MediaFoundation__IMFAttributes__NAudio *, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x00043660] NAudio_MediaFoundation_IMFSinkWriter__NAudio__NAudio_MediaFoundation__IMFSinkWriter__NAudio *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.MediaFoundation.MediaFoundationInterop", "MFCreateSinkWriterFromURL")]
+		public static void MFCreateSinkWriterFromURL(
+					string pwszOutputURL, 
+					global::NAudio_MediaFoundation.IMFByteStream__NAudio pByteStream, 
+					global::NAudio_MediaFoundation.IMFAttributes__NAudio pAttributes, 
+					out global::NAudio_MediaFoundation.IMFSinkWriter__NAudio ppSinkWriter)
+		{
+			// Setup
+			ushort* unsafe_pwszOutputURL = default(ushort*);
+			void* unsafe_pByteStream = default(void*);
+			void* unsafe_pAttributes = default(void*);
+			void* unsafe_ppSinkWriter = default(void*);
+			int unsafe___hr;
+			try
+			{
+				// Marshalling
+				fixed (char* pinned_pwszOutputURL = pwszOutputURL)
+				{
+					unsafe_pwszOutputURL = (ushort*)pinned_pwszOutputURL;
+					unsafe_pByteStream = (void*)global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(
+										pByteStream, 
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFByteStream,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+									);
+					unsafe_pAttributes = (void*)global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(
+										pAttributes, 
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFAttributes,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+									);
+					unsafe_ppSinkWriter = null;
+					// Call to native method
+					unsafe___hr = global::__Interop.mfreadwrite_dll_PInvokes.MFCreateSinkWriterFromURL(
+										unsafe_pwszOutputURL, 
+										unsafe_pByteStream, 
+										unsafe_pAttributes, 
+										&(unsafe_ppSinkWriter)
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+					ppSinkWriter = (global::NAudio_MediaFoundation.IMFSinkWriter__NAudio)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+										((global::System.IntPtr)unsafe_ppSinkWriter), 
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.MediaFoundation.IMFSinkWriter,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+									);
+				}
+				// Return
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_pByteStream)));
+				global::System.GC.KeepAlive(pByteStream);
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_pAttributes)));
+				global::System.GC.KeepAlive(pAttributes);
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_ppSinkWriter)));
+			}
+		}
+	}
+
+	/// <summary>
+	/// P/Invoke class for module 'api-ms-win-core-synch-l1-2-0.dll'
+	/// </summary>
+	public unsafe static partial class api_ms_win_core_synch_l1_2_0_dll
+	{
+		// Signature, CreateEventExW, [fwd] [return] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Wave_EventAccess__NAudio__EventAccess__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.NativeMethods", "CreateEventExW")]
+		public static global::System.IntPtr CreateEventExW(
+					global::System.IntPtr lpEventAttributes, 
+					global::System.IntPtr lpName, 
+					int dwFlags, 
+					global::NAudio_Wave.EventAccess__NAudio dwDesiredAccess)
+		{
+			// Setup
+			global::System.IntPtr unsafe___value;
+			// Marshalling
+			global::System.Runtime.InteropServices.McgMarshal.ClearLastWin32Error();
+			// Call to native method
+			unsafe___value = global::__Interop.api_ms_win_core_synch_l1_2_0_dll_PInvokes.CreateEventExW(
+								lpEventAttributes, 
+								lpName, 
+								dwFlags, 
+								dwDesiredAccess
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::System.Runtime.InteropServices.McgMarshal.SaveLastWin32Error();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, WaitForSingleObjectEx, [fwd] [return] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x00040848] bool__System.Boolean, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.NativeMethods", "WaitForSingleObjectEx")]
+		public static int WaitForSingleObjectEx(
+					global::System.IntPtr hEvent, 
+					int milliseconds, 
+					bool bAlertable)
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			global::System.Runtime.InteropServices.McgMarshal.ClearLastWin32Error();
+			// Call to native method
+			unsafe___value = global::__Interop.api_ms_win_core_synch_l1_2_0_dll_PInvokes.WaitForSingleObjectEx(
+								hEvent, 
+								milliseconds, 
+								(bAlertable ? 1 : 0)
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::System.Runtime.InteropServices.McgMarshal.SaveLastWin32Error();
+			// Return
+			return unsafe___value;
+		}
+	}
+
+	/// <summary>
+	/// P/Invoke class for module 'api-ms-win-core-handle-l1-1-0.dll'
+	/// </summary>
+	public unsafe static partial class api_ms_win_core_handle_l1_1_0_dll
+	{
+		// Signature, CloseHandle, [fwd] [return] [EETypeRva:0x00040848] bool__System.Boolean, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.NativeMethods", "CloseHandle")]
+		public static bool CloseHandle(global::System.IntPtr hObject)
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			global::System.Runtime.InteropServices.McgMarshal.ClearLastWin32Error();
+			// Call to native method
+			unsafe___value = global::__Interop.api_ms_win_core_handle_l1_1_0_dll_PInvokes.CloseHandle(hObject);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::System.Runtime.InteropServices.McgMarshal.SaveLastWin32Error();
+			// Return
+			return unsafe___value != 0;
+		}
+
+		// Signature, CloseHandle__0, [fwd] [return] [EETypeRva:0x00040848] bool__System.Boolean, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1", "SharpDX.Utilities", "CloseHandle")]
+		public static bool CloseHandle__0(global::System.IntPtr handle)
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			global::System.Runtime.InteropServices.McgMarshal.ClearLastWin32Error();
+			// Call to native method
+			unsafe___value = global::__Interop.api_ms_win_core_handle_l1_1_0_dll_PInvokes.CloseHandle__0(handle);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::System.Runtime.InteropServices.McgMarshal.SaveLastWin32Error();
+			// Return
+			return unsafe___value != 0;
+		}
+	}
+
+	/// <summary>
+	/// P/Invoke class for module 'Mmdevapi.dll'
+	/// </summary>
+	public unsafe static partial class Mmdevapi_dll
+	{
+		// Signature, ActivateAudioInterfaceAsync, [fwd] [return] [EETypeRva:0x00042030] void__int, [fwd] [in] [EETypeRva:0x00041B44] string__wchar_t *, [fwd] [in] [EETypeRva:0x00042EF4] System_Guid__System.Guid *, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00043660] NAudio_Wave_IActivateAudioInterfaceCompletionHandler__NAudio__NAudio_Wave__IActivateAudioInterfaceCompletionHandler__NAudio *, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x00043660] NAudio_Wave_IActivateAudioInterfaceAsyncOperation__NAudio__NAudio_Wave__IActivateAudioInterfaceAsyncOperation__NAudio *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Wave.NativeMethods", "ActivateAudioInterfaceAsync")]
+		public static void ActivateAudioInterfaceAsync(
+					string deviceInterfacePath, 
+					global::System.Guid riid, 
+					global::System.IntPtr activationParams, 
+					global::NAudio_Wave.IActivateAudioInterfaceCompletionHandler__NAudio completionHandler, 
+					out global::NAudio_Wave.IActivateAudioInterfaceAsyncOperation__NAudio activationOperation)
+		{
+			// Setup
+			ushort* unsafe_deviceInterfacePath = default(ushort*);
+			global::System.Guid* unsafe_riid;
+			void* unsafe_completionHandler = default(void*);
+			void* unsafe_activationOperation = default(void*);
+			int unsafe___hr;
+			try
+			{
+				// Marshalling
+				fixed (char* pinned_deviceInterfacePath = deviceInterfacePath)
+				{
+					unsafe_deviceInterfacePath = (ushort*)pinned_deviceInterfacePath;
+					unsafe_riid = (global::System.Guid*)&(riid);
+					unsafe_completionHandler = (void*)global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(
+										completionHandler, 
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.Wave.IActivateAudioInterfaceCompletionHandler,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=n" +
+												"ull")
+									);
+					unsafe_activationOperation = null;
+					// Call to native method
+					unsafe___hr = global::__Interop.Mmdevapi_dll_PInvokes.ActivateAudioInterfaceAsync(
+										unsafe_deviceInterfacePath, 
+										unsafe_riid, 
+										activationParams, 
+										unsafe_completionHandler, 
+										&(unsafe_activationOperation)
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+					activationOperation = (global::NAudio_Wave.IActivateAudioInterfaceAsyncOperation__NAudio)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+										((global::System.IntPtr)unsafe_activationOperation), 
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.Wave.IActivateAudioInterfaceAsyncOperation,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null" +
+												"")
+									);
+				}
+				// Return
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_completionHandler)));
+				global::System.GC.KeepAlive(completionHandler);
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_activationOperation)));
+			}
+		}
+	}
+
+	/// <summary>
+	/// P/Invoke class for module 'msdmo.dll'
+	/// </summary>
+	public unsafe static partial class msdmo_dll
+	{
+		// Signature, DMOEnum, [fwd] [return] [EETypeRva:0x000419B0] int__int, [fwd] [in] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_Guid__System.Guid, [fwd] [in] [EETypeRva:0x00042D60] NAudio_Dmo_DmoEnumFlags__NAudio__DmoEnumFlags__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000424E8] rg_NAudio_Dmo_DmoPartialMediaType__NAudio__NAudio_Dmo__DmoPartialMediaType__NAudio *, [fwd] [in] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000424E8] rg_NAudio_Dmo_DmoPartialMediaType__NAudio__NAudio_Dmo__DmoPartialMediaType__NAudio *, [fwd] [out] [managedbyref] [nativebyref] [EETypeRva:0x00043660] NAudio_Dmo_IEnumDmo__NAudio__NAudio_Dmo__IEnumDmo__NAudio *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Dmo.DmoInterop", "DMOEnum")]
+		public static int DMOEnum(
+					ref global::System.Guid guidCategory, 
+					global::NAudio_Dmo.DmoEnumFlags__NAudio flags, 
+					int inTypes, 
+					global::NAudio_Dmo.DmoPartialMediaType__NAudio[] inTypesArray, 
+					int outTypes, 
+					global::NAudio_Dmo.DmoPartialMediaType__NAudio[] outTypesArray, 
+					out global::NAudio_Dmo.IEnumDmo__NAudio enumDmo)
+		{
+			// Setup
+			global::NAudio_Dmo.DmoPartialMediaType__NAudio* unsafe_inTypesArray = default(global::NAudio_Dmo.DmoPartialMediaType__NAudio*);
+			global::NAudio_Dmo.DmoPartialMediaType__NAudio* unsafe_outTypesArray = default(global::NAudio_Dmo.DmoPartialMediaType__NAudio*);
+			void* unsafe_enumDmo = default(void*);
+			int unsafe___value;
+			try
+			{
+				// Marshalling
+				fixed (global::System.Guid* pinned_guidCategory = &(guidCategory))
+				{
+					if (inTypesArray == null)
+						unsafe_inTypesArray = null;
+					else
+					{
+						if (inTypesArray != null)
+							unsafe_inTypesArray = (global::NAudio_Dmo.DmoPartialMediaType__NAudio*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(((global::System.IntPtr)checked(inTypesArray.Length * sizeof(global::NAudio_Dmo.DmoPartialMediaType__NAudio))));
+						if (inTypesArray != null)
+							for (uint mcgIdx = 0; (mcgIdx < inTypesArray.Length); mcgIdx++)
+							{
+								// [fwd] [in] [optional] [EETypeRva:0x0004314C] NAudio_Dmo_DmoPartialMediaType__NAudio__NAudio_Dmo__DmoPartialMediaType__NAudio inTypesArray
+								unsafe_inTypesArray[mcgIdx] = inTypesArray[mcgIdx];
+							}
+					}
+					if (outTypesArray == null)
+						unsafe_outTypesArray = null;
+					else
+					{
+						if (outTypesArray != null)
+							unsafe_outTypesArray = (global::NAudio_Dmo.DmoPartialMediaType__NAudio*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(((global::System.IntPtr)checked(outTypesArray.Length * sizeof(global::NAudio_Dmo.DmoPartialMediaType__NAudio))));
+						if (outTypesArray != null)
+							for (uint mcgIdx_2 = 0; (mcgIdx_2 < outTypesArray.Length); mcgIdx_2++)
+							{
+								// [fwd] [in] [optional] [EETypeRva:0x0004314C] NAudio_Dmo_DmoPartialMediaType__NAudio__NAudio_Dmo__DmoPartialMediaType__NAudio outTypesArray
+								unsafe_outTypesArray[mcgIdx_2] = outTypesArray[mcgIdx_2];
+							}
+					}
+					unsafe_enumDmo = null;
+					// Call to native method
+					unsafe___value = global::__Interop.msdmo_dll_PInvokes.DMOEnum(
+										pinned_guidCategory, 
+										flags, 
+										inTypes, 
+										unsafe_inTypesArray, 
+										outTypes, 
+										unsafe_outTypesArray, 
+										&(unsafe_enumDmo)
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+					enumDmo = (global::NAudio_Dmo.IEnumDmo__NAudio)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+										((global::System.IntPtr)unsafe_enumDmo), 
+										global::System.Runtime.InteropServices.TypeOfHelper.RuntimeTypeHandleOf("NAudio.Dmo.IEnumDmo,NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null")
+									);
+				}
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_inTypesArray);
+				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_outTypesArray);
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_enumDmo)));
+			}
+		}
+
+		// Signature, MoFreeMediaType, [fwd] [return] [EETypeRva:0x000419B0] int__int, [fwd] [in] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Dmo_DmoMediaType__NAudio__NAudio_Dmo__DmoMediaType__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Dmo.DmoInterop", "MoFreeMediaType")]
+		public static int MoFreeMediaType(ref global::NAudio_Dmo.DmoMediaType__NAudio mediaType)
+		{
+			// Setup
+			global::NAudio_Dmo.DmoMediaType__NAudio__Impl.UnsafeType unsafe_mediaType = default(global::NAudio_Dmo.DmoMediaType__NAudio__Impl.UnsafeType);
+			int unsafe___value;
+			// Marshalling
+			global::NAudio_Dmo.DmoMediaType__NAudio__Impl.Marshal__SafeToUnsafe(
+								ref mediaType, 
+								out unsafe_mediaType
+							);
+			// Call to native method
+			unsafe___value = global::__Interop.msdmo_dll_PInvokes.MoFreeMediaType(&(unsafe_mediaType));
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, MoInitMediaType, [fwd] [return] [EETypeRva:0x000419B0] int__int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x000421C0] NAudio_Dmo_DmoMediaType__NAudio__NAudio_Dmo__DmoMediaType__NAudio, [fwd] [in] [EETypeRva:0x000419B0] int__int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Dmo.DmoInterop", "MoInitMediaType")]
+		public static int MoInitMediaType(
+					ref global::NAudio_Dmo.DmoMediaType__NAudio mediaType, 
+					int formatBlockBytes)
+		{
+			// Setup
+			global::NAudio_Dmo.DmoMediaType__NAudio__Impl.UnsafeType unsafe_mediaType = default(global::NAudio_Dmo.DmoMediaType__NAudio__Impl.UnsafeType);
+			int unsafe___value;
+			// Marshalling
+			global::NAudio_Dmo.DmoMediaType__NAudio__Impl.Marshal__SafeToUnsafe(
+								ref mediaType, 
+								out unsafe_mediaType
+							);
+			// Call to native method
+			unsafe___value = global::__Interop.msdmo_dll_PInvokes.MoInitMediaType(
+								&(unsafe_mediaType), 
+								formatBlockBytes
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::NAudio_Dmo.DmoMediaType__NAudio__Impl.Marshal__UnsafeToSafe(
+								ref unsafe_mediaType, 
+								out mediaType
+							);
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, DMOGetName, [fwd] [return] [EETypeRva:0x000419B0] int__int, [fwd] [in] [managedbyref] [nativebyref] [EETypeRva:0x000419B0] System_Guid__System.Guid, [fwd] [out] [EETypeRva:0x00041CF4] System_Text_StringBuilder__unsigned char *, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.Dmo.DmoInterop", "DMOGetName")]
+		public static int DMOGetName(
+					ref global::System.Guid clsidDMO, 
+					global::System.Text.StringBuilder name)
+		{
+			// Setup
+			byte* unsafe_name = default(byte*);
+			int unsafe___value;
+			try
+			{
+				// Marshalling
+				fixed (global::System.Guid* pinned_clsidDMO = &(clsidDMO))
+				{
+					if (name == null)
+						unsafe_name = null;
+					else
+					{
+						unsafe_name = (byte*)global::System.Runtime.InteropServices.McgMarshal.CoTaskMemAllocAndZeroMemory(new global::System.IntPtr(checked(name.Capacity * global::System.Runtime.InteropServices.Marshal.SystemMaxDBCSCharSize 
+											+ 2)));
+						if (unsafe_name == null)
+							throw new global::System.OutOfMemoryException();
+					}
+					// Call to native method
+					unsafe___value = global::__Interop.msdmo_dll_PInvokes.DMOGetName(
+										pinned_clsidDMO, 
+										unsafe_name
+									);
+					global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+					if (name != null)
+						global::System.Runtime.InteropServices.McgMarshal.AnsiStringToStringBuilder(
+											unsafe_name, 
+											name
+										);
+				}
+				// Return
+				return unsafe___value;
+			}
+			finally
+			{
+				// Cleanup
+				if (unsafe_name != null)
+					global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_name);
+			}
+		}
+	}
+
+	/// <summary>
+	/// P/Invoke class for module 'api-ms-win-core-com-l1-1-1.dll'
+	/// </summary>
+	public unsafe static partial class api_ms_win_core_com_l1_1_1_dll
+	{
+		// Signature, PropVariantClear, [fwd] [return] [EETypeRva:0x000419B0] int__int, [fwd] [in] [out] [managedbyref] [nativebyref] [EETypeRva:0x0004314C] NAudio_CoreAudioApi_Interfaces_PropVariant__NAudio__NAudio_CoreAudioApi_Interfaces__PropVariant__NAudio, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.CoreAudioApi.Interfaces.PropVariantNative", "PropVariantClear")]
+		public static int PropVariantClear(ref global::NAudio_CoreAudioApi_Interfaces.PropVariant__NAudio pvar)
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			fixed (global::NAudio_CoreAudioApi_Interfaces.PropVariant__NAudio* pinned_pvar = &(pvar))
+			{
+				// Call to native method
+				unsafe___value = global::__Interop.api_ms_win_core_com_l1_1_1_dll_PInvokes.PropVariantClear(pinned_pvar);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			}
+			// Return
+			return unsafe___value;
+		}
+
+		// Signature, PropVariantClear__0, [fwd] [return] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null", "NAudio.CoreAudioApi.Interfaces.PropVariantNative", "PropVariantClear")]
+		public static int PropVariantClear__0(global::System.IntPtr pvar)
+		{
+			// Setup
+			int unsafe___value;
+			// Marshalling
+			// Call to native method
+			unsafe___value = global::__Interop.api_ms_win_core_com_l1_1_1_dll_PInvokes.PropVariantClear__0(pvar);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			// Return
+			return unsafe___value;
+		}
+	}
+
+	/// <summary>
 	/// P/Invoke class for module 'api-ms-win-core-localization-l1-2-0.dll'
 	/// </summary>
 	public unsafe static partial class api_ms_win_core_localization_l1_2_0_dll
@@ -316,28 +3133,6 @@ namespace __Interop
 			}
 			// Return
 			return unsafe___value;
-		}
-	}
-
-	/// <summary>
-	/// P/Invoke class for module 'api-ms-win-core-handle-l1-1-0.dll'
-	/// </summary>
-	public unsafe static partial class api_ms_win_core_handle_l1_1_0_dll
-	{
-		// Signature, CloseHandle, [fwd] [return] [EETypeRva:0x00040848] bool__System.Boolean, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, 
-		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1", "SharpDX.Utilities", "CloseHandle")]
-		public static bool CloseHandle(global::System.IntPtr handle)
-		{
-			// Setup
-			int unsafe___value;
-			// Marshalling
-			global::System.Runtime.InteropServices.McgMarshal.ClearLastWin32Error();
-			// Call to native method
-			unsafe___value = global::__Interop.api_ms_win_core_handle_l1_1_0_dll_PInvokes.CloseHandle(handle);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			global::System.Runtime.InteropServices.McgMarshal.SaveLastWin32Error();
-			// Return
-			return unsafe___value != 0;
 		}
 	}
 
@@ -595,119 +3390,6 @@ namespace __Interop
 			global::System.Runtime.InteropServices.McgMarshal.SaveLastWin32Error();
 			// Return
 			return unsafe___value != 0;
-		}
-	}
-
-	/// <summary>
-	/// P/Invoke class for module 'kernel32.dll'
-	/// </summary>
-	public unsafe static partial class kernel32_dll
-	{
-		// Signature, LoadLibraryEx, [fwd] [return] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00041C30] string__unsigned char *, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00042D60] SharpDX_DXGI_Kernel32_LoadLibraryFlags__SharpDX_DXGI__Kernel32_LoadLibraryFlags__SharpDX_DXGI, 
-		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1", "SharpDX.DXGI.Kernel32", "LoadLibraryEx")]
-		public static global::System.IntPtr LoadLibraryEx(
-					string lpFileName, 
-					global::System.IntPtr hReservedNull, 
-					global::SharpDX_DXGI.Kernel32_LoadLibraryFlags__SharpDX_DXGI dwFlags)
-		{
-			// Setup
-			byte* unsafe_lpFileName = default(byte*);
-			global::System.IntPtr unsafe___value;
-			try
-			{
-				// Marshalling
-				unsafe_lpFileName = global::System.Runtime.InteropServices.McgMarshal.StringToAnsiString(lpFileName, true, false);
-				global::System.Runtime.InteropServices.McgMarshal.ClearLastWin32Error();
-				// Call to native method
-				unsafe___value = global::__Interop.kernel32_dll_PInvokes.LoadLibraryEx(
-									unsafe_lpFileName, 
-									hReservedNull, 
-									dwFlags
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				global::System.Runtime.InteropServices.McgMarshal.SaveLastWin32Error();
-				// Return
-				return unsafe___value;
-			}
-			finally
-			{
-				// Cleanup
-				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpFileName);
-			}
-		}
-
-		// Signature, GetModuleHandle, [fwd] [return] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00041C30] string__unsigned char *, 
-		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1", "SharpDX.DXGI.Kernel32", "GetModuleHandle")]
-		public static global::System.IntPtr GetModuleHandle(string lpModuleName)
-		{
-			// Setup
-			byte* unsafe_lpModuleName = default(byte*);
-			global::System.IntPtr unsafe___value;
-			try
-			{
-				// Marshalling
-				unsafe_lpModuleName = global::System.Runtime.InteropServices.McgMarshal.StringToAnsiString(lpModuleName, true, false);
-				// Call to native method
-				unsafe___value = global::__Interop.kernel32_dll_PInvokes.GetModuleHandle(unsafe_lpModuleName);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				// Return
-				return unsafe___value;
-			}
-			finally
-			{
-				// Cleanup
-				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_lpModuleName);
-			}
-		}
-
-		// Signature, GetProcAddress, [fwd] [return] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x000419B0] System_IntPtr____w64 int, [fwd] [in] [EETypeRva:0x00041C30] string__unsigned char *, 
-		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1", "SharpDX.DXGI.Kernel32", "GetProcAddress")]
-		public static global::System.IntPtr GetProcAddress(
-					global::System.IntPtr hModule, 
-					string procName)
-		{
-			// Setup
-			byte* unsafe_procName = default(byte*);
-			global::System.IntPtr unsafe___value;
-			try
-			{
-				// Marshalling
-				unsafe_procName = global::System.Runtime.InteropServices.McgMarshal.StringToAnsiString(procName, true, false);
-				// Call to native method
-				unsafe___value = global::__Interop.kernel32_dll_PInvokes.GetProcAddress(
-									hModule, 
-									unsafe_procName
-								);
-				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-				// Return
-				return unsafe___value;
-			}
-			finally
-			{
-				// Cleanup
-				global::System.Runtime.InteropServices.McgMarshal.SafeCoTaskMemFree(unsafe_procName);
-			}
-		}
-
-		// Signature, GetCPInfoExW, [fwd] [return] [EETypeRva:0x000419B0] int__int, [fwd] [in] [EETypeRva:0x000419B0] uint__unsigned int, [fwd] [in] [EETypeRva:0x000419B0] uint__unsigned int, [fwd] [in] [EETypeRva:0x000419B0] __Interop_Kernel32_CPINFOEXW__System_Text_Encoding_CodePages___ptr__Interop_Kernel32_CPINFOEXW__System_Text_Encoding_CodePages *, 
-		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("System.Text.Encoding.CodePages, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "Interop+Kernel32", "GetCPInfoExW")]
-		public static int GetCPInfoExW(
-					uint CodePage, 
-					uint dwFlags, 
-					global::_.Interop_Kernel32_CPINFOEXW__System_Text_Encoding_CodePages* lpCPInfoEx)
-		{
-			// Setup
-			int unsafe___value;
-			// Marshalling
-			// Call to native method
-			unsafe___value = global::__Interop.kernel32_dll_PInvokes.GetCPInfoExW(
-								CodePage, 
-								dwFlags, 
-								((global::_.Interop_Kernel32_CPINFOEXW__System_Text_Encoding_CodePages*)lpCPInfoEx)
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			// Return
-			return unsafe___value;
 		}
 	}
 
@@ -1160,6 +3842,831 @@ namespace __Interop
 					void* param9);
 	}
 
+	public unsafe static partial class kernel32_dll_PInvokes
+	{
+		[global::System.Runtime.InteropServices.DllImport("kernel32.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static global::System.IntPtr GetProcAddress(
+					global::System.IntPtr hModule, 
+					byte* procedureName);
+
+		[global::System.Runtime.InteropServices.DllImport("kernel32.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int FreeLibrary(global::System.IntPtr hModule);
+
+		[global::System.Runtime.InteropServices.DllImport("kernel32.dll", EntryPoint="LoadLibraryExA", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static global::System.IntPtr LoadLibraryEx(
+					byte* lpFileName, 
+					global::System.IntPtr hReservedNull, 
+					global::SharpDX_DXGI.Kernel32_LoadLibraryFlags__SharpDX_DXGI dwFlags);
+
+		[global::System.Runtime.InteropServices.DllImport("kernel32.dll", EntryPoint="GetModuleHandleA", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static global::System.IntPtr GetModuleHandle(byte* lpModuleName);
+
+		[global::System.Runtime.InteropServices.DllImport("kernel32.dll", EntryPoint="GetProcAddress", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static global::System.IntPtr GetProcAddress__0(
+					global::System.IntPtr hModule, 
+					byte* procName);
+
+		[global::System.Runtime.InteropServices.DllImport("kernel32.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int GetCPInfoExW(
+					uint CodePage, 
+					uint dwFlags, 
+					global::_.Interop_Kernel32_CPINFOEXW__System_Text_Encoding_CodePages* lpCPInfoEx);
+	}
+
+	public unsafe static partial class winmm_dll_PInvokes
+	{
+		public static int mixerGetNumDevs()
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!mixerGetNumDevs\' non résolue à partir de cette méthode. Recherchez cette méthode dan" +
+					"s les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio mixerOpen(
+					global::System.IntPtr* hMixer, 
+					int uMxId, 
+					global::System.IntPtr dwCallback, 
+					global::System.IntPtr dwInstance, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwOpenFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!mixerOpen\' non résolue à partir de cette méthode. Recherchez cette méthode dans les " +
+					"avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio mixerClose(global::System.IntPtr hMixer)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!mixerClose\' non résolue à partir de cette méthode. Recherchez cette méthode dans les" +
+					" avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio mixerGetControlDetails(
+					global::System.IntPtr hMixer, 
+					global::NAudio_Mixer.MixerInterop_MIXERCONTROLDETAILS__NAudio* mixerControlDetails, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwDetailsFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!mixerGetControlDetails\' non résolue à partir de cette méthode. Recherchez cette méth" +
+					"ode dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio mixerGetDevCaps(
+					global::System.IntPtr nMixerID, 
+					global::NAudio_Mixer.MixerInterop_MIXERCAPS__NAudio__Impl.UnsafeType* mixerCaps, 
+					int mixerCapsSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!mixerGetDevCaps\' non résolue à partir de cette méthode. Recherchez cette méthode dan" +
+					"s les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio mixerGetID(
+					global::System.IntPtr hMixer, 
+					int* mixerID, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwMixerIDFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!mixerGetID\' non résolue à partir de cette méthode. Recherchez cette méthode dans les" +
+					" avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio mixerGetLineControls(
+					global::System.IntPtr hMixer, 
+					global::NAudio_Mixer.MixerInterop_MIXERLINECONTROLS__NAudio* mixerLineControls, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwControlFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!mixerGetLineControls\' non résolue à partir de cette méthode. Recherchez cette méthod" +
+					"e dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio mixerGetLineInfo(
+					global::System.IntPtr hMixer, 
+					global::NAudio_Mixer.MixerInterop_MIXERLINE__NAudio__Impl.UnsafeType* mixerLine, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwInfoFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!mixerGetLineInfo\' non résolue à partir de cette méthode. Recherchez cette méthode da" +
+					"ns les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio mixerMessage(
+					global::System.IntPtr hMixer, 
+					uint nMessage, 
+					global::System.IntPtr dwParam1, 
+					global::System.IntPtr dwParam2)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!mixerMessage\' non résolue à partir de cette méthode. Recherchez cette méthode dans l" +
+					"es avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio mixerSetControlDetails(
+					global::System.IntPtr hMixer, 
+					global::NAudio_Mixer.MixerInterop_MIXERCONTROLDETAILS__NAudio* mixerControlDetails, 
+					global::NAudio_Mixer.MixerFlags__NAudio dwDetailsFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!mixerSetControlDetails\' non résolue à partir de cette méthode. Recherchez cette méth" +
+					"ode dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiConnect(
+					global::System.IntPtr hMidiIn, 
+					global::System.IntPtr hMidiOut, 
+					global::System.IntPtr pReserved)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiConnect\' non résolue à partir de cette méthode. Recherchez cette méthode dans le" +
+					"s avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiDisconnect(
+					global::System.IntPtr hMidiIn, 
+					global::System.IntPtr hMidiOut, 
+					global::System.IntPtr pReserved)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiDisconnect\' non résolue à partir de cette méthode. Recherchez cette méthode dans" +
+					" les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInAddBuffer(
+					global::System.IntPtr hMidiIn, 
+					global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType* lpMidiInHdr, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInAddBuffer\' non résolue à partir de cette méthode. Recherchez cette méthode dan" +
+					"s les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInClose(global::System.IntPtr hMidiIn)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInClose\' non résolue à partir de cette méthode. Recherchez cette méthode dans le" +
+					"s avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInGetDevCaps(
+					global::System.IntPtr deviceId, 
+					global::NAudio_Midi.MidiInCapabilities__NAudio__Impl.UnsafeType* capabilities, 
+					int size)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInGetDevCaps\' non résolue à partir de cette méthode. Recherchez cette méthode da" +
+					"ns les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInGetErrorText(
+					int err, 
+					byte* lpText, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInGetErrorText\' non résolue à partir de cette méthode. Recherchez cette méthode " +
+					"dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInGetID(
+					global::System.IntPtr hMidiIn, 
+					int* lpuDeviceId)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInGetID\' non résolue à partir de cette méthode. Recherchez cette méthode dans le" +
+					"s avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static int midiInGetNumDevs()
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInGetNumDevs\' non résolue à partir de cette méthode. Recherchez cette méthode da" +
+					"ns les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInMessage(
+					global::System.IntPtr hMidiIn, 
+					int msg, 
+					global::System.IntPtr dw1, 
+					global::System.IntPtr dw2)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInMessage\' non résolue à partir de cette méthode. Recherchez cette méthode dans " +
+					"les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInOpen(
+					global::System.IntPtr* hMidiIn, 
+					global::System.IntPtr uDeviceID, 
+					void* callback, 
+					global::System.IntPtr dwInstance, 
+					int dwFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInOpen\' non résolue à partir de cette méthode. Recherchez cette méthode dans les" +
+					" avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInOpenWindow(
+					global::System.IntPtr* hMidiIn, 
+					global::System.IntPtr uDeviceID, 
+					global::System.IntPtr callbackWindowHandle, 
+					global::System.IntPtr dwInstance, 
+					int dwFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInOpenWindow\' non résolue à partir de cette méthode. Recherchez cette méthode da" +
+					"ns les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInPrepareHeader(
+					global::System.IntPtr hMidiIn, 
+					global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType* lpMidiInHdr, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInPrepareHeader\' non résolue à partir de cette méthode. Recherchez cette méthode" +
+					" dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInReset(global::System.IntPtr hMidiIn)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInReset\' non résolue à partir de cette méthode. Recherchez cette méthode dans le" +
+					"s avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInStart(global::System.IntPtr hMidiIn)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInStart\' non résolue à partir de cette méthode. Recherchez cette méthode dans le" +
+					"s avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInStop(global::System.IntPtr hMidiIn)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInStop\' non résolue à partir de cette méthode. Recherchez cette méthode dans les" +
+					" avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiInUnprepareHeader(
+					global::System.IntPtr hMidiIn, 
+					global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType* lpMidiInHdr, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiInUnprepareHeader\' non résolue à partir de cette méthode. Recherchez cette métho" +
+					"de dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutCacheDrumPatches(
+					global::System.IntPtr hMidiOut, 
+					int uPatch, 
+					global::System.IntPtr lpKeyArray, 
+					int uFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutCacheDrumPatches\' non résolue à partir de cette méthode. Recherchez cette mét" +
+					"hode dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutCachePatches(
+					global::System.IntPtr hMidiOut, 
+					int uBank, 
+					global::System.IntPtr lpPatchArray, 
+					int uFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutCachePatches\' non résolue à partir de cette méthode. Recherchez cette méthode" +
+					" dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutClose(global::System.IntPtr hMidiOut)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutClose\' non résolue à partir de cette méthode. Recherchez cette méthode dans l" +
+					"es avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutGetDevCaps(
+					global::System.IntPtr deviceNumber, 
+					global::NAudio_Midi.MidiOutCapabilities__NAudio__Impl.UnsafeType* caps, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutGetDevCaps\' non résolue à partir de cette méthode. Recherchez cette méthode d" +
+					"ans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutGetErrorText(
+					global::System.IntPtr err, 
+					byte* lpText, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutGetErrorText\' non résolue à partir de cette méthode. Recherchez cette méthode" +
+					" dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutGetID(
+					global::System.IntPtr hMidiOut, 
+					int* lpuDeviceID)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutGetID\' non résolue à partir de cette méthode. Recherchez cette méthode dans l" +
+					"es avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static int midiOutGetNumDevs()
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutGetNumDevs\' non résolue à partir de cette méthode. Recherchez cette méthode d" +
+					"ans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutGetVolume(
+					global::System.IntPtr uDeviceID, 
+					int* lpdwVolume)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutGetVolume\' non résolue à partir de cette méthode. Recherchez cette méthode da" +
+					"ns les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutLongMsg(
+					global::System.IntPtr hMidiOut, 
+					global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType* lpMidiOutHdr, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutLongMsg\' non résolue à partir de cette méthode. Recherchez cette méthode dans" +
+					" les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutMessage(
+					global::System.IntPtr hMidiOut, 
+					int msg, 
+					global::System.IntPtr dw1, 
+					global::System.IntPtr dw2)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutMessage\' non résolue à partir de cette méthode. Recherchez cette méthode dans" +
+					" les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutOpen(
+					global::System.IntPtr* lphMidiOut, 
+					global::System.IntPtr uDeviceID, 
+					void* dwCallback, 
+					global::System.IntPtr dwInstance, 
+					int dwFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutOpen\' non résolue à partir de cette méthode. Recherchez cette méthode dans le" +
+					"s avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutPrepareHeader(
+					global::System.IntPtr hMidiOut, 
+					global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType* lpMidiOutHdr, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutPrepareHeader\' non résolue à partir de cette méthode. Recherchez cette méthod" +
+					"e dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutReset(global::System.IntPtr hMidiOut)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutReset\' non résolue à partir de cette méthode. Recherchez cette méthode dans l" +
+					"es avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutSetVolume(
+					global::System.IntPtr hMidiOut, 
+					int dwVolume)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutSetVolume\' non résolue à partir de cette méthode. Recherchez cette méthode da" +
+					"ns les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutShortMsg(
+					global::System.IntPtr hMidiOut, 
+					int dwMsg)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutShortMsg\' non résolue à partir de cette méthode. Recherchez cette méthode dan" +
+					"s les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiOutUnprepareHeader(
+					global::System.IntPtr hMidiOut, 
+					global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType* lpMidiOutHdr, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiOutUnprepareHeader\' non résolue à partir de cette méthode. Recherchez cette méth" +
+					"ode dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiStreamClose(global::System.IntPtr hMidiStream)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiStreamClose\' non résolue à partir de cette méthode. Recherchez cette méthode dan" +
+					"s les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiStreamOpen(
+					global::System.IntPtr* hMidiStream, 
+					global::System.IntPtr puDeviceID, 
+					int cMidi, 
+					global::System.IntPtr dwCallback, 
+					global::System.IntPtr dwInstance, 
+					int fdwOpen)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiStreamOpen\' non résolue à partir de cette méthode. Recherchez cette méthode dans" +
+					" les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiStreamOut(
+					global::System.IntPtr hMidiStream, 
+					global::NAudio_Midi.MidiInterop_MIDIHDR__NAudio__Impl.UnsafeType* pmh, 
+					int cbmh)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiStreamOut\' non résolue à partir de cette méthode. Recherchez cette méthode dans " +
+					"les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiStreamPause(global::System.IntPtr hMidiStream)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiStreamPause\' non résolue à partir de cette méthode. Recherchez cette méthode dan" +
+					"s les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiStreamPosition(
+					global::System.IntPtr hMidiStream, 
+					global::NAudio_Midi.MidiInterop_MMTIME__NAudio* lpmmt, 
+					int cbmmt)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiStreamPosition\' non résolue à partir de cette méthode. Recherchez cette méthode " +
+					"dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiStreamProperty(
+					global::System.IntPtr hMidiStream, 
+					global::System.IntPtr lppropdata, 
+					int dwProperty)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiStreamProperty\' non résolue à partir de cette méthode. Recherchez cette méthode " +
+					"dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiStreamRestart(global::System.IntPtr hMidiStream)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiStreamRestart\' non résolue à partir de cette méthode. Recherchez cette méthode d" +
+					"ans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio midiStreamStop(global::System.IntPtr hMidiStream)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!midiStreamStop\' non résolue à partir de cette méthode. Recherchez cette méthode dans" +
+					" les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static int mmioStringToFOURCC(
+					byte* s, 
+					int flags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!mmioStringToFOURCC\' non résolue à partir de cette méthode. Recherchez cette méthode " +
+					"dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static int waveOutGetNumDevs()
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutGetNumDevs\' non résolue à partir de cette méthode. Recherchez cette méthode d" +
+					"ans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutPrepareHeader(
+					global::System.IntPtr hWaveOut, 
+					global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* lpWaveOutHdr, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutPrepareHeader\' non résolue à partir de cette méthode. Recherchez cette méthod" +
+					"e dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutUnprepareHeader(
+					global::System.IntPtr hWaveOut, 
+					global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* lpWaveOutHdr, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutUnprepareHeader\' non résolue à partir de cette méthode. Recherchez cette méth" +
+					"ode dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutWrite(
+					global::System.IntPtr hWaveOut, 
+					global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* lpWaveOutHdr, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutWrite\' non résolue à partir de cette méthode. Recherchez cette méthode dans l" +
+					"es avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutOpen(
+					global::System.IntPtr* hWaveOut, 
+					global::System.IntPtr uDeviceID, 
+					global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType* lpFormat, 
+					void* dwCallback, 
+					global::System.IntPtr dwInstance, 
+					global::NAudio_Wave.WaveInterop_WaveInOutOpenFlags__NAudio dwFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutOpen\' non résolue à partir de cette méthode. Recherchez cette méthode dans le" +
+					"s avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutOpenWindow(
+					global::System.IntPtr* hWaveOut, 
+					global::System.IntPtr uDeviceID, 
+					global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType* lpFormat, 
+					global::System.IntPtr callbackWindowHandle, 
+					global::System.IntPtr dwInstance, 
+					global::NAudio_Wave.WaveInterop_WaveInOutOpenFlags__NAudio dwFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutOpenWindow\' non résolue à partir de cette méthode. Recherchez cette méthode d" +
+					"ans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutReset(global::System.IntPtr hWaveOut)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutReset\' non résolue à partir de cette méthode. Recherchez cette méthode dans l" +
+					"es avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutClose(global::System.IntPtr hWaveOut)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutClose\' non résolue à partir de cette méthode. Recherchez cette méthode dans l" +
+					"es avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutPause(global::System.IntPtr hWaveOut)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutPause\' non résolue à partir de cette méthode. Recherchez cette méthode dans l" +
+					"es avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutRestart(global::System.IntPtr hWaveOut)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutRestart\' non résolue à partir de cette méthode. Recherchez cette méthode dans" +
+					" les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutGetPosition(
+					global::System.IntPtr hWaveOut, 
+					global::NAudio_Wave.MmTime__NAudio* mmTime, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutGetPosition\' non résolue à partir de cette méthode. Recherchez cette méthode " +
+					"dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutSetVolume(
+					global::System.IntPtr hWaveOut, 
+					int dwVolume)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutSetVolume\' non résolue à partir de cette méthode. Recherchez cette méthode da" +
+					"ns les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutGetVolume(
+					global::System.IntPtr hWaveOut, 
+					int* dwVolume)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutGetVolume\' non résolue à partir de cette méthode. Recherchez cette méthode da" +
+					"ns les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveOutGetDevCaps(
+					global::System.IntPtr deviceID, 
+					global::NAudio_Wave.WaveOutCapabilities__NAudio__Impl.UnsafeType* waveOutCaps, 
+					int waveOutCapsSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveOutGetDevCaps\' non résolue à partir de cette méthode. Recherchez cette méthode d" +
+					"ans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static int waveInGetNumDevs()
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInGetNumDevs\' non résolue à partir de cette méthode. Recherchez cette méthode da" +
+					"ns les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveInGetDevCaps(
+					global::System.IntPtr deviceID, 
+					global::NAudio_Wave.WaveInCapabilities__NAudio__Impl.UnsafeType* waveInCaps, 
+					int waveInCapsSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInGetDevCaps\' non résolue à partir de cette méthode. Recherchez cette méthode da" +
+					"ns les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveInAddBuffer(
+					global::System.IntPtr hWaveIn, 
+					global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* pwh, 
+					int cbwh)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInAddBuffer\' non résolue à partir de cette méthode. Recherchez cette méthode dan" +
+					"s les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveInClose(global::System.IntPtr hWaveIn)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInClose\' non résolue à partir de cette méthode. Recherchez cette méthode dans le" +
+					"s avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveInOpen(
+					global::System.IntPtr* hWaveIn, 
+					global::System.IntPtr uDeviceID, 
+					global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType* lpFormat, 
+					void* dwCallback, 
+					global::System.IntPtr dwInstance, 
+					global::NAudio_Wave.WaveInterop_WaveInOutOpenFlags__NAudio dwFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInOpen\' non résolue à partir de cette méthode. Recherchez cette méthode dans les" +
+					" avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveInOpenWindow(
+					global::System.IntPtr* hWaveIn, 
+					global::System.IntPtr uDeviceID, 
+					global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType* lpFormat, 
+					global::System.IntPtr callbackWindowHandle, 
+					global::System.IntPtr dwInstance, 
+					global::NAudio_Wave.WaveInterop_WaveInOutOpenFlags__NAudio dwFlags)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInOpenWindow\' non résolue à partir de cette méthode. Recherchez cette méthode da" +
+					"ns les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveInPrepareHeader(
+					global::System.IntPtr hWaveIn, 
+					global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* lpWaveInHdr, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInPrepareHeader\' non résolue à partir de cette méthode. Recherchez cette méthode" +
+					" dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveInUnprepareHeader(
+					global::System.IntPtr hWaveIn, 
+					global::NAudio_Wave.WaveHeader__NAudio__Impl.UnsafeType* lpWaveInHdr, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInUnprepareHeader\' non résolue à partir de cette méthode. Recherchez cette métho" +
+					"de dans les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveInReset(global::System.IntPtr hWaveIn)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInReset\' non résolue à partir de cette méthode. Recherchez cette méthode dans le" +
+					"s avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveInStart(global::System.IntPtr hWaveIn)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInStart\' non résolue à partir de cette méthode. Recherchez cette méthode dans le" +
+					"s avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveInStop(global::System.IntPtr hWaveIn)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInStop\' non résolue à partir de cette méthode. Recherchez cette méthode dans les" +
+					" avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static global::NAudio.MmResult__NAudio waveInGetPosition(
+					global::System.IntPtr hWaveIn, 
+					global::NAudio_Wave.MmTime__NAudio* mmTime, 
+					int uSize)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'winmm.dll!waveInGetPosition\' non résolue à partir de cette méthode. Recherchez cette méthode d" +
+					"ans les avertissements de build pour obtenir plus de détails. ");
+		}
+	}
+
+	public unsafe static partial class mfplat_dll_PInvokes
+	{
+		[global::System.Runtime.InteropServices.DllImport("mfplat.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFStartup(
+					int version, 
+					int dwFlags);
+
+		[global::System.Runtime.InteropServices.DllImport("mfplat.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFShutdown();
+
+		[global::System.Runtime.InteropServices.DllImport("mfplat.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFCreateMediaType(void** ppMFType);
+
+		[global::System.Runtime.InteropServices.DllImport("mfplat.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFInitMediaTypeFromWaveFormatEx(
+					void* pMFType, 
+					global::NAudio_Wave.WaveFormat__NAudio__Impl.UnsafeType* pWaveFormat, 
+					int cbBufSize);
+
+		[global::System.Runtime.InteropServices.DllImport("mfplat.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFCreateWaveFormatExFromMFMediaType(
+					void* pMFType, 
+					global::System.IntPtr* ppWF, 
+					int* pcbSize, 
+					int flags);
+
+		[global::System.Runtime.InteropServices.DllImport("mfplat.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFCreateMFByteStreamOnStreamEx(
+					void** punkStream, 
+					void** ppByteStream);
+
+		[global::System.Runtime.InteropServices.DllImport("mfplat.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFCreateSample(void** ppIMFSample);
+
+		[global::System.Runtime.InteropServices.DllImport("mfplat.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFCreateMemoryBuffer(
+					int cbMaxLength, 
+					void** ppBuffer);
+
+		[global::System.Runtime.InteropServices.DllImport("mfplat.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFCreateAttributes(
+					void** ppMFAttributes, 
+					int cInitialSize);
+	}
+
+	public unsafe static partial class mfreadwrite_dll_PInvokes
+	{
+		[global::System.Runtime.InteropServices.DllImport("mfreadwrite.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFCreateSourceReaderFromURL(
+					ushort* pwszURL, 
+					void* pAttributes, 
+					void** ppSourceReader);
+
+		[global::System.Runtime.InteropServices.DllImport("mfreadwrite.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFCreateSourceReaderFromByteStream(
+					void* pByteStream, 
+					void* pAttributes, 
+					void** ppSourceReader);
+
+		[global::System.Runtime.InteropServices.DllImport("mfreadwrite.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int MFCreateSinkWriterFromURL(
+					ushort* pwszOutputURL, 
+					void* pByteStream, 
+					void* pAttributes, 
+					void** ppSinkWriter);
+	}
+
+	public unsafe static partial class api_ms_win_core_synch_l1_2_0_dll_PInvokes
+	{
+		[global::System.Runtime.InteropServices.DllImport("api-ms-win-core-synch-l1-2-0.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static global::System.IntPtr CreateEventExW(
+					global::System.IntPtr lpEventAttributes, 
+					global::System.IntPtr lpName, 
+					int dwFlags, 
+					global::NAudio_Wave.EventAccess__NAudio dwDesiredAccess);
+
+		[global::System.Runtime.InteropServices.DllImport("api-ms-win-core-synch-l1-2-0.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int WaitForSingleObjectEx(
+					global::System.IntPtr hEvent, 
+					int milliseconds, 
+					int bAlertable);
+	}
+
+	public unsafe static partial class api_ms_win_core_handle_l1_1_0_dll_PInvokes
+	{
+		[global::System.Runtime.InteropServices.DllImport("api-ms-win-core-handle-l1-1-0.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int CloseHandle(global::System.IntPtr hObject);
+
+		[global::System.Runtime.InteropServices.DllImport("api-ms-win-core-handle-l1-1-0.dll", EntryPoint="CloseHandle", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int CloseHandle__0(global::System.IntPtr handle);
+	}
+
+	public unsafe static partial class Mmdevapi_dll_PInvokes
+	{
+		[global::System.Runtime.InteropServices.DllImport("Mmdevapi.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int ActivateAudioInterfaceAsync(
+					ushort* deviceInterfacePath, 
+					global::System.Guid* riid, 
+					global::System.IntPtr activationParams, 
+					void* completionHandler, 
+					void** activationOperation);
+	}
+
+	public unsafe static partial class msdmo_dll_PInvokes
+	{
+		public static int DMOEnum(
+					global::System.Guid* guidCategory, 
+					global::NAudio_Dmo.DmoEnumFlags__NAudio flags, 
+					int inTypes, 
+					global::NAudio_Dmo.DmoPartialMediaType__NAudio* inTypesArray, 
+					int outTypes, 
+					global::NAudio_Dmo.DmoPartialMediaType__NAudio* outTypesArray, 
+					void** enumDmo)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'msdmo.dll!DMOEnum\' non résolue à partir de cette méthode. Recherchez cette méthode dans les av" +
+					"ertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static int MoFreeMediaType(global::NAudio_Dmo.DmoMediaType__NAudio__Impl.UnsafeType* mediaType)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'msdmo.dll!MoFreeMediaType\' non résolue à partir de cette méthode. Recherchez cette méthode dan" +
+					"s les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static int MoInitMediaType(
+					global::NAudio_Dmo.DmoMediaType__NAudio__Impl.UnsafeType* mediaType, 
+					int formatBlockBytes)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'msdmo.dll!MoInitMediaType\' non résolue à partir de cette méthode. Recherchez cette méthode dan" +
+					"s les avertissements de build pour obtenir plus de détails. ");
+		}
+
+		public static int DMOGetName(
+					global::System.Guid* clsidDMO, 
+					byte* name)
+		{
+			throw new global::System.TypeLoadException("Méthode P/Invoke \'msdmo.dll!DMOGetName\' non résolue à partir de cette méthode. Recherchez cette méthode dans les" +
+					" avertissements de build pour obtenir plus de détails. ");
+		}
+	}
+
+	public unsafe static partial class api_ms_win_core_com_l1_1_1_dll_PInvokes
+	{
+		[global::System.Runtime.InteropServices.DllImport("api-ms-win-core-com-l1-1-1.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int PropVariantClear(global::NAudio_CoreAudioApi_Interfaces.PropVariant__NAudio* pvar);
+
+		[global::System.Runtime.InteropServices.DllImport("api-ms-win-core-com-l1-1-1.dll", EntryPoint="PropVariantClear", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
+		public extern static int PropVariantClear__0(global::System.IntPtr pvar);
+	}
+
 	public unsafe static partial class api_ms_win_core_localization_l1_2_0_dll_PInvokes
 	{
 		[global::System.Runtime.InteropServices.DllImport("api-ms-win-core-localization-l1-2-0.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
@@ -1200,12 +4707,6 @@ namespace __Interop
 					int dwClsContext, 
 					byte* riid, 
 					global::System.IntPtr* ppv);
-	}
-
-	public unsafe static partial class api_ms_win_core_handle_l1_1_0_dll_PInvokes
-	{
-		[global::System.Runtime.InteropServices.DllImport("api-ms-win-core-handle-l1-1-0.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
-		public extern static int CloseHandle(global::System.IntPtr handle);
 	}
 
 	public unsafe static partial class api_ms_win_core_libraryloader_l1_1_1_dll_PInvokes
@@ -1270,29 +4771,6 @@ namespace __Interop
 					global::SharpDX_IO.NativeFile_FILE_INFO_BY_HANDLE_CLASS__SharpDX FileInformationClass, 
 					global::System.IntPtr lpFileInformation, 
 					int dwBufferSize);
-	}
-
-	public unsafe static partial class kernel32_dll_PInvokes
-	{
-		[global::System.Runtime.InteropServices.DllImport("kernel32.dll", EntryPoint="LoadLibraryExA", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
-		public extern static global::System.IntPtr LoadLibraryEx(
-					byte* lpFileName, 
-					global::System.IntPtr hReservedNull, 
-					global::SharpDX_DXGI.Kernel32_LoadLibraryFlags__SharpDX_DXGI dwFlags);
-
-		[global::System.Runtime.InteropServices.DllImport("kernel32.dll", EntryPoint="GetModuleHandleA", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
-		public extern static global::System.IntPtr GetModuleHandle(byte* lpModuleName);
-
-		[global::System.Runtime.InteropServices.DllImport("kernel32.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
-		public extern static global::System.IntPtr GetProcAddress(
-					global::System.IntPtr hModule, 
-					byte* procName);
-
-		[global::System.Runtime.InteropServices.DllImport("kernel32.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.Winapi)]
-		public extern static int GetCPInfoExW(
-					uint CodePage, 
-					uint dwFlags, 
-					global::_.Interop_Kernel32_CPINFOEXW__System_Text_Encoding_CodePages* lpCPInfoEx);
 	}
 
 	public unsafe static partial class dxgi_dll_PInvokes

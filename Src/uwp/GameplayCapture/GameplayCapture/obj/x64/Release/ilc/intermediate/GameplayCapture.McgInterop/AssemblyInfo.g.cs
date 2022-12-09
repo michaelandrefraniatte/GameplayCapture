@@ -12,6 +12,7 @@ using global::Windows.Foundation.Collections;
 
 [assembly: global::System.Runtime.InteropServices.McgGeneratedAssembly]
 [assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("System.Private.WinRTInterop.CoreLib")]
+[assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("NAudio")]
 [assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("System.Runtime.WindowsRuntime")]
 [assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("CaptureEncoder")]
 [assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("SharpDX")]

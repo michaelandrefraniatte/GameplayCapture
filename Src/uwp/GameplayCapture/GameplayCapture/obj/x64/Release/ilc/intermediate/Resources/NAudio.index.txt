@@ -1,0 +1,7 @@
+NAudio, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null
+  NAudio.Gui.Fader.resources
+  NAudio.Gui.PanSlider.resources
+  NAudio.Gui.Pot.resources
+  NAudio.Gui.VolumeSlider.resources
+  NAudio.Gui.WaveViewer.resources
+  NAudio.Utils.ProgressLog.resources

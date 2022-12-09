@@ -1,21 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Threading;
 using System.Threading.Tasks;
 using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 using CaptureEncoder;
 using System.Diagnostics;
 using Windows.Graphics.Capture;
@@ -26,6 +18,9 @@ using Windows.Storage.Pickers;
 using Windows.System;
 using Windows.UI;
 using Windows.UI.ViewManagement;
+using ScreenSenderComponent;
+using Windows.Media.Devices;
+using System.Runtime.CompilerServices;
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, consultez la page https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -75,6 +70,10 @@ namespace GameplayCapture
         }
         private async void Start_Button_Click(object sender, RoutedEventArgs e)
         {
+            loopbackAudioCapture = new LoopbackAudioCapture(MediaDevice.GetDefaultAudioRenderId(AudioDeviceRole.Default));
+            loopbackAudioCapture.BufferReadyDelegate = LoopbackBufferReady;
+            BufferList.Clear();
+
             var button = (ToggleButton)sender;
 
             // Get our encoder properties
@@ -126,7 +125,7 @@ namespace GameplayCapture
                     await _encoder.EncodeAsync(
                         stream,
                         width, height, bitrate,
-                        frameRate);
+                        frameRate, loopbackAudioCapture);
                 }
                 MainTextBlock.Foreground = originalBrush;
             }
@@ -178,8 +177,10 @@ namespace GameplayCapture
             await Launcher.LaunchFileAsync(newFile);
         }
 
-        private void Stop_Button_Click(object sender, RoutedEventArgs e)
+        private async void Stop_Button_Click(object sender, RoutedEventArgs e)
         {
+            audioEncodingProperties = loopbackAudioCapture.EncodingProperties;
+            await loopbackAudioCapture.Stop();
             // If the encoder is doing stuff, tell it to stop
             _encoder?.Dispose();
         }
@@ -387,6 +388,20 @@ namespace GameplayCapture
             }
         }
 
+        private unsafe void LoopbackBufferReady(AudioClientBufferDetails details, out int numSamplesRead)
+        {
+            numSamplesRead = details.NumSamplesToRead;
+
+            byte* buffer = (byte*)details.DataPointer;
+            uint byteLength = (uint)details.ByteLength;
+
+            byte[] audioBuffer = new byte[byteLength];
+            Unsafe.CopyBlock(ref audioBuffer[0], ref *buffer, byteLength);
+
+
+            foreach (var b in audioBuffer) BufferList.Add(b);
+        }
+
         struct AppSettings
         {
             public VideoEncodingQuality Quality;
@@ -396,5 +411,8 @@ namespace GameplayCapture
 
         private IDirect3DDevice _device;
         private Encoder _encoder;
+        private LoopbackAudioCapture loopbackAudioCapture;
+        private AudioEncodingProperties audioEncodingProperties;
+        private List<byte> BufferList = new List<byte>();
     }
 }

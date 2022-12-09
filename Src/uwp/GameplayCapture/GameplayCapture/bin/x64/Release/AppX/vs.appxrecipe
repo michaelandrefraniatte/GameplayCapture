@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\bin\x64\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-09T12:39:06.445</Modified>
+      <Modified>2022-12-09T19:58:03.666</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -74,15 +74,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\bin\x64\Release\ilc\GameplayCapture.dll">
       <PackagePath>GameplayCapture.dll</PackagePath>
-      <Modified>2022-12-09T12:39:05.952</Modified>
+      <Modified>2022-12-09T19:58:03.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\bin\x64\Release\ilc\GameplayCapture.exe">
       <PackagePath>GameplayCapture.exe</PackagePath>
-      <Modified>2022-12-09T12:39:06.432</Modified>
+      <Modified>2022-12-09T19:58:03.651</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\bin\x64\Release\ilc\GameplayCapture.pdb">
       <PackagePath>GameplayCapture.pdb</PackagePath>
-      <Modified>2022-12-09T12:39:06.429</Modified>
+      <Modified>2022-12-09T19:58:03.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\bin\x64\Release\ilc\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -94,7 +94,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\bin\x64\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-12-09T12:38:39.273</Modified>
+      <Modified>2022-12-09T19:57:40.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\bin\x64\Release\ilc\ScreenSenderComponent.winmd">
       <PackagePath>ScreenSenderComponent.winmd</PackagePath>

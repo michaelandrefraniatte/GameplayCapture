@@ -14,6 +14,7 @@ Microsoft.Graphics.Canvas.dll                         : 1.26.0
 Microsoft.VisualBasic.dll                             : 4.6.31327.01
 Microsoft.Win32.Primitives.dll                        : 4.6.31327.01
 mscorlib.dll                                          : 4.6.31327.01
+NAudio.dll                                            : 1.10.0.0
 netstandard.dll                                       : 4.6.31327.1
 SharpDX.Direct3D11.dll                                : 4.2.0
 SharpDX.dll                                           : 4.2.0
@@ -137,7 +138,7 @@ System.Reflection.TypeExtensions.dll                  : 4.6.31327.01
 System.Resources.Reader.dll                           : 4.6.31327.01
 System.Resources.ResourceManager.dll                  : 4.6.31327.01
 System.Resources.Writer.dll                           : 4.6.31327.01
-System.Runtime.CompilerServices.Unsafe.dll            : 
+System.Runtime.CompilerServices.Unsafe.dll            : 6.0.21.52210
 System.Runtime.CompilerServices.VisualC.dll           : 4.6.31327.01
 System.Runtime.dll                                    : 4.6.31327.01
 System.Runtime.Extensions.dll                         : 4.6.31327.01
