@@ -1,8 +1,7 @@
 ﻿using System.Windows.Forms;
 using SharpDX.DXGI;
-using GameplayCapture;
 
-namespace WinDuplicator
+namespace GameplayCapture
 {
     public partial class ChooseOutput : Form
     {
@@ -29,7 +28,7 @@ namespace WinDuplicator
             }
 
             listViewMain.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-            UpdateControls();
+            //UpdateControls();
             Text = "Choose Monitor for " + adapter.Description.Description;
         }
 
@@ -53,7 +52,7 @@ namespace WinDuplicator
 
         private void listViewMain_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            UpdateControls();
+            //UpdateControls();
         }
     }
 }

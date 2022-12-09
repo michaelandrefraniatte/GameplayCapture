@@ -46,9 +46,6 @@ namespace GameplayCapture
 
         public WaveFormat GetFormat(AudioDevice device)
         {
-            if (device == null)
-                throw new ArgumentNullException(nameof(device));
-
             var audioClient = device.ActivateClient();
             try
             {
@@ -74,7 +71,7 @@ namespace GameplayCapture
             var thread = new Thread(ThreadLoop);
             thread.Name = nameof(AudioCapture) + DateTime.Now.TimeOfDay;
             thread.IsBackground = true;
-            //thread.Priority = ThreadPriority.Lowest;
+            thread.Priority = ThreadPriority.Lowest;
             var state = new ThreadState();
             state.Device = device;
             state.TaskName = threadTaskName;
@@ -127,15 +124,6 @@ namespace GameplayCapture
         public void Loop(AudioDevice device, WaitHandle stopHandle) => Loop(device, stopHandle, null);
         public void Loop(AudioDevice device, WaitHandle stopHandle, string threadTaskName)
         {
-            if (device == null)
-                throw new ArgumentNullException(nameof(device));
-
-            if (stopHandle == null)
-                throw new ArgumentNullException(nameof(stopHandle));
-
-            if (_device != null)
-                throw new InvalidOperationException("Capture loop was already started.");
-
             _device = device;
             bool renderDevice = IsRenderDevice(_device);
 
@@ -185,8 +173,6 @@ namespace GameplayCapture
                 {
                     // profiles names are stored as sub keys of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks
                     var task = CoreAudio.AvSetMmThreadCharacteristics(threadTaskName, out int taskIndex);
-                    if (task == IntPtr.Zero)
-                        throw new Win32Exception(Marshal.GetLastWin32Error());
 
                     // reuse the same buffer
                     byte[] data = null;
@@ -206,7 +192,7 @@ namespace GameplayCapture
                                     break;
 
                                 captureClient.GetBuffer(out IntPtr dataPtr, out int frames, out CoreAudio.AUDCLNT_BUFFERFLAGS flags, out long devPosition, out long qpcPosition);
-                                //Duplicator.Trace("frames:" + frames + " flags: " + flags);
+
                                 int bytesCount;
                                 if (flags.HasFlag(CoreAudio.AUDCLNT_BUFFERFLAGS.AUDCLNT_BUFFERFLAGS_SILENT))
                                 {
@@ -226,7 +212,7 @@ namespace GameplayCapture
                             {
                                 index = WaitHandle.WaitAny(new[] { stopHandle, _dataEvent }, WaitTimeout);
                             }
-                            catch (ObjectDisposedException)
+                            catch
                             {
                                 index = 0;
                             }
@@ -324,9 +310,7 @@ namespace GameplayCapture
             {
                 deviceEnumerator = (CoreAudio.IMMDeviceEnumerator)(new CoreAudio.MMDeviceEnumerator());
             }
-            catch
-            {
-            }
+            catch { }
 
             if (deviceEnumerator != null)
             {
@@ -397,7 +381,6 @@ namespace GameplayCapture
             }
             catch
             {
-                // huh? not on vista?
                 return null;
             }
         }
@@ -412,7 +395,6 @@ namespace GameplayCapture
             }
             catch
             {
-                // huh? not on vista?
                 return null;
             }
         }

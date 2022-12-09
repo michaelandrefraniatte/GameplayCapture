@@ -4,23 +4,12 @@ using System.Windows.Forms;
 using System.IO;
 using System.Threading;
 using System.Runtime.InteropServices;
-using NAudio.Wave;
-
 namespace GameplayCapture
 {
     public partial class Form1 : Form
     {
-        [DllImport("winmm.dll", EntryPoint = "timeBeginPeriod")]
-        public static extern uint TimeBeginPeriod(uint ms);
-        [DllImport("winmm.dll", EntryPoint = "timeEndPeriod")]
-        public static extern uint TimeEndPeriod(uint ms);
-        [DllImport("ntdll.dll", EntryPoint = "NtSetTimerResolution")]
-        public static extern void NtSetTimerResolution(uint DesiredResolution, bool SetResolution, ref uint CurrentResolution);
-        public static uint CurrentResolution = 0;
         [DllImport("user32.dll")]
         public static extern bool GetAsyncKeyState(Keys vKey);
-        private static MediaFoundationReader audioFileReader;
-        public static WaveOut soundOut;
         private WinGameplayCaptureOptions _options;
         private GameplayCapture _duplicator;
         private static bool Getstate;
@@ -51,26 +40,11 @@ namespace GameplayCapture
         }
         private void Form1_Shown(object sender, EventArgs e)
         {
-            TimeBeginPeriod(1);
-            NtSetTimerResolution(1, true, ref CurrentResolution);
-            InitSoundPlay();
             MinimumSize = Size;
             _options = new WinGameplayCaptureOptions();
             propertyGridMain.SelectedObject = _options;
             _duplicator = new GameplayCapture(_options);
             Task.Run(() => Start());
-        }
-        private void InitSoundPlay()
-        {
-            audioFileReader = new MediaFoundationReader("silence.mp3");
-            soundOut = new WaveOut();
-            soundOut.Init(audioFileReader);
-            soundOut.Play();
-            soundOut.PlaybackStopped += SoundOut_PlaybackStopped;
-        }
-        private void SoundOut_PlaybackStopped(object sender, NAudio.Wave.StoppedEventArgs e)
-        {
-            soundOut.Play();
         }
         public void Start()
         {
