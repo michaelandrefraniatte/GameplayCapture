@@ -1,0 +1,2 @@
+C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\CaptureEncoder\CaptureEncoder.csproj;x64
+C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\GameplayCapture.csproj;x64

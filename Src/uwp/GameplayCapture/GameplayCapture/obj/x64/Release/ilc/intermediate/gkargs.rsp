@@ -1,0 +1,13 @@
+﻿"C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\obj\x64\Release\ilc\in\CaptureEncoder.dll"
+"C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\obj\x64\Release\ilc\in\GameplayCapture.exe"
+"C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\obj\x64\Release\ilc\in\Microsoft.Graphics.Canvas.winmd"
+"C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\obj\x64\Release\ilc\in\ScreenSenderComponent.winmd"
+"C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\obj\x64\Release\ilc\in\SharpDX.dll"
+"C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\obj\x64\Release\ilc\in\SharpDX.Direct3D11.dll"
+"C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\obj\x64\Release\ilc\in\SharpDX.DXGI.dll"
+/Lib:"C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\obj\x64\Release\ilc\in"
+/Lib:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.2.12-rel-31116-00\tools\x64\ilc\lib\Private"
+/WinMD:"C:\Users\micha\Documents\GitHub\GameplayCapture\Src\uwp\GameplayCapture\GameplayCapture\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"AppId\":1001,\"UserId\":\"8b1e1f41-cc1e-4c31-bcc6-590f25f8a318\",\"Id\":\"dfba0fdb-7a19-4aba-a181-c0641606524d\",\"ProcessStartTime\":638061862248902096,\"SkuName\":\"VS_Community\",\"VSExeVersion\":\"17.4.33122.133\",\"BucketFiltersToEnableWatsonForFaults\":[],\"BucketFiltersToAddDumpsToFaults\":[]}"
+/RdXmlPath:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\2.2.12-rel-31116-00\tools\LibraryXML"
+/RunOnlyPreDR
